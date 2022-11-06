@@ -1,248 +1,103 @@
 package windows;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import java.awt.Color;
+import java.awt.BorderLayout;
 import java.awt.GridLayout;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
+import java.awt.Font;
+import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.util.TreeMap;
-
-import javax.swing.JLabel;
-import javax.swing.JMenuBar;
-import java.awt.Font;
-import java.awt.Cursor;
-import java.awt.Dimension;
-import javax.swing.border.MatteBorder;
-import javax.swing.event.MouseInputListener;
-
-import clss.Cliente;
-import paneles.PanelCamisetas;
-import paneles.PanelPantalones;
-import paneles.PanelSudaderas;
-import paneles.PanelZapatillas;
-
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.SwingConstants;
 
 public class VentanaMain extends JFrame {
 
 	private JPanel contentPane;
-	private JPanel pnlPrincipal;
-	private JPanel pnlNorte;
-	private JPanel pnlIzquierda;
-	private JPanel pnlDerecha;
-	private JLabel lblCamisetas;
-	private JLabel lblPantalones;
-	private JLabel lblZapatillas;
-	private JLabel lblSudaderas;
-	private JLabel lblNewLabel_1;
-	public static TreeMap<String, Cliente> tmCliente = new TreeMap<>();
-	private JPanel pnlDerechaAbajo;
-	private JButton btnCesta;
-	private JButton btnNewButton_1;
+	protected int resp;
 	
 
 	/**
-	 * Lanza JFrame
+	 * Launch the application.
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					
 					VentanaMain frame = new VentanaMain();
-
 					frame.setVisible(true);
-//					if(login.getTfUsuario().getText()=="admin"){
-//						VentanaMain frame = new VentanaMain();
-//						frame.setVisible(true);
-//						login.setVisible(false);
-//					}
-					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
 		});
 	}
-	
 
-//	/**
-//	 * Crea el JFrame
-//	 */
+	/**
+	 * Create the frame.
+	 */
 	public VentanaMain() {
-	
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 801, 517);
+		setBounds(100, 100, 1050, 725);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(0, 0));
+
 		setContentPane(contentPane);
+		contentPane.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		PanelPrincipal panel1 = new PanelPrincipal();
-		add(panel1, BorderLayout.WEST);
-		PanelInicio panelInicio = new PanelInicio();
-		add(panelInicio, BorderLayout.NORTH);
+		JPanel pnl_Izq = new JPanel();
+		contentPane.add(pnl_Izq);
+		pnl_Izq.setLayout(new BorderLayout(0, 0));
 		
+		JLabel lbl_Img = new JLabel("");
+		lbl_Img.setIcon(new ImageIcon(VentanaMain.class.getResource("/img/Diseño sin título.png")));
+		pnl_Izq.add(lbl_Img, BorderLayout.CENTER);
+		
+		JPanel pnl_Derech = new JPanel();
+		contentPane.add(pnl_Derech);
+		pnl_Derech.setLayout(new BorderLayout(0, 0));
+		
+		JPanel pnl_Arriba = new JPanel();
+		pnl_Derech.add(pnl_Arriba, BorderLayout.NORTH);
+		
+		JLabel lblNewLabel = new JLabel("¿Que Desea Hacer?");
+		lblNewLabel.setFont(new Font("Montserrat", Font.PLAIN, 20));
+		pnl_Arriba.add(lblNewLabel);
+		
+		JPanel panel_1 = new JPanel();
+		pnl_Derech.add(panel_1, BorderLayout.CENTER);
+		panel_1.setLayout(new GridLayout(4, 0, 0, 0));
+		
+		JButton btnNewButton = new JButton("Crear una sesion");
+		btnNewButton.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(btnNewButton);
+		
+		JButton btnNewButton_1_1 = new JButton("Crear Un Reto");
+		btnNewButton_1_1.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(btnNewButton_1_1);
+		
+		JButton btnObtenerDeRetos = new JButton("Obtener Retos Activos");
+		panel_1.add(btnObtenerDeRetos);
+		btnObtenerDeRetos.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		
+		JPanel panel = new JPanel();
+		panel_1.add(panel);
+		panel.setLayout(new GridLayout(0, 2, 0, 0));
+		
+		JButton btnNewButton_2 = new JButton("Cerrar Sesion");
+		btnNewButton_2.addMouseListener(new MouseAdapter() {
 
-//		pnlDerecha = new JPanel();
-//		pnlPrincipal.add(pnlDerecha, BorderLayout.CENTER);
-//
-//		pnlDerecha.setLayout(new BorderLayout(0, 0));
-//		
-//		pnlDerechaAbajo = new JPanel();
-//		pnlDerecha.add(pnlDerechaAbajo, BorderLayout.SOUTH);
-//		
-//		btnCesta = new JButton("Cesta");
-//		pnlDerechaAbajo.add(btnCesta);
-//		
-//		btnNewButton_1 = new JButton("");
-//		pnlDerechaAbajo.add(btnNewButton_1);
-		
-		
-		lblCamisetas.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseClicked(MouseEvent e) {
-				panelInicio.removeAll();
-				panelInicio.revalidate();
-				add(new PanelCamisetas(), BorderLayout.CENTER);
+			public void mousePressed(MouseEvent e) {
+				resp = JOptionPane.showConfirmDialog(null, "¿Esta seguro?", "Alerta!", JOptionPane.YES_NO_OPTION);
 				
 			}
-	});
-
-		lblSudaderas.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				panelInicio.removeAll();
-				panelInicio.revalidate();
-				add(new PanelSudaderas(), BorderLayout.CENTER);
-				
-			}
-	});
-
-		lblPantalones.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				panelInicio.removeAll();
-				panelInicio.revalidate();
-				add(new PanelPantalones(), BorderLayout.CENTER);
-				
-			}
-	});
-
-		lblZapatillas.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				panelInicio.removeAll();
-				panelInicio.revalidate();
-				add(new PanelZapatillas(), BorderLayout.CENTER);
-				
-			}
-	});
-		
-
+		});
+		panel.add(btnNewButton_2);
 	}
 
-	
-		class PanelPrincipal extends JPanel{
-		
-			public PanelPrincipal() {
-				setLayout(new BorderLayout());
-			
-				pnlPrincipal = new JPanel();
-				contentPane.add(pnlPrincipal, BorderLayout.CENTER);
-				pnlPrincipal.setLayout(new BorderLayout(0, 0));
-				pnlNorte = new JPanel();
-				pnlNorte.setPreferredSize(new Dimension(10, 40));
-				pnlNorte.setBackground(new Color(227, 48, 73));
-				pnlPrincipal.add(pnlNorte, BorderLayout.NORTH);
-				pnlNorte.setLayout(new BorderLayout(0, 0));
-				
-				lblNewLabel_1 = new JLabel("Bienvenido a OutFitShop");
-				lblNewLabel_1.setFont(new Font("Monaco", Font.PLAIN, 16));
-				lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-				pnlNorte.add(lblNewLabel_1);
-				
-				PanelBotones panelBotones = new PanelBotones();
-				add(panelBotones, BorderLayout.CENTER);
-				
-				
-			}
-		
-		class PanelBotones extends JPanel{
-	
-			public PanelBotones() {
-				setLayout(new GridLayout(5,1));
-				
-				
-				
-				JLabel JLabelImagen = new JLabel();
-				JLabelImagen.setIcon(new ImageIcon("E:\\Joseba\\Desktop\\alud\\2�\\1� CUATRI\\PROG\\ProyectoProgIII\\ProyectoProgIII\\ProyectoProgIII\\src\\img\\Inicio.png"));
-				add(JLabelImagen, BorderLayout.NORTH);
-				
-				
-
-				 
-				
-				lblCamisetas = new JLabel("Camisetas");
-				lblCamisetas.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-				lblCamisetas.setFont(new Font("Verdana", Font.PLAIN, 14));
-				lblCamisetas.setBorder(new MatteBorder(2, 0, 2, 2, (Color) Color.WHITE));
-				lblCamisetas.setBackground(Color.LIGHT_GRAY);
-				lblCamisetas.setOpaque(true);
-				add(lblCamisetas, BorderLayout.CENTER);
-				
-				lblPantalones = new JLabel("Pantalones");
-				lblPantalones.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-				lblPantalones.setFont(new Font("Verdana", Font.PLAIN, 14));
-				lblPantalones.setBorder(new MatteBorder(2, 0, 2, 2, (Color) Color.WHITE));
-				lblPantalones.setBackground(Color.LIGHT_GRAY);
-				lblPantalones.setOpaque(true);
-				add(lblPantalones, BorderLayout.CENTER);
-				
-				
-				
-				lblSudaderas = new JLabel("Sudaderas");
-				lblSudaderas.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-				lblSudaderas.setFont(new Font("Verdana", Font.PLAIN, 14));
-				lblSudaderas.setBorder(new MatteBorder(2, 0, 2, 2, (Color) Color.WHITE));
-				lblSudaderas.setBackground(Color.LIGHT_GRAY);
-				lblSudaderas.setOpaque(true);
-				add(lblSudaderas, BorderLayout.CENTER);
-				
-				lblZapatillas = new JLabel("Zapatillas");
-				lblZapatillas.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-				lblZapatillas.setFont(new Font("Verdana", Font.PLAIN, 14));
-				lblZapatillas.setBorder(new MatteBorder(2, 0, 2, 2, (Color) Color.WHITE));
-				lblZapatillas.setBackground(Color.LIGHT_GRAY);
-				lblZapatillas.setOpaque(true);
-				add(lblZapatillas, BorderLayout.CENTER);
-				
-			
-				
-			}
-			
-			
-		}
-		
-		
-	}
-	
-	class PanelInicio extends JPanel{ //Panel con el que se inicia
-		public PanelInicio(){
-		
-			
-			
-		
-
-			
-		}
-	}
 }
