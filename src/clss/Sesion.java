@@ -2,13 +2,13 @@ package clss;
 
 public class Sesion {
 	private String titulo;
-	private Enum tipo;
-	private Double km;
+	private tipoDeporte tipo;
+	private double km;
 	private String fInicio;
-	private Integer hora;
-	private Double duracion;
+	private int hora;
+	private double duracion;
 
-	public Sesion(String titulo, Enum tipo, Double km, String fInicio, Integer hora, Double duracion) {
+	public Sesion(String titulo, tipoDeporte tipo, double km, String fInicio, int hora, double duracion) {
 		super();
 		this.titulo = titulo;
 		this.tipo = tipo;
@@ -16,6 +16,12 @@ public class Sesion {
 		this.fInicio = fInicio;
 		this.hora = hora;
 		this.duracion = duracion;
+	}
+
+	@Override
+	public String toString() {
+		return "Sesion [titulo=" + titulo + ", tipo=" + tipo + ", km=" + km + ", fInicio=" + fInicio + ", hora=" + hora
+				+ ", duracion=" + duracion + "]";
 	}
 
 	public String getTitulo() {
@@ -26,19 +32,19 @@ public class Sesion {
 		this.titulo = titulo;
 	}
 
-	public Enum getTipo() {
+	public tipoDeporte getTipo() {
 		return tipo;
 	}
 
-	public void setTipo(Enum tipo) {
+	public void setTipo(tipoDeporte tipo) {
 		this.tipo = tipo;
 	}
 
-	public Double getKm() {
+	public double getKm() {
 		return km;
 	}
 
-	public void setKm(Double km) {
+	public void setKm(double km) {
 		this.km = km;
 	}
 
@@ -50,26 +56,20 @@ public class Sesion {
 		this.fInicio = fInicio;
 	}
 
-	public Integer getHora() {
+	public int getHora() {
 		return hora;
 	}
 
-	public void setHora(Integer hora) {
+	public void setHora(int hora) {
 		this.hora = hora;
 	}
 
-	public Double getDuracion() {
+	public double getDuracion() {
 		return duracion;
 	}
 
-	public void setDuracion(Double duracion) {
+	public void setDuracion(double duracion) {
 		this.duracion = duracion;
-	}
-
-	@Override
-	public String toString() {
-		return "Sesion [titulo=" + titulo + ", tipo=" + tipo + ", km=" + km + ", fInicio=" + fInicio + ", hora=" + hora
-				+ ", duracion=" + duracion + "]";
 	}
 
 }

@@ -30,7 +30,7 @@ public class VentanaLoginN extends JFrame {
 
 	private JPanel contentPane, pnlPrincipal, pnlIzquierda, pnlDerechaa;
 
-	private JLabel lblIniciarSesion, lblCopy, lblUsuario, lblIconoUsu, lblContraseya;
+	private JLabel lblIniciarSesion, lblUsuario, lblIconoUsu, lblContraseya;
 
 	private JTextField txtUsuario;
 	private JPasswordField passContraseya;
@@ -42,6 +42,7 @@ public class VentanaLoginN extends JFrame {
 	private JLabel lblNewLabel_1;
 	private JLabel lblNewLabel_2;
 	private JLabel lblNewLabel_3;
+	private JLabel lblStravaCopyright;
 
 	/**
 	 * Launch the application.
@@ -64,9 +65,10 @@ public class VentanaLoginN extends JFrame {
 	 */
 
 	public VentanaLoginN() {
+		setResizable(false);
 		setTitle("LogIn");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1414, 566);
+		setBounds(100, 100, 1048, 737);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -110,15 +112,16 @@ public class VentanaLoginN extends JFrame {
 		pnlDerechaa.setBorder(new MatteBorder(0, 3, 0, 0, (Color) new Color(0, 0, 0)));
 		pnlDerechaa.setBackground(UIManager.getColor("Button.background"));
 		pnlPrincipal.add(pnlDerechaa);
-		pnlDerechaa.setLayout(new MigLayout("", "[598px]", "[][fill][][][][][][][][][][][][][]"));
-				
-				lblNewLabel_3 = new JLabel("");
-				lblNewLabel_3.setIcon(new ImageIcon(VentanaLoginN.class.getResource("/img/Diseño sin título.png")));
-				pnlDerechaa.add(lblNewLabel_3, "cell 0 0 1 14");
+		pnlDerechaa.setLayout(new BorderLayout(0, 0));
 		
-				lblCopy = new JLabel("STRAVA 2022 CopyRight © Todos los derechos reservados a LosMinitos - Política de privacidad");
-				lblCopy.setHorizontalAlignment(SwingConstants.CENTER);
-				pnlDerechaa.add(lblCopy, "cell 0 14,alignx left,aligny top");
+		lblNewLabel_3 = new JLabel("");
+		lblNewLabel_3.setIcon(new ImageIcon(VentanaLoginN.class.getResource("/img/Diseño sin título.png")));
+		pnlDerechaa.add(lblNewLabel_3, BorderLayout.CENTER);
+		
+		lblStravaCopyright = new JLabel("STRAVA 2022 CopyRight © Todos los derechos reservados a LosMinitos");
+		lblStravaCopyright.setBackground(Color.WHITE);
+		lblStravaCopyright.setHorizontalAlignment(SwingConstants.CENTER);
+		pnlDerechaa.add(lblStravaCopyright, BorderLayout.SOUTH);
 
 		// Imagenes
 		// Imagen Salir boton login
