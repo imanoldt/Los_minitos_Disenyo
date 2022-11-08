@@ -81,7 +81,8 @@ public class VentanaLoginN extends JFrame {
 		pnlIzquierda = new JPanel();
 		pnlIzquierda.setBackground(new Color(255, 140, 0));
 		pnlPrincipal.add(pnlIzquierda);
-		pnlIzquierda.setLayout(new MigLayout("", "[grow]", "[59.00][][46.00][36.00,top][][3.00][41.00][][fill][46.00][47.00,grow][][][][][][][][][][][][]"));
+		pnlIzquierda.setLayout(new MigLayout("", "[grow]",
+				"[59.00][][46.00][36.00,top][][3.00][41.00][][fill][46.00][47.00,grow][][][][][][][][][][][][]"));
 
 		lblIniciarSesion = new JLabel("Bienvenido de nuevo");
 		lblIniciarSesion.setHorizontalAlignment(SwingConstants.CENTER);
@@ -113,11 +114,11 @@ public class VentanaLoginN extends JFrame {
 		pnlDerechaa.setBackground(UIManager.getColor("Button.background"));
 		pnlPrincipal.add(pnlDerechaa);
 		pnlDerechaa.setLayout(new BorderLayout(0, 0));
-		
+
 		lblNewLabel_3 = new JLabel("");
 		lblNewLabel_3.setIcon(new ImageIcon(VentanaLoginN.class.getResource("/img/Diseño sin título.png")));
 		pnlDerechaa.add(lblNewLabel_3, BorderLayout.CENTER);
-		
+
 		lblStravaCopyright = new JLabel("STRAVA 2022 CopyRight © Todos los derechos reservados a LosMinitos");
 		lblStravaCopyright.setBackground(Color.WHITE);
 		lblStravaCopyright.setHorizontalAlignment(SwingConstants.CENTER);
@@ -131,75 +132,57 @@ public class VentanaLoginN extends JFrame {
 
 		ImageIcon imgIconEnc = new ImageIcon(getClass().getResource("/img/xEncendida.png"));
 		Image imgEscaladaEnc = imgIconEnc.getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH);
-										
-										lbl_o = new JLabel("O Inicia Sesion con:");
-										lbl_o.setFont(new Font("Montserrat", Font.PLAIN, 14));
-										pnlIzquierda.add(lbl_o, "cell 0 9");
-										
-										panel = new JPanel();
-										pnlIzquierda.add(panel, "cell 0 10,grow");
-										panel.setLayout(new GridLayout(1, 0, 0, 0));
-										
-										lblNewLabel_2 = new JLabel("GOOGLE");
-										panel.add(lblNewLabel_2);
-										
-										lblNewLabel_1 = new JLabel("FACEBOOK");
-										panel.add(lblNewLabel_1);
-										
-										lblNewLabel = new JLabel("LOCAL");
-										panel.add(lblNewLabel);
-								
-										btnSalir = new JButton();
-										btnSalir.setOpaque(false);
-										btnSalir.addMouseMotionListener(new MouseMotionAdapter() {
-											@Override
-											public void mouseMoved(MouseEvent e) {
-												System.out.println("Prueba");
-												btnSalir.setBackground(new Color(0, 0, 0));
-											}
-										});
-										
-												btnIniciarSession = new JButton("Iniciar Sesion");
-												
-														btnIniciarSession.addActionListener(new ActionListener() {
-															@SuppressWarnings("deprecation")
-															@Override
-															public void actionPerformed(ActionEvent e) {
-																String usuario = txtUsuario.getText();
-												
-																String contrasenya = passContraseya.getText();
-												
-															}
-												
-														});
-																
-																		btnRegistrarse = new JButton("Registrarse");
-																		btnRegistrarse.setFont(new Font("Monaco", Font.PLAIN, 16));
-																		btnRegistrarse.setPreferredSize(new Dimension(120, 50));
-																		pnlIzquierda.add(btnRegistrarse, "flowx,cell 0 14,alignx center,aligny center");
-													
-																btnIniciarSession.setFont(new Font("Monaco", Font.PLAIN, 16));
-																btnIniciarSession.setPreferredSize(new Dimension(5000, 50));
-																pnlIzquierda.add(btnIniciarSession, "cell 0 14,alignx center,aligny center");
-										btnSalir.setText(" Salir");
-										btnSalir.setRolloverIcon(new ImageIcon(VentanaLoginN.class.getResource("/img/xEncendida.png")));
-										btnSalir.setFont(new Font("Monaco", Font.PLAIN, 16));
-										btnSalir.setPreferredSize(new Dimension(5000, 20));
-										pnlIzquierda.add(btnSalir, "cell 0 15,alignx center,aligny center");
-										btnSalir.setIcon(new ImageIcon(imgEscalada));
-										btnSalir.setRolloverIcon(new ImageIcon(imgEscaladaEnc));
-										
-										lblRegistrate = new JLabel("¡¡ Registrate !!");
-										lblRegistrate.setFont(new Font("Montserrat", Font.PLAIN, 20));
-										pnlIzquierda.add(lblRegistrate, "cell 0 16,alignx center,aligny center");
-		
-		//Hilos
+
+		lbl_o = new JLabel("O Inicia Sesion con:");
+		lbl_o.setFont(new Font("Montserrat", Font.PLAIN, 14));
+		pnlIzquierda.add(lbl_o, "cell 0 9");
+
+		panel = new JPanel();
+		pnlIzquierda.add(panel, "cell 0 10,grow");
+		panel.setLayout(new GridLayout(1, 0, 0, 0));
+		lblNewLabel_2 = new JLabel("GOOGLE");
+		panel.add(lblNewLabel_2);
+		lblNewLabel_1 = new JLabel("FACEBOOK");
+		panel.add(lblNewLabel_1);
+		lblNewLabel = new JLabel("LOCAL");
+		panel.add(lblNewLabel);
+
+		btnSalir = new JButton();
+		btnSalir.setOpaque(false);
+		btnIniciarSession = new JButton("Iniciar Sesion");
+		btnRegistrarse = new JButton("Registrarse");
+		btnRegistrarse.setFont(new Font("Montserrat", Font.PLAIN, 16));
+		btnRegistrarse.setPreferredSize(new Dimension(120, 50));
+		pnlIzquierda.add(btnRegistrarse, "flowx,cell 0 14,alignx center,aligny center");
+		btnIniciarSession.setFont(new Font("Montserrat", Font.PLAIN, 16));
+		btnIniciarSession.setPreferredSize(new Dimension(5000, 50));
+		pnlIzquierda.add(btnIniciarSession, "cell 0 14,alignx center,aligny center");
+		btnSalir.setText(" Salir");
+		btnSalir.setRolloverIcon(new ImageIcon(VentanaLoginN.class.getResource("/img/xEncendida.png")));
+		btnSalir.setFont(new Font("Montserrat", Font.PLAIN, 16));
+		btnSalir.setPreferredSize(new Dimension(5000, 20));
+		pnlIzquierda.add(btnSalir, "cell 0 15,alignx center,aligny center");
+		btnSalir.setIcon(new ImageIcon(imgEscalada));
+		btnSalir.setRolloverIcon(new ImageIcon(imgEscaladaEnc));
+
+		lblRegistrate = new JLabel("¡¡ Registrate !!");
+		lblRegistrate.setFont(new Font("Montserrat", Font.PLAIN, 20));
+		pnlIzquierda.add(lblRegistrate, "cell 0 16,alignx center,aligny center");
+
+		btnSalir.addMouseMotionListener(new MouseMotionAdapter() {
+			@Override
+			public void mouseMoved(MouseEvent e) {
+				btnSalir.setBackground(new Color(0, 0, 0));
+			}
+		});
+
+		// Hilos
 		Runnable r1 = new Runnable() {
-			
+
 			@Override
 			public void run() {
-				while(true) {
-					lblRegistrate.setForeground(new Color (249, 194, 4));
+				while (true) {
+					lblRegistrate.setForeground(new Color(249, 194, 4));
 					try {
 						Thread.sleep(500);
 					} catch (InterruptedException e) {
@@ -213,10 +196,7 @@ public class VentanaLoginN extends JFrame {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-					
 				}
-				
-				
 			}
 		};
 		Thread t1 = new Thread(r1);

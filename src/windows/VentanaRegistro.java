@@ -19,6 +19,7 @@ import javax.swing.ImageIcon;
 import net.miginfocom.swing.MigLayout;
 import java.awt.Font;
 import javax.swing.SwingConstants;
+import datechooser.beans.DateChooserPanel;
 
 public class VentanaRegistro extends JFrame {
 
@@ -30,6 +31,15 @@ public class VentanaRegistro extends JFrame {
 	private JLabel lblRegistro;
 	private JLabel lblNewLabel_2;
 	private JLabel lblNewLabel_3;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JLabel lblFecha;
+	private JLabel lblNewLabel_4;
+	private JLabel lblNewLabel_5;
+	private JTextField textField_2;
+	private JTextField textField_3;
+	private DateChooserPanel dateChooserPanel;
+
 
 	/**
 	 * Launch the application.
@@ -65,25 +75,60 @@ public class VentanaRegistro extends JFrame {
 		
 		panel_1 = new JPanel();
 		panel.add(panel_1);
-		panel_1.setLayout(new MigLayout("", "[][][][][][][][][][][][][][][]", "[][][][][][][][][][][][][][][][][][][][][][][]"));
+		panel_1.setLayout(new MigLayout("", "[][grow][][grow][grow][grow][grow][][][][][][][][][][][]", "[][][][][][][grow][][][][][][][][][][][][][][][][]"));
 		
 		lblRegistro = new JLabel("Registro");
 		lblRegistro.setHorizontalAlignment(SwingConstants.CENTER);
 		lblRegistro.setFont(new Font("Montserrat", Font.PLAIN, 22));
-		panel_1.add(lblRegistro, "cell 0 0 11 1,alignx center,aligny center");
+		panel_1.add(lblRegistro, "cell 0 0 14 1,alignx center,aligny center");
 		
 		lblNewLabel_2 = new JLabel("Nombre:");
-		panel_1.add(lblNewLabel_2, "cell 0 2");
+		lblNewLabel_2.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(lblNewLabel_2, "cell 0 2,grow");
+		
+		textField = new JTextField();
+		panel_1.add(textField, "cell 6 2 11 1,growx");
+		textField.setColumns(10);
 		
 		lblNewLabel_3 = new JLabel("Email:");
-		panel_1.add(lblNewLabel_3, "cell 0 4");
+		lblNewLabel_3.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(lblNewLabel_3, "cell 0 4,growx,aligny center");
+		
+		textField_1 = new JTextField();
+		panel_1.add(textField_1, "cell 6 4 11 1,growx");
+		textField_1.setColumns(10);
+		
+		lblFecha = new JLabel("Fecha de Nacimiento:\n");
+		lblFecha.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(lblFecha, "cell 0 6");
+		
+		dateChooserPanel = new DateChooserPanel();
+		panel_1.add(dateChooserPanel, "cell 5 6 12 1,grow");
+		
+		lblNewLabel_4 = new JLabel("Peso:");
+		lblNewLabel_4.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(lblNewLabel_4, "cell 0 8,grow");
+		
+		textField_2 = new JTextField();
+		panel_1.add(textField_2, "cell 7 8 10 1,growx");
+		textField_2.setColumns(10);
+		
+		lblNewLabel_5 = new JLabel("Altura:");
+		lblNewLabel_5.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(lblNewLabel_5, "cell 0 10,grow");
+		
+		textField_3 = new JTextField();
+		panel_1.add(textField_3, "cell 7 10 10 1,growx");
+		textField_3.setColumns(10);
 		
 		lblNewLabel_1 = new JLabel("Registro");
-		panel_1.add(lblNewLabel_1, "cell 14 22");
+		panel_1.add(lblNewLabel_1, "cell 17 22");
 		
 		lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(VentanaRegistro.class.getResource("/img/Diseño sin título.png")));
 		panel.add(lblNewLabel);
+		
+
 	}
 
 }
