@@ -2,13 +2,13 @@ package clss;
 
 public class Sesion {
 	private String titulo;
-	private tipoDeporte tipo;
+	private TipoDeporte tipo;
 	private double km;
 	private String fInicio;
 	private int hora;
 	private double duracion;
 
-	public Sesion(String titulo, tipoDeporte tipo, double km, String fInicio, int hora, double duracion) {
+	public Sesion(String titulo, TipoDeporte tipo, double km, String fInicio, int hora, double duracion) {
 		super();
 		this.titulo = titulo;
 		this.tipo = tipo;
@@ -32,11 +32,11 @@ public class Sesion {
 		this.titulo = titulo;
 	}
 
-	public tipoDeporte getTipo() {
+	public TipoDeporte getTipo() {
 		return tipo;
 	}
 
-	public void setTipo(tipoDeporte tipo) {
+	public void setTipo(TipoDeporte tipo) {
 		this.tipo = tipo;
 	}
 

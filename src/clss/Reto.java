@@ -6,9 +6,9 @@ public class Reto {
 	private String fFin;
 	private double distancia;
 	private double objetivo;
-	private tipoDeporte tDeporte;
+	private TipoDeporte tDeporte;
 
-	public Reto(String nombre, String fInicio, String fFin, double distancia, double objetivo, tipoDeporte tDeporte) {
+	public Reto(String nombre, String fInicio, String fFin, double distancia, double objetivo, TipoDeporte tDeporte) {
 		super();
 		this.nombre = nombre;
 		this.fInicio = fInicio;
@@ -62,11 +62,11 @@ public class Reto {
 		this.objetivo = objetivo;
 	}
 
-	public tipoDeporte gettDeporte() {
+	public TipoDeporte gettDeporte() {
 		return tDeporte;
 	}
 
-	public void settDeporte(tipoDeporte tDeporte) {
+	public void settDeporte(TipoDeporte tDeporte) {
 		this.tDeporte = tDeporte;
 	}
 

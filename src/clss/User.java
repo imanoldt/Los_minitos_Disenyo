@@ -9,10 +9,11 @@ public class User {
 	private int altura;
 	private double fCardiacaMaxima;
 	private double fCardiacaReposo;
-	private tipoProvedor provedor;
+	private TipoProvedor provedor;
+	private EstadoCuenta estado;
 
 	public User(String email, String nombre, String fNacimiento, double peso, int altura, double fCardiacaMaxima,
-			double fCardiacaReposo, tipoProvedor provedor) {
+			double fCardiacaReposo, TipoProvedor provedor) {
 		super();
 		this.email = email;
 		this.nombre = nombre;
@@ -103,11 +104,11 @@ public class User {
 		this.fCardiacaReposo = fCardiacaReposo;
 	}
 
-	public tipoProvedor getProvedor() {
+	public TipoProvedor getProvedor() {
 		return provedor;
 	}
 
-	public void setProvedor(tipoProvedor provedor) {
+	public void setProvedor(TipoProvedor provedor) {
 		this.provedor = provedor;
 	}
 
