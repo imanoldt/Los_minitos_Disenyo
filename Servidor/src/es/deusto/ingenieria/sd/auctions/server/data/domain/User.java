@@ -2,13 +2,21 @@ package es.deusto.ingenieria.sd.auctions.server.data.domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoProvedor;
 
 public class User {	
 	private String nickname;
 	private String password;
 	private String email;
-	private List<Bid> bids = new ArrayList<>();
-	private List<Article> articles = new ArrayList<>();
+	private String fNac;
+	private double peso;
+	private int altura;
+	private double fCardiacaMaxima;
+	private double fCardiacaReposo;
+	private TipoProvedor provedor;
+	private int estado;
+	private List<Reto> retos = new ArrayList<>();
+	private List<Sesion> sesiones = new ArrayList<>();
 		
 	public String getNickname() {
 		return nickname;
@@ -34,31 +42,87 @@ public class User {
 		this.email = email;
 	}
 	
-	public List<Bid> getBids() {
-		return bids;
+	public String getfNac() {
+		return fNac;
 	}
-	
-	public void setBids(List<Bid> bids) {
-		this.bids = bids;
+
+	public void setfNac(String fNac) {
+		this.fNac = fNac;
 	}
-	
-	public void addBid(Bid bid) {
-		if (bid != null && !this.bids.contains(bid)) {
-			this.bids.add(bid);
+
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	public int getAltura() {
+		return altura;
+	}
+
+	public void setAltura(int altura) {
+		this.altura = altura;
+	}
+
+	public double getfCardiacaMaxima() {
+		return fCardiacaMaxima;
+	}
+
+	public void setfCardiacaMaxima(double fCardiacaMaxima) {
+		this.fCardiacaMaxima = fCardiacaMaxima;
+	}
+
+	public double getfCardiacaReposo() {
+		return fCardiacaReposo;
+	}
+
+	public void setfCardiacaReposo(double fCardiacaReposo) {
+		this.fCardiacaReposo = fCardiacaReposo;
+	}
+
+	public TipoProvedor getProvedor() {
+		return provedor;
+	}
+
+	public void setProvedor(TipoProvedor provedor) {
+		this.provedor = provedor;
+	}
+
+	public int getEstado() {
+		return estado;
+	}
+
+	public void setEstado(int estado) {
+		this.estado = estado;
+	}
+
+	public List<Reto> getRetos() {
+		return retos;
+	}
+
+	public void setRetos(List<Reto> retos) {
+		this.retos = retos;
+	}
+
+	public List<Sesion> getSesiones() {
+		return sesiones;
+	}
+
+	public void setSesiones(List<Sesion> sesiones) {
+		this.sesiones = sesiones;
+	}
+
+	public void addSesion(Sesion sesion) {
+		if (sesion != null && !this.sesiones.contains(sesion)) {
+			this.sesiones.add(sesion);
 		}
 	}
 	
-	public List<Article> getArticles() {
-		return articles;
-	}
-	
-	public void setArticles(List<Article> articles) {
-		this.articles = articles;
-	}
-	
-	public void addArticle(Article article) {
-		if (article != null && !this.articles.contains(article)) {
-			this.articles.add(article);
+	public void addReto(Reto reto) {
+		if (reto != null && !this.retos.contains(reto)) {
+			this.retos.add(reto);
 		}
 	}
 		
@@ -70,10 +134,10 @@ public class User {
 		result.append(" - ");
 		result.append(this.email);
 		result.append(" - (");
-		result.append(this.articles.size());
-		result.append(" articles) - (");
-		result.append(this.bids.size());
-		result.append(" bids)");
+		result.append(this.retos.size());
+		result.append(" retos) - (");
+		result.append(this.sesiones.size());
+		result.append(" sesiones)");
 		
 		return result.toString();
 	}

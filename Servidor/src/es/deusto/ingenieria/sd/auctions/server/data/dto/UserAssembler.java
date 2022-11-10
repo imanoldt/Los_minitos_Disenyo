@@ -21,6 +21,13 @@ public class UserAssembler {
 		
 		dto.setEmail(user.getEmail());
 		dto.setNickname(user.getNickname());
+		dto.setAltura(user.getAltura());
+		dto.setEstado(user.getEstado());
+		dto.setfCardiacaMaxima(user.getfCardiacaMaxima());
+		dto.setfCardiacaReposo(user.getfCardiacaReposo());
+		dto.setfNac(user.getfNac());
+		dto.setPeso(user.getPeso());
+		dto.setProvedor(user.getProvedor());
 		
 		return dto;
 	}
