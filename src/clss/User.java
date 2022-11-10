@@ -10,10 +10,10 @@ public class User {
 	private double fCardiacaMaxima;
 	private double fCardiacaReposo;
 	private TipoProvedor provedor;
-	private EstadoCuenta estado;
+	private int estado;
 
 	public User(String email, String nombre, String fNacimiento, double peso, int altura, double fCardiacaMaxima,
-			double fCardiacaReposo, TipoProvedor provedor) {
+			double fCardiacaReposo, TipoProvedor provedor, int estado) {
 		super();
 		this.email = email;
 		this.nombre = nombre;
@@ -23,29 +23,10 @@ public class User {
 		this.fCardiacaMaxima = fCardiacaMaxima;
 		this.fCardiacaReposo = fCardiacaReposo;
 		this.provedor = provedor;
-	}
-
-	public User(String email, String nombre, String fNacimiento, double peso, int altura, double fCardiacaMaxima,
-			double fCardiacaReposo) {
-		super();
-		this.email = email;
-		this.nombre = nombre;
-		this.fNacimiento = fNacimiento;
-		this.peso = peso;
-		this.altura = altura;
-		this.fCardiacaMaxima = fCardiacaMaxima;
-		this.fCardiacaReposo = fCardiacaReposo;
+		this.estado = estado;
 	}
 
 	public User() {
-
-	}
-
-	@Override
-	public String toString() {
-		return "User [email=" + email + ", nombre=" + nombre + ", fNacimiento=" + fNacimiento + ", peso=" + peso
-				+ ", altura=" + altura + ", fCardiacaMaxima=" + fCardiacaMaxima + ", fCardiacaReposo=" + fCardiacaReposo
-				+ ", provedor=" + provedor + "]";
 	}
 
 	public String getEmail() {
@@ -110,6 +91,21 @@ public class User {
 
 	public void setProvedor(TipoProvedor provedor) {
 		this.provedor = provedor;
+	}
+
+	public int getEstado() {
+		return estado;
+	}
+
+	public void setEstado(int estado) {
+		this.estado = estado;
+	}
+
+	@Override
+	public String toString() {
+		return "User [email=" + email + ", nombre=" + nombre + ", fNacimiento=" + fNacimiento + ", peso=" + peso
+				+ ", altura=" + altura + ", fCardiacaMaxima=" + fCardiacaMaxima + ", fCardiacaReposo=" + fCardiacaReposo
+				+ ", provedor=" + provedor + ", estado=" + estado + "]";
 	}
 
 }
