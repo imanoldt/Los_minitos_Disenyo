@@ -3,10 +3,7 @@ package es.deusto.ingenieria.sd.auctions.server.remote;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.List;
-
 import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoDeporte;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.ArticleDTO;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.CategoryDTO;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.RetoDTO;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.SesionDTO;
 

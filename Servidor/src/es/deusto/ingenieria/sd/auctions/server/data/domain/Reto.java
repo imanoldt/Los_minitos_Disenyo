@@ -75,5 +75,4 @@ public class Reto {
 		return "Reto [nombre=" + nombre + ", fInicio=" + fInicio + ", fFin=" + fFin + ", distancia=" + distancia
 				+ ", objetivo=" + objetivo + ", tDeporte=" + tDeporte + "]";
 	}
-
 }

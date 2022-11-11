@@ -2,18 +2,17 @@ package es.deusto.ingenieria.sd.auctions.server.remote;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import es.deusto.ingenieria.sd.auctions.server.data.domain.Article;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.Category;
+import es.deusto.ingenieria.sd.auctions.server.data.domain.Sesion;
+import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoDeporte;
 import es.deusto.ingenieria.sd.auctions.server.data.domain.User;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.ArticleAssembler;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.ArticleDTO;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.CategoryAssembler;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.CategoryDTO;
+import es.deusto.ingenieria.sd.auctions.server.data.dto.RetoDTO;
+import es.deusto.ingenieria.sd.auctions.server.data.dto.SesionAssembler;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.SesionDTO;
 import es.deusto.ingenieria.sd.auctions.server.services.BidAppService;
 import es.deusto.ingenieria.sd.auctions.server.services.LoginAppService;
@@ -30,6 +29,17 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 
 	public RemoteFacade() throws RemoteException {
 		super();		
+	}
+	
+	@Override
+	public synchronized void regist(String email, String password) throws RemoteException {
+		System.out.println(" * RemoteFacade regist(): " + email + " / " + password);
+		
+		//Perform login() using LoginAppService
+		User user = loginService.login(email, password);
+			
+		//TODO define registry method
+		
 	}
 	
 	@Override
@@ -65,34 +75,51 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 			throw new RemoteException("User is not logged in!");
 		}
 	}
-	
-	@Override
-	public List<CategoryDTO> getCategories() throws RemoteException {
-		System.out.println(" * RemoteFacade getCategories()");
-		
-		//Get Categories using BidAppService
-		List<Category> categories = bidService.getCategories();
-		
-		if (categories != null) {
-			//Convert domain object to DTO
-			return CategoryAssembler.getInstance().categoryToDTO(categories);
-		} else {
-			throw new RemoteException("getCategories() fails!");
-		}
-	}
 
 	@Override
 	public List<SesionDTO> getSesiones() throws RemoteException {
 		System.out.println(" * RemoteFacade getArticle('')");
 
 		//Get Articles using BidAppService
-		List<Article> articles = bidService.getArticles(null);
+		List<Sesion> sesions = new ArrayList<Sesion>();//TODObidService.getSesiones(null);
 		
-		if (articles != null) {
+		if (sesions != null) {
 			//Convert domain object to DTO
-			return ArticleAssembler.getInstance().articleToDTO(null);
+			return SesionAssembler.getInstance().sesionToDTO(sesions);
 		} else {
 			throw new RemoteException("getArticles() fails!");
 		}
+	}
+	
+	@Override
+	public List<RetoDTO> getReto() throws RemoteException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public List<RetoDTO> getRetoActivado() throws RemoteException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public boolean activateReto(String nombre) throws RemoteException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	@Override
+	public boolean makeReto(String nombre, String fInicio, String fFin, double distancia, double objetivo,
+			TipoDeporte tDeporte) throws RemoteException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	@Override
+	public boolean makeSesion(String titulo, TipoDeporte tipo, double km, String fInicio, int hora, double duracion)
+			throws RemoteException {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }
