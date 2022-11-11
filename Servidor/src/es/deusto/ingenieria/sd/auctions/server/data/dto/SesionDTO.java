@@ -5,83 +5,82 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoDeporte;
+
 public class SesionDTO {
 	//This attribute is needed to implement the "Serializable" interface.
 		private static final long serialVersionUID = 1L;
-		private int number;
-		private String title;
-		private Date auctionEnd;
-		private float inicialPrice;
-		private float actualPrice;
-		private int totalBids;
-		
-		public int getNumber() {
-			return number;
-		}
-		
-		public void setNumber(int number) {
-			this.number = number;
-		}
-		
-		public String getTitle() {
-			return title;
-		}
-		
-		public void setTitle(String title) {
-			this.title = title;
-		}
-		
-		public Date getAuctionEnd() {
-			return auctionEnd;
+		private String titulo;
+		private TipoDeporte tipo;
+		private double km;
+		private String fInicio;
+		private int hora;
+		private double duracion;
+
+		public String getTitulo() {
+			return titulo;
 		}
 
-		public void setAuctionEnd(Date auctionEnd) {
-			this.auctionEnd = auctionEnd;
+		public void setTitulo(String titulo) {
+			this.titulo = titulo;
 		}
 
-		public float getInicialPrice() {
-			return inicialPrice;
+		public TipoDeporte getTipo() {
+			return tipo;
 		}
 
-		public void setInicialPrice(float inicialPrice) {
-			this.inicialPrice = inicialPrice;
+		public void setTipo(TipoDeporte tipo) {
+			this.tipo = tipo;
 		}
 
-		public float getActualPrice() {
-			return actualPrice;
+		public double getKm() {
+			return km;
 		}
 
-		public void setActualPrice(float actualPrice) {
-			this.actualPrice = actualPrice;
+		public void setKm(double km) {
+			this.km = km;
 		}
 
-		public int getTotalBids() {
-			return totalBids;
+		public String getfInicio() {
+			return fInicio;
 		}
 
-		public void setTotalBids(int totalBids) {
-			this.totalBids = totalBids;
+		public void setfInicio(String fInicio) {
+			this.fInicio = fInicio;
+		}
+
+		public int getHora() {
+			return hora;
+		}
+
+		public void setHora(int hora) {
+			this.hora = hora;
+		}
+
+		public double getDuracion() {
+			return duracion;
+		}
+
+		public void setDuracion(double duracion) {
+			this.duracion = duracion;
 		}
 		
 		@Override
 		public String toString() {
-			SimpleDateFormat dateFormatter = new SimpleDateFormat("dd-MMM-YY - hh:mm");
-			NumberFormat numberFormatter = NumberFormat.getCurrencyInstance(Locale.getDefault()); 
-
 			StringBuffer result = new StringBuffer();
 			
-			result.append(this.number);
-			result.append(" # '");
-			result.append(this.title);
-			result.append("' # Initial/actual price: ");
-			result.append(numberFormatter.format(this.inicialPrice));
-			result.append("/");
-			result.append(numberFormatter.format(this.actualPrice));
-			result.append(" # Auction end: ");
-			result.append(dateFormatter.format(this.auctionEnd));
-			result.append(" (");
-			result.append(this.totalBids);
-			result.append(" bids)");
+			result.append(this.titulo);
+			result.append(" - ");
+			result.append(this.tipo);
+			result.append(" - ");
+			result.append(this.km);
+			result.append("km - Session begin: ");
+			result.append(this.fInicio);
+			result.append(" - Start time: ");
+			result.append(this.hora);
+			result.append(" - Tot. Time: ");
+			result.append(this.duracion);
+			result.append(" minutes");
 			
 			return result.toString();
 		}
