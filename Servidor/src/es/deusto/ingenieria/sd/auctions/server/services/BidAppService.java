@@ -4,15 +4,11 @@ import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-
-import es.deusto.ingenieria.sd.auctions.server.data.domain.Article;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.Bid;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.Category;
 import es.deusto.ingenieria.sd.auctions.server.data.domain.User;
 
 //TODO: Implement Singleton Pattern
 public class BidAppService {
-	
+	/*
 	//TODO: remove when DAO Pattern is implemented
 	private List<Category> categories = new ArrayList<>();
 	private List<Article> articles = new ArrayList<>();
@@ -140,5 +136,5 @@ public class BidAppService {
 	public float getGBPRate() throws RemoteException {
 		//TODO: Get conversion rate using Service Gateway
 		return 1.17f;
-	}
+	}*/
 }

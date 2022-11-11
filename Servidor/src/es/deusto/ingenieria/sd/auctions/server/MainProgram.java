@@ -1,7 +1,6 @@
 package es.deusto.ingenieria.sd.auctions.server;
 
 import java.rmi.Naming;
-
 import es.deusto.ingenieria.sd.auctions.server.remote.IRemoteFacade;
 import es.deusto.ingenieria.sd.auctions.server.remote.RemoteFacade;
 

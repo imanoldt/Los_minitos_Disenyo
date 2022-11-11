@@ -2,13 +2,10 @@ package es.deusto.ingenieria.sd.auctions.server.test;
 
 import java.util.List;
 
-import es.deusto.ingenieria.sd.auctions.server.data.dto.ArticleDTO;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.CategoryDTO;
-import es.deusto.ingenieria.sd.auctions.server.remote.RemoteFacade;
-
 public class LocalTest {
 
-	public static void main(String[] args) {		
+	public static void main(String[] args) {	
+		/*
 		RemoteFacade facade = null;
 		List<CategoryDTO> categories = null;
 		CategoryDTO category = null;
@@ -65,6 +62,6 @@ public class LocalTest {
 		}
 
 		//Force exit to stop RMI Server
-		System.exit(0);
+		System.exit(0);*/
 	}
 }
