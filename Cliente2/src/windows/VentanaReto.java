@@ -1,7 +1,6 @@
 package windows;
 
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -18,7 +17,7 @@ import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.DefaultComboBoxModel;
-import clss.TipoDeporte;
+//import clss.TipoDeporte;
 
 public class VentanaReto extends JFrame {
 
@@ -105,7 +104,7 @@ public class VentanaReto extends JFrame {
 		panel_1.add(lblTipoDeporte);
 		
 		JComboBox cbTipoDeporte = new JComboBox();
-		cbTipoDeporte.setModel(new DefaultComboBoxModel(TipoDeporte.values()));
+		//cbTipoDeporte.setModel(new DefaultComboBoxModel(TipoDeporte.values()));
 		panel_1.add(cbTipoDeporte);
 		
 		JButton btnCrearReto = new JButton("Crear Reto");
