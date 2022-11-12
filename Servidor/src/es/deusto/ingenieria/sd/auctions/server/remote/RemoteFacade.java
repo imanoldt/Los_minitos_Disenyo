@@ -34,13 +34,15 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	//TODO REVISAR TODOS LOS EDITS Y COMENTARIOS 
 	
 	@Override
-	public synchronized void regist(String email, String password) throws RemoteException {
-		System.out.println(" * RemoteFacade regist(): " + email + " / " + password);
+	public synchronized void regist(String nick, String pass, String email, String fNac, String peso, 
+			String alt, String fCardMax, String fCardRep, String provedor) throws RemoteException {
+		System.out.println(" * RemoteFacade regist(): " + email + " / " + pass);
 		
-		//Perform login() using LoginAppService
-		//User user = loginService.login(email, password);
-			
-		//TODO define registry method
+		User u = new User(nick, pass, email, fNac, Double.valueOf(peso), Integer.valueOf(alt), 
+				0, 0, 0);
+		if(!loginService.regist(u)) {
+			throw new RemoteException("User is already logged in!");
+		}
 		
 	}
 	
@@ -49,11 +51,10 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 		System.out.println(" * RemoteFacade login(): " + email + " / " + password);
 				
 		//Perform login() using LoginAppService
-		//User user = loginService.login(email, password);
-		boolean user = false;
+		User user = loginService.login(email, password);
 			
 		//If login() success user is stored in the Server State
-		if (user) {
+		if (user != null) {
 			//If user is not logged in 
 			if (!this.serverState.values().contains(user)) {
 				Long token = Calendar.getInstance().getTimeInMillis();		

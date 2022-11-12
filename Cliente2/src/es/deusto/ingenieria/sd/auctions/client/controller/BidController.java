@@ -2,14 +2,12 @@ package es.deusto.ingenieria.sd.auctions.client.controller;
 
 import java.rmi.RemoteException;
 import java.util.List;
-
 import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.ArticleDTO;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.CategoryDTO;
+
 
 //This class implements Controller pattern.
 public class BidController {
-	
+	/*
 	//Reference to the Service Locator
 	private ServiceLocator serviceLocator;
 	
@@ -60,5 +58,5 @@ public class BidController {
 			System.err.println("# Error getting GBP rate: " + e);
 			return -1;
 		}
-	}
+	}*/
 }

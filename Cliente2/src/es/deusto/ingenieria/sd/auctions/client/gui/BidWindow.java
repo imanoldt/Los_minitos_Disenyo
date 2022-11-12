@@ -4,14 +4,12 @@ import java.text.DateFormat;
 import java.text.NumberFormat;
 import java.util.List;
 import java.util.Locale;
-
 import es.deusto.ingenieria.sd.auctions.client.controller.BidController;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.ArticleDTO;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.CategoryDTO;
+
 
 //This clase simulates the GUI of the Bid use case
 public class BidWindow {
-	
+	/*
 	private BidController controller;
 	
 	//This attributes are user for formatting currencies and dates
@@ -96,5 +94,5 @@ public class BidWindow {
 		boolean bidResult = this.controller.makeBid(token, article.getNumber(), bid);
 		
 		System.out.println("\t* Make bid result: " + bidResult);		
-	}
+	}*/
 }

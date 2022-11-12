@@ -88,7 +88,6 @@ public class VentanaMain extends JFrame {
 						try {
 							VentanaSesion frame = new VentanaSesion();
 							frame.setVisible(true);
-							dispose();
 						} catch (Exception e) {
 							e.printStackTrace();
 						}
@@ -109,7 +108,6 @@ public class VentanaMain extends JFrame {
 						try {
 							VentanaReto frame = new VentanaReto();
 							frame.setVisible(true);
-							dispose();
 						} catch (Exception e) {
 							e.printStackTrace();
 						}

@@ -14,9 +14,28 @@ public class User {
 	private double fCardiacaMaxima;
 	private double fCardiacaReposo;
 	private TipoProvedor provedor;
-	private int estado;
 	private List<Reto> retos = new ArrayList<>();
 	private List<Sesion> sesiones = new ArrayList<>();
+	
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public User(String nick, String pass, String email, String fNac, double peso, 
+			int alt, double fCardMax, double fCardRep, int provedor) {
+		this.nickname = nick;
+		this.password = pass;
+		this.email = email;
+		this.fNac = fNac;
+		this.peso = peso;
+		this.altura = alt;
+		//this.fCardiacaMaxima = fCardMax;
+		//this.fCardiacaReposo = fCardRep;
+		//this.provedor = provedor;
+		this.provedor = TipoProvedor.EMAIL;
+		this.retos = new ArrayList<>();
+		this.sesiones = new ArrayList<>();
+	}
 		
 	public String getNickname() {
 		return nickname;
@@ -24,6 +43,10 @@ public class User {
 	
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
+	}
+	
+	public String getPassword() {
+		return password;
 	}
 	
 	public boolean checkPassword(String password) {
@@ -88,14 +111,6 @@ public class User {
 
 	public void setProvedor(TipoProvedor provedor) {
 		this.provedor = provedor;
-	}
-
-	public int getEstado() {
-		return estado;
-	}
-
-	public void setEstado(int estado) {
-		this.estado = estado;
 	}
 
 	public List<Reto> getRetos() {

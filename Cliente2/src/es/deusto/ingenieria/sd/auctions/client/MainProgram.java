@@ -1,14 +1,8 @@
 package es.deusto.ingenieria.sd.auctions.client;
 
-import java.util.List;
-
-import es.deusto.ingenieria.sd.auctions.client.controller.BidController;
-import es.deusto.ingenieria.sd.auctions.client.controller.LoginController;
-import es.deusto.ingenieria.sd.auctions.client.gui.BidWindow;
-import es.deusto.ingenieria.sd.auctions.client.gui.LoginDialog;
+import java.awt.EventQueue;
 import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.ArticleDTO;
-import es.deusto.ingenieria.sd.auctions.server.data.dto.CategoryDTO;
+import windows.VentanaLoginN;
 
 public class MainProgram {
 
@@ -20,6 +14,7 @@ public class MainProgram {
 		//args[2] = Service Name
 		serviceLocator.setService(args[0], args[1], args[2]);
 		
+		/*
 		LoginController loginController = new LoginController(serviceLocator);
 		LoginDialog loginDialog = new LoginDialog(loginController);			
 		BidController bidController = new BidController(serviceLocator);			
@@ -31,5 +26,16 @@ public class MainProgram {
 		
 		//Logout
 		loginDialog.logout();
+		*/
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					VentanaLoginN frame = new VentanaLoginN(serviceLocator);
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
 	}
 }

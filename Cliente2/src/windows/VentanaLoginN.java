@@ -14,6 +14,10 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.Font;
 import javax.swing.border.MatteBorder;
+
+import es.deusto.ingenieria.sd.auctions.client.controller.LoginController;
+import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.SwingConstants;
@@ -29,6 +33,7 @@ import javax.swing.UIManager;
 
 @SuppressWarnings("serial")
 public class VentanaLoginN extends JFrame {
+	private LoginController controller;
 
 	private JPanel contentPane, pnlPrincipal, pnlIzquierda, pnlDerechaa;
 
@@ -49,6 +54,7 @@ public class VentanaLoginN extends JFrame {
 	/**
 	 * Launch the application.
 	 */
+	/*
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -61,12 +67,14 @@ public class VentanaLoginN extends JFrame {
 			}
 		});
 	}
+	*/
 
 	/**
 	 * Create the frame.
 	 */
 
-	public VentanaLoginN() {
+	public VentanaLoginN(ServiceLocator service) {
+		controller = new LoginController(service);
 		setResizable(false);
 		setTitle("LogIn");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -152,6 +160,26 @@ public class VentanaLoginN extends JFrame {
 		btnSalir = new JButton();
 		btnSalir.setOpaque(false);
 		btnIniciarSession = new JButton("Iniciar Sesion");
+		btnIniciarSession.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if(controller.login(txtUsuario.getText(), passContraseya.getText())) {
+					EventQueue.invokeLater(new Runnable() {
+						public void run() {
+							try {
+								VentanaMain frame = new VentanaMain();
+								frame.setVisible(true);
+							} catch (Exception e) {
+								e.printStackTrace();
+							}
+						}
+					});
+				} else {
+					System.out.println("# Error during login!");
+				}
+			}
+		});
 		btnRegistrarse = new JButton("Registrarse");
 		btnRegistrarse.addActionListener(new ActionListener() {
 			
@@ -160,7 +188,7 @@ public class VentanaLoginN extends JFrame {
 				EventQueue.invokeLater(new Runnable() {
 					public void run() {
 						try {
-							VentanaRegistro frame = new VentanaRegistro();
+							VentanaRegistro frame = new VentanaRegistro(service);
 							frame.setVisible(true);
 							dispose();
 						} catch (Exception e) {

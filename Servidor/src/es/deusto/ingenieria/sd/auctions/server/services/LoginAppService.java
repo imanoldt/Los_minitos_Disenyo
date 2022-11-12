@@ -15,11 +15,13 @@ public class LoginAppService {
 		return true;
 	}
 	
-	public boolean login(String email, String password) {
+	public User login(String email, String password) {
 		//TODO: Get User using DAO and check 		
 		if(userMap.containsKey(email)) {
-			return password.equals(userMap.get(email).checkPassword(password));
+			if(userMap.get(email).checkPassword(password)) {
+				return userMap.get(email);
+			} 
 		}
-		return false;
+		return null;
 	}
 }
