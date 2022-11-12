@@ -20,6 +20,7 @@ import net.miginfocom.swing.MigLayout;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 import datechooser.beans.DateChooserPanel;
+import java.awt.Color;
 
 public class VentanaRegistro extends JFrame {
 
@@ -27,7 +28,6 @@ public class VentanaRegistro extends JFrame {
 	private JPanel panel;
 	private JPanel panel_1;
 	private JLabel lblNewLabel;
-	private JLabel lblNewLabel_1;
 	private JLabel lblRegistro;
 	private JLabel lblNewLabel_2;
 	private JLabel lblNewLabel_3;
@@ -39,6 +39,7 @@ public class VentanaRegistro extends JFrame {
 	private JTextField textField_2;
 	private JTextField textField_3;
 	private DateChooserPanel dateChooserPanel;
+	private JButton btnRegistrarse;
 
 
 	/**
@@ -121,13 +122,23 @@ public class VentanaRegistro extends JFrame {
 		panel_1.add(textField_3, "cell 7 10 10 1,growx");
 		textField_3.setColumns(10);
 		
-		lblNewLabel_1 = new JLabel("Registro");
-		panel_1.add(lblNewLabel_1, "cell 17 22");
+		btnRegistrarse = new JButton("Registrarme");
+		btnRegistrarse.setOpaque(true);
+		btnRegistrarse.setBackground(new Color(255, 165, 0));
+		btnRegistrarse.setFont(new Font("Montserrat", Font.BOLD, 18));
+
+		panel_1.add(btnRegistrarse, "cell 0 18 17 4,grow");
 		
 		lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon("img/Disenyo_sin_titulo.png"));
 		panel.add(lblNewLabel);
 		
+		
+		btnRegistrarse.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 
 	}
 
