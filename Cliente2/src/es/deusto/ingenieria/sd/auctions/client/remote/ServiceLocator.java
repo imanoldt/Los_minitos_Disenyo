@@ -1,7 +1,6 @@
 package es.deusto.ingenieria.sd.auctions.client.remote;
 
 import java.rmi.Naming;
-
 import es.deusto.ingenieria.sd.auctions.server.remote.IRemoteFacade;
 
 //This class implements Service Locator pattern

@@ -24,7 +24,6 @@ public class SesionAssembler {
 		dto.setfInicio(sesion.getfInicio());
 		dto.setHora(sesion.getHora());
 		dto.setKm(sesion.getKm());
-		dto.setTipo(sesion.getTipo());
 		dto.setTitulo(sesion.getTitulo());
 				
 		return dto;

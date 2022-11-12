@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 import es.deusto.ingenieria.sd.auctions.server.data.domain.Sesion;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoDeporte;
+
 import es.deusto.ingenieria.sd.auctions.server.data.domain.User;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.RetoDTO;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.SesionAssembler;
@@ -114,14 +114,14 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 	
 	@Override
-	public boolean makeReto(String nombre, String fInicio, String fFin, double distancia, double objetivo,
-			TipoDeporte tDeporte) throws RemoteException {
+	public boolean makeReto(String nombre, String fInicio, String fFin, double distancia, double objetivo
+			) throws RemoteException {
 		// TODO Auto-generated method stub
 		return false;
 	}
 	
 	@Override
-	public boolean makeSesion(String titulo, TipoDeporte tipo, double km, String fInicio, int hora, double duracion)
+	public boolean makeSesion(String titulo, double km, String fInicio, int hora, double duracion)
 			throws RemoteException {
 		// TODO Auto-generated method stub
 		return false;

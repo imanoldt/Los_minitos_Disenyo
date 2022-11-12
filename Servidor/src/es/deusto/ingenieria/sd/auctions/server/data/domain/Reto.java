@@ -6,16 +6,14 @@ public class Reto {
 	private String fFin;
 	private double distancia;
 	private double objetivo;
-	private TipoDeporte tDeporte;
-
-	public Reto(String nombre, String fInicio, String fFin, double distancia, double objetivo, TipoDeporte tDeporte) {
+	
+	public Reto(String nombre, String fInicio, String fFin, double distancia, double objetivo) {
 		super();
 		this.nombre = nombre;
 		this.fInicio = fInicio;
 		this.fFin = fFin;
 		this.distancia = distancia;
 		this.objetivo = objetivo;
-		this.tDeporte = tDeporte;
 	}
 
 	public Reto() {
@@ -62,17 +60,9 @@ public class Reto {
 		this.objetivo = objetivo;
 	}
 
-	public TipoDeporte gettDeporte() {
-		return tDeporte;
-	}
-
-	public void settDeporte(TipoDeporte tDeporte) {
-		this.tDeporte = tDeporte;
-	}
-
 	@Override
 	public String toString() {
 		return "Reto [nombre=" + nombre + ", fInicio=" + fInicio + ", fFin=" + fFin + ", distancia=" + distancia
-				+ ", objetivo=" + objetivo + ", tDeporte=" + tDeporte + "]";
+				+ ", objetivo=" + objetivo + ", tDeporte=" + "]";
 	}
 }

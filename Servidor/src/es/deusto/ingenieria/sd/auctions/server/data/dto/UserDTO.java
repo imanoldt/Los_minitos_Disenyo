@@ -1,12 +1,13 @@
 package es.deusto.ingenieria.sd.auctions.server.data.dto;
 
 import java.io.Serializable;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import es.deusto.ingenieria.sd.auctions.server.data.domain.Reto;
 import es.deusto.ingenieria.sd.auctions.server.data.domain.Sesion;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoProvedor;
+
 import es.deusto.ingenieria.sd.auctions.server.data.domain.User;
 
 //This class implements DTO pattern
@@ -20,7 +21,6 @@ public class UserDTO implements Serializable {
 	private int altura;
 	private double fCardiacaMaxima;
 	private double fCardiacaReposo;
-	private TipoProvedor provedor;
 	private int estado;
 	private List<Reto> retos = new ArrayList<>();
 	private List<Sesion> sesiones = new ArrayList<>();
@@ -87,14 +87,6 @@ public class UserDTO implements Serializable {
 
 	public void setfCardiacaReposo(double fCardiacaReposo) {
 		this.fCardiacaReposo = fCardiacaReposo;
-	}
-
-	public TipoProvedor getProvedor() {
-		return provedor;
-	}
-
-	public void setProvedor(TipoProvedor provedor) {
-		this.provedor = provedor;
 	}
 
 	public int getEstado() {

@@ -2,7 +2,6 @@ package es.deusto.ingenieria.sd.auctions.server.data.domain;
 
 import java.util.ArrayList;
 import java.util.List;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoProvedor;
 
 public class User {	
 	private String nickname;
@@ -13,7 +12,6 @@ public class User {
 	private int altura;
 	private double fCardiacaMaxima;
 	private double fCardiacaReposo;
-	private TipoProvedor provedor;
 	private List<Reto> retos = new ArrayList<>();
 	private List<Sesion> sesiones = new ArrayList<>();
 	
@@ -31,8 +29,7 @@ public class User {
 		this.altura = alt;
 		//this.fCardiacaMaxima = fCardMax;
 		//this.fCardiacaReposo = fCardRep;
-		//this.provedor = provedor;
-		this.provedor = TipoProvedor.EMAIL;
+		//this.provedor = provedor y deprte;
 		this.retos = new ArrayList<>();
 		this.sesiones = new ArrayList<>();
 	}
@@ -103,14 +100,6 @@ public class User {
 
 	public void setfCardiacaReposo(double fCardiacaReposo) {
 		this.fCardiacaReposo = fCardiacaReposo;
-	}
-
-	public TipoProvedor getProvedor() {
-		return provedor;
-	}
-
-	public void setProvedor(TipoProvedor provedor) {
-		this.provedor = provedor;
 	}
 
 	public List<Reto> getRetos() {

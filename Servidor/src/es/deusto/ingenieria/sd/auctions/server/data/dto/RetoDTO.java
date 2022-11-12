@@ -1,6 +1,5 @@
 package es.deusto.ingenieria.sd.auctions.server.data.dto;
 
-import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoDeporte;
 
 public class RetoDTO {
 	private String nombre;
@@ -8,8 +7,7 @@ public class RetoDTO {
 	private String fFin;
 	private double distancia;
 	private double objetivo;
-	private TipoDeporte tDeporte;
-
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -49,14 +47,6 @@ public class RetoDTO {
 	public void setObjetivo(double objetivo) {
 		this.objetivo = objetivo;
 	}
-
-	public TipoDeporte gettDeporte() {
-		return tDeporte;
-	}
-
-	public void settDeporte(TipoDeporte tDeporte) {
-		this.tDeporte = tDeporte;
-	}
 	
 	@Override
 	public String toString() {
@@ -71,8 +61,6 @@ public class RetoDTO {
 		result.append(this.distancia);
 		result.append(" - ");
 		result.append(this.objetivo);
-		result.append(" - ");
-		result.append(this.tDeporte);
 		
 		return result.toString();		
 	}

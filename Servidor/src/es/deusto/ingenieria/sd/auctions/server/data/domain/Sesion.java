@@ -2,16 +2,16 @@ package es.deusto.ingenieria.sd.auctions.server.data.domain;
 
 public class Sesion {
 	private String titulo;
-	private TipoDeporte tipo;
+	
 	private double km;
 	private String fInicio;
 	private int hora;
 	private double duracion;
 
-	public Sesion(String titulo, TipoDeporte tipo, double km, String fInicio, int hora, double duracion) {
+	public Sesion(String titulo, double km, String fInicio, int hora, double duracion) {
 		super();
 		this.titulo = titulo;
-		this.tipo = tipo;
+	
 		this.km = km;
 		this.fInicio = fInicio;
 		this.hora = hora;
@@ -20,7 +20,7 @@ public class Sesion {
 
 	@Override
 	public String toString() {
-		return "Sesion [titulo=" + titulo + ", tipo=" + tipo + ", km=" + km + ", fInicio=" + fInicio + ", hora=" + hora
+		return "Sesion [titulo=" + titulo + ", km=" + km + ", fInicio=" + fInicio + ", hora=" + hora
 				+ ", duracion=" + duracion + "]";
 	}
 
@@ -30,14 +30,6 @@ public class Sesion {
 
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
-	}
-
-	public TipoDeporte getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(TipoDeporte tipo) {
-		this.tipo = tipo;
 	}
 
 	public double getKm() {

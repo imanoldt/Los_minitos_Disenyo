@@ -26,7 +26,6 @@ public class UserAssembler {
 		dto.setfCardiacaReposo(user.getfCardiacaReposo());
 		dto.setfNac(user.getfNac());
 		dto.setPeso(user.getPeso());
-		dto.setProvedor(user.getProvedor());
 		
 		return dto;
 	}

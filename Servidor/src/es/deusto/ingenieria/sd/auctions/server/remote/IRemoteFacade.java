@@ -3,7 +3,7 @@ package es.deusto.ingenieria.sd.auctions.server.remote;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.List;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoDeporte;
+
 import es.deusto.ingenieria.sd.auctions.server.data.dto.RetoDTO;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.SesionDTO;
 
@@ -23,11 +23,11 @@ public interface IRemoteFacade extends Remote {
 	
 	public List<SesionDTO> getSesiones() throws RemoteException;
 	
-	public boolean makeSesion(String titulo, TipoDeporte tipo, double km, 
+	public boolean makeSesion(String titulo, double km, 
 			String fInicio, int hora, double duracion) throws RemoteException;
 	
 	public boolean makeReto(String nombre, String fInicio, String fFin, double distancia, 
-			double objetivo, TipoDeporte tDeporte) throws RemoteException;
+			double objetivo) throws RemoteException;
 	
 	public boolean activateReto(String nombre) throws RemoteException;
 }

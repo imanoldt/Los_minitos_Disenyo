@@ -1,13 +1,11 @@
 package es.deusto.ingenieria.sd.auctions.server.data.dto;
 
 
-import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoDeporte;
 
 public class SesionDTO {
 	//This attribute is needed to implement the "Serializable" interface.
 		private static final long serialVersionUID = 1L;
 		private String titulo;
-		private TipoDeporte tipo;
 		private double km;
 		private String fInicio;
 		private int hora;
@@ -19,14 +17,6 @@ public class SesionDTO {
 
 		public void setTitulo(String titulo) {
 			this.titulo = titulo;
-		}
-
-		public TipoDeporte getTipo() {
-			return tipo;
-		}
-
-		public void setTipo(TipoDeporte tipo) {
-			this.tipo = tipo;
 		}
 
 		public double getKm() {
@@ -66,8 +56,6 @@ public class SesionDTO {
 			StringBuffer result = new StringBuffer();
 			
 			result.append(this.titulo);
-			result.append(" - ");
-			result.append(this.tipo);
 			result.append(" - ");
 			result.append(this.km);
 			result.append("km - Session begin: ");

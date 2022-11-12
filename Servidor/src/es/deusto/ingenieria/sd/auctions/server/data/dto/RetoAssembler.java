@@ -25,7 +25,6 @@ public class RetoAssembler {
 		dto.setfInicio(reto.getfInicio());
 		dto.setNombre(reto.getNombre());
 		dto.setObjetivo(reto.getObjetivo());
-		dto.settDeporte(reto.gettDeporte());
 				
 		return dto;
 	}

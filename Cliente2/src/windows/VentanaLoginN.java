@@ -190,7 +190,6 @@ public class VentanaLoginN extends JFrame {
 						try {
 							VentanaRegistro frame = new VentanaRegistro(service);
 							frame.setVisible(true);
-							dispose();
 						} catch (Exception e) {
 							e.printStackTrace();
 						}
