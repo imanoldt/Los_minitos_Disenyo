@@ -14,6 +14,9 @@ import javax.swing.ImageIcon;
 import java.awt.Font;
 import javax.swing.JButton;
 import javax.swing.JDialog;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -57,7 +60,7 @@ public class VentanaMain extends JFrame {
 		pnl_Izq.setLayout(new BorderLayout(0, 0));
 
 		JLabel lbl_Img = new JLabel("");
-		lbl_Img.setIcon(new ImageIcon(VentanaMain.class.getResource("/img/Diseño sin título.png")));
+		lbl_Img.setIcon(new ImageIcon("img/Disenyo_sin_titulo.png"));
 		pnl_Izq.add(lbl_Img, BorderLayout.CENTER);
 
 		JPanel pnl_Derech = new JPanel();
@@ -76,10 +79,44 @@ public class VentanaMain extends JFrame {
 		panel_1.setLayout(new GridLayout(4, 0, 0, 0));
 
 		JButton btnSesion = new JButton("Crear una sesion");
+		btnSesion.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				EventQueue.invokeLater(new Runnable() {
+					public void run() {
+						try {
+							VentanaSesion frame = new VentanaSesion();
+							frame.setVisible(true);
+							dispose();
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+					}
+				});
+			}
+		});
 		btnSesion.setFont(new Font("Montserrat", Font.PLAIN, 15));
 		panel_1.add(btnSesion);
 
 		JButton btnReto = new JButton("Crear Un Reto");
+		btnReto.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				EventQueue.invokeLater(new Runnable() {
+					public void run() {
+						try {
+							VentanaReto frame = new VentanaReto();
+							frame.setVisible(true);
+							dispose();
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+					}
+				});
+			}
+		});
 		btnReto.setFont(new Font("Montserrat", Font.PLAIN, 15));
 		panel_1.add(btnReto);
 

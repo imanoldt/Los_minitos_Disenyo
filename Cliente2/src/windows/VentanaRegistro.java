@@ -125,7 +125,7 @@ public class VentanaRegistro extends JFrame {
 		panel_1.add(lblNewLabel_1, "cell 17 22");
 		
 		lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(VentanaRegistro.class.getResource("/img/Diseño sin título.png")));
+		lblNewLabel.setIcon(new ImageIcon("img/Disenyo_sin_titulo.png"));
 		panel.add(lblNewLabel);
 		
 

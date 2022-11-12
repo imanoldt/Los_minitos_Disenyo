@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
-import clss.TipoDeporte;
+//import clss.TipoDeporte;
 import datechooser.beans.DateChooserCombo;
 
 public class VentanaSesion extends JFrame {
@@ -78,7 +78,7 @@ public class VentanaSesion extends JFrame {
 		panel_1.add(lblTipoDeporte);
 		
 		JComboBox comboBox = new JComboBox();
-		comboBox.setModel(new DefaultComboBoxModel(TipoDeporte.values()));
+		//comboBox.setModel(new DefaultComboBoxModel(TipoDeporte.values()));
 		panel_1.add(comboBox);
 		
 		JLabel lblFechaIni = new JLabel("Fecha de Inicio:");

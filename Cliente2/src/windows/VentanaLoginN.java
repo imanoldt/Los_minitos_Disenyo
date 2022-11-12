@@ -2,7 +2,6 @@ package windows;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -20,6 +19,9 @@ import java.awt.Dimension;
 import javax.swing.SwingConstants;
 import java.awt.*;
 import java.awt.event.MouseMotionAdapter;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -151,6 +153,23 @@ public class VentanaLoginN extends JFrame {
 		btnSalir.setOpaque(false);
 		btnIniciarSession = new JButton("Iniciar Sesion");
 		btnRegistrarse = new JButton("Registrarse");
+		btnRegistrarse.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				EventQueue.invokeLater(new Runnable() {
+					public void run() {
+						try {
+							VentanaRegistro frame = new VentanaRegistro();
+							frame.setVisible(true);
+							dispose();
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+					}
+				});
+			}
+		});
 		btnRegistrarse.setFont(new Font("Montserrat", Font.PLAIN, 16));
 		btnRegistrarse.setPreferredSize(new Dimension(120, 50));
 		pnlIzquierda.add(btnRegistrarse, "flowx,cell 0 14,alignx center,aligny center");
@@ -161,6 +180,13 @@ public class VentanaLoginN extends JFrame {
 		btnSalir.setRolloverIcon(new ImageIcon("img/xEncendida.png"));
 		btnSalir.setFont(new Font("Montserrat", Font.PLAIN, 16));
 		btnSalir.setPreferredSize(new Dimension(5000, 20));
+		btnSalir.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				dispose();
+			}
+		});
 		pnlIzquierda.add(btnSalir, "cell 0 15,alignx center,aligny center");
 		btnSalir.setIcon(new ImageIcon(imgEscalada));
 		btnSalir.setRolloverIcon(new ImageIcon(imgEscaladaEnc));
@@ -201,6 +227,14 @@ public class VentanaLoginN extends JFrame {
 		};
 		Thread t1 = new Thread(r1);
 		t1.start();
-
+		
+		addWindowListener(new WindowAdapter() {
+	
+			@Override
+			public void windowClosed(WindowEvent e) {
+				t1.stop();
+			}
+	
+		});
 	}
 }
