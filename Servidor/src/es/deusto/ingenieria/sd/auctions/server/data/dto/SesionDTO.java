@@ -1,71 +1,89 @@
 package es.deusto.ingenieria.sd.auctions.server.data.dto;
 
-
+import java.util.ArrayList;
+import java.util.List;
 
 public class SesionDTO {
 	//This attribute is needed to implement the "Serializable" interface.
-		private static final long serialVersionUID = 1L;
-		private String titulo;
-		private double km;
-		private String fInicio;
-		private int hora;
-		private double duracion;
-
-		public String getTitulo() {
-			return titulo;
+	private String titulo;
+	private String deporte;
+	private double km;
+	private String fInicio;
+	private int hora;
+	private double duracion;
+	private static final String[] TIPOS = {"Running", "Ciclismo"};
+	
+	public static List<String> getTipoDeporte() {
+		List<String> tipoDeporte = new ArrayList<>();
+		for(String s: TIPOS) {
+			tipoDeporte.add(s);
 		}
+		return tipoDeporte;
+	}
 
-		public void setTitulo(String titulo) {
-			this.titulo = titulo;
-		}
+	public String getTitulo() {
+		return titulo;
+	}
 
-		public double getKm() {
-			return km;
-		}
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	
+	public String getDeporte() {
+		return deporte;
+	}
+	
+	public void setDeporte(String deporte) {
+		this.deporte = deporte;
+	}
 
-		public void setKm(double km) {
-			this.km = km;
-		}
+	public double getKm() {
+		return km;
+	}
 
-		public String getfInicio() {
-			return fInicio;
-		}
+	public void setKm(double km) {
+		this.km = km;
+	}
 
-		public void setfInicio(String fInicio) {
-			this.fInicio = fInicio;
-		}
+	public String getfInicio() {
+		return fInicio;
+	}
 
-		public int getHora() {
-			return hora;
-		}
+	public void setfInicio(String fInicio) {
+		this.fInicio = fInicio;
+	}
 
-		public void setHora(int hora) {
-			this.hora = hora;
-		}
+	public int getHora() {
+		return hora;
+	}
 
-		public double getDuracion() {
-			return duracion;
-		}
+	public void setHora(int hora) {
+		this.hora = hora;
+	}
 
-		public void setDuracion(double duracion) {
-			this.duracion = duracion;
-		}
+	public double getDuracion() {
+		return duracion;
+	}
+
+	public void setDuracion(double duracion) {
+		this.duracion = duracion;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuffer result = new StringBuffer();
 		
-		@Override
-		public String toString() {
-			StringBuffer result = new StringBuffer();
+		result.append(this.titulo);
+		result.append(" - ");
+		result.append(this.km);
+		result.append("km - Session begin: ");
+		result.append(this.fInicio);
+		result.append(" - Start time: ");
+		result.append(this.hora);
+		result.append(" - Tot. Time: ");
+		result.append(this.duracion);
+		result.append(" minutes");
 			
-			result.append(this.titulo);
-			result.append(" - ");
-			result.append(this.km);
-			result.append("km - Session begin: ");
-			result.append(this.fInicio);
-			result.append(" - Start time: ");
-			result.append(this.hora);
-			result.append(" - Tot. Time: ");
-			result.append(this.duracion);
-			result.append(" minutes");
-			
-			return result.toString();
-		}
+		return result.toString();
+	}
 }

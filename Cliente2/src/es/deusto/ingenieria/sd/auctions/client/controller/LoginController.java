@@ -53,4 +53,8 @@ public class LoginController {
 	public long getToken() {
 		return token;
 	}
+	
+	public ServiceLocator getServiceLocator() {
+		return serviceLocator;
+	}
 }

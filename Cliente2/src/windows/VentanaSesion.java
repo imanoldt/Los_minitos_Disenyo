@@ -7,6 +7,7 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.ArrayList;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
@@ -19,10 +20,11 @@ import javax.swing.border.EmptyBorder;
 
 //import clss.TipoDeporte;
 import datechooser.beans.DateChooserCombo;
+import es.deusto.ingenieria.sd.auctions.client.controller.SesionController;
 
 public class VentanaSesion extends JFrame {
 	
-	
+	private SesionController controller;
 	private JPanel contentPane;
 	private JTextField txtDistancia, txtReto, txtObjetivo;
 	private JTextField txtKm;
@@ -30,6 +32,7 @@ public class VentanaSesion extends JFrame {
 	/**
 	 * Launch the application.
 	 */
+	/*
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -41,12 +44,13 @@ public class VentanaSesion extends JFrame {
 				}
 			}
 		});
-	}
+	}*/
 
 	/**
 	 * Create the frame.
 	 */
-	public VentanaSesion() {
+	public VentanaSesion(SesionController cont) {
+		controller = cont;
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 500, 673);
@@ -78,7 +82,7 @@ public class VentanaSesion extends JFrame {
 		panel_1.add(lblTipoDeporte);
 		
 		JComboBox comboBox = new JComboBox();
-		//comboBox.setModel(new DefaultComboBoxModel(TipoDeporte.values()));
+		comboBox.setModel(new DefaultComboBoxModel(controller.getDeporte().toArray()));
 		panel_1.add(comboBox);
 		
 		JLabel lblFechaIni = new JLabel("Fecha de Inicio:");

@@ -79,6 +79,11 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 			throw new RemoteException("User is not logged in!");
 		}
 	}
+	
+	@Override
+	public List<String> getDeporte() throws RemoteException {
+		return SesionDTO.getTipoDeporte();
+	}
 
 	@Override
 	public List<SesionDTO> getSesiones() throws RemoteException {

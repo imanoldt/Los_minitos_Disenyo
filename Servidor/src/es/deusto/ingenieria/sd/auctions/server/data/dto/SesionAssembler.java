@@ -19,7 +19,7 @@ public class SesionAssembler {
 
 	public SesionDTO sesionToDTO(Sesion sesion) {
 		SesionDTO dto = new SesionDTO();
-		
+		dto.setDeporte(sesion.getDeporte());
 		dto.setDuracion(sesion.getDuracion());
 		dto.setfInicio(sesion.getfInicio());
 		dto.setHora(sesion.getHora());

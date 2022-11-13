@@ -17,6 +17,8 @@ public interface IRemoteFacade extends Remote {
 	
 	public void logout(long token) throws RemoteException; 
 	
+	public List<String> getDeporte() throws RemoteException;
+	
 	public List<RetoDTO> getReto() throws RemoteException;
 	
 	public List<RetoDTO> getRetoActivado() throws RemoteException;

@@ -7,6 +7,7 @@ import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
 
 import es.deusto.ingenieria.sd.auctions.client.controller.LoginController;
+import es.deusto.ingenieria.sd.auctions.client.controller.SesionController;
 import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
 
 import java.awt.BorderLayout;
@@ -27,6 +28,7 @@ import java.awt.event.MouseEvent;
 public class VentanaMain extends JFrame {
 
 	private LoginController controller;
+	private SesionController sController;
 	private JPanel contentPane;
 	protected int resp;
 
@@ -53,6 +55,7 @@ public class VentanaMain extends JFrame {
 	 */
 	public VentanaMain(LoginController cont) {
 		controller = cont;
+		sController = new SesionController(cont.getServiceLocator());
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1050, 725);
@@ -93,7 +96,7 @@ public class VentanaMain extends JFrame {
 				EventQueue.invokeLater(new Runnable() {
 					public void run() {
 						try {
-							VentanaSesion frame = new VentanaSesion();
+							VentanaSesion frame = new VentanaSesion(sController);
 							frame.setVisible(true);
 						} catch (Exception e) {
 							e.printStackTrace();
