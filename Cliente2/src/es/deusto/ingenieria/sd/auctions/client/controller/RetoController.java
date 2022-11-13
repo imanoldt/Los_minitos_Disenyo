@@ -41,6 +41,15 @@ public class RetoController {
 		}
 	}
 	
+	public List<String> getRetoAct() {
+		try {
+			return this.serviceLocator.getService().getRetoActivado();
+		} catch(Exception e) {
+			System.out.println(" # Error during get RetoAct: " + e);
+			return null;
+		}
+	}
+	
 	public void makeRetoAct(String s) {
 		try {
 			this.serviceLocator.getService().activateReto(s);

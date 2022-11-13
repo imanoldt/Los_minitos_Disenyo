@@ -150,6 +150,19 @@ public class VentanaMain extends JFrame {
 		JButton btnNewButton_2 = new JButton("Cerrar Sesion");
 		btnNewButton_2.setFont(new Font("Montserrat", Font.BOLD, 15));
 		panel.add(btnNewButton_2);
+		
+		btnObtenerRetos.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JDialog.setDefaultLookAndFeelDecorated(true);
+				Object[] selectionValues = rController.getRetoAct().toArray();
+				String initialSelection = (String)rController.getReto().toArray()[0];
+				Object selection = JOptionPane.showInputDialog(null, "Retos Activos:", "Retos Activos",
+						JOptionPane.QUESTION_MESSAGE, null, selectionValues, initialSelection);
+				dispose();
+			}
+		});
 
 		btnActivarReto.addActionListener(new ActionListener() {
 			
