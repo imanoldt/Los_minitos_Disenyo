@@ -5,6 +5,10 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
+
+import es.deusto.ingenieria.sd.auctions.client.controller.LoginController;
+import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
+
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import javax.swing.JLabel;
@@ -22,12 +26,14 @@ import java.awt.event.MouseEvent;
 
 public class VentanaMain extends JFrame {
 
+	private LoginController controller;
 	private JPanel contentPane;
 	protected int resp;
 
 	/**
 	 * Launch the application.
 	 */
+	/*
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -40,12 +46,13 @@ public class VentanaMain extends JFrame {
 				}
 			}
 		});
-	}
+	}*/
 
 	/**
 	 * Create the frame.
 	 */
-	public VentanaMain() {
+	public VentanaMain(LoginController cont) {
+		controller = cont;
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1050, 725);
@@ -153,7 +160,10 @@ public class VentanaMain extends JFrame {
 			@Override
 			public void mousePressed(MouseEvent e) {
 				resp = JOptionPane.showConfirmDialog(null, "¿Esta seguro?", "Alerta!", JOptionPane.YES_NO_OPTION);
-
+				if(resp == 0) {
+					controller.logout();
+					dispose();
+				}
 			}
 		});
 

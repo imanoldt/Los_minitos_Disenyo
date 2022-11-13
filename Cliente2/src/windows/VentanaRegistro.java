@@ -67,8 +67,8 @@ public class VentanaRegistro extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public VentanaRegistro(ServiceLocator service) {
-		controller = new LoginController(service);
+	public VentanaRegistro(LoginController cont) {
+		controller = cont;
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1060, 708);

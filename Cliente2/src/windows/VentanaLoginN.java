@@ -168,7 +168,7 @@ public class VentanaLoginN extends JFrame {
 					EventQueue.invokeLater(new Runnable() {
 						public void run() {
 							try {
-								VentanaMain frame = new VentanaMain();
+								VentanaMain frame = new VentanaMain(controller);
 								frame.setVisible(true);
 							} catch (Exception e) {
 								e.printStackTrace();
@@ -188,7 +188,7 @@ public class VentanaLoginN extends JFrame {
 				EventQueue.invokeLater(new Runnable() {
 					public void run() {
 						try {
-							VentanaRegistro frame = new VentanaRegistro(service);
+							VentanaRegistro frame = new VentanaRegistro(controller);
 							frame.setVisible(true);
 						} catch (Exception e) {
 							e.printStackTrace();
