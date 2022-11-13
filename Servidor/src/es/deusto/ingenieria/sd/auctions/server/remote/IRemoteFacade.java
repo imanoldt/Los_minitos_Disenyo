@@ -19,17 +19,17 @@ public interface IRemoteFacade extends Remote {
 	
 	public List<String> getDeporte() throws RemoteException;
 	
-	public List<RetoDTO> getReto() throws RemoteException;
+	public String[] getDeporteRet() throws RemoteException;
 	
-	public List<RetoDTO> getRetoActivado() throws RemoteException;
+	public List<String> getReto() throws RemoteException;
 	
-	public List<SesionDTO> getSesiones() throws RemoteException;
+	public List<String> getRetoActivado() throws RemoteException;
 	
 	public void makeSesion(String titulo, String deporte, double km, String fInicio, 
 			int hora, double duracion) throws RemoteException;
 	
-	public boolean makeReto(String nombre, String fInicio, String fFin, double distancia, 
-			double objetivo) throws RemoteException;
+	public void makeReto(String nombre, String fInicio, String fFin, 
+			double distancia, double objetivo, String deporte) throws RemoteException;
 	
-	public boolean activateReto(String nombre) throws RemoteException;
+	public void activateReto(String nombre) throws RemoteException;
 }

@@ -16,7 +16,7 @@ public class SesionController {
 			try {
 				return this.serviceLocator.getService().getDeporte();
 			} catch (Exception e) {
-				System.out.println("# Error during getDep: " + e);
+				System.out.println(" # Error during getDep: " + e);
 				return null;
 			}
 		}

@@ -6,14 +6,16 @@ public class Reto {
 	private String fFin;
 	private double distancia;
 	private double objetivo;
+	private String deporte;
 	
-	public Reto(String nombre, String fInicio, String fFin, double distancia, double objetivo) {
+	public Reto(String nombre, String fInicio, String fFin, double distancia, double objetivo, String deporte) {
 		super();
 		this.nombre = nombre;
 		this.fInicio = fInicio;
 		this.fFin = fFin;
 		this.distancia = distancia;
 		this.objetivo = objetivo;
+		this.deporte = deporte;
 	}
 
 	public Reto() {
@@ -59,10 +61,39 @@ public class Reto {
 	public void setObjetivo(double objetivo) {
 		this.objetivo = objetivo;
 	}
+	
+	public String getDeporte() {
+		return deporte;
+	}
+	
+	public void setDeporte(String deporte) {
+		this.deporte = deporte;
+	}
 
 	@Override
 	public String toString() {
-		return "Reto [nombre=" + nombre + ", fInicio=" + fInicio + ", fFin=" + fFin + ", distancia=" + distancia
-				+ ", objetivo=" + objetivo + ", tDeporte=" + "]";
+		StringBuffer result = new StringBuffer();
+		
+		result.append(this.nombre);
+		result.append(" - ");
+		result.append(this.fInicio);
+		result.append(" - ");
+		result.append(this.fFin);
+		result.append(" - ");
+		result.append(this.distancia);
+		result.append(" - ");
+		result.append(this.objetivo);
+		result.append(" - ");
+		result.append(this.deporte);
+		
+		return result.toString();		
 	}
+	
+	/*
+	@Override
+	public String toString() {
+		return "Reto [nombre=" + nombre + ", fInicio=" + fInicio + ", fFin=" + fFin + ", distancia=" + distancia
+				+ ", objetivo=" + objetivo + ", tDeporte=" + deporte + "]";
+	}
+	*/
 }

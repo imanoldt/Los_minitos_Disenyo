@@ -17,9 +17,9 @@ public class RetoAssembler {
 		return instance;
 	}
 
-	public RetoDTO retoToDTO(Reto reto) {
+	public static RetoDTO retoToDTO(Reto reto) {
 		RetoDTO dto = new RetoDTO();
-		
+		dto.setDeporte(reto.getDeporte());
 		dto.setDistancia(reto.getDistancia());
 		dto.setfFin(reto.getfFin());
 		dto.setfInicio(reto.getfInicio());

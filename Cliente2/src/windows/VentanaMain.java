@@ -7,6 +7,7 @@ import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
 
 import es.deusto.ingenieria.sd.auctions.client.controller.LoginController;
+import es.deusto.ingenieria.sd.auctions.client.controller.RetoController;
 import es.deusto.ingenieria.sd.auctions.client.controller.SesionController;
 import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
 
@@ -29,6 +30,7 @@ public class VentanaMain extends JFrame {
 
 	private LoginController controller;
 	private SesionController sController;
+	private RetoController rController;
 	private JPanel contentPane;
 	protected int resp;
 
@@ -56,6 +58,7 @@ public class VentanaMain extends JFrame {
 	public VentanaMain(LoginController cont) {
 		controller = cont;
 		sController = new SesionController(cont.getServiceLocator());
+		rController = new RetoController(cont.getServiceLocator());
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1050, 725);
@@ -116,7 +119,7 @@ public class VentanaMain extends JFrame {
 				EventQueue.invokeLater(new Runnable() {
 					public void run() {
 						try {
-							VentanaReto frame = new VentanaReto();
+							VentanaReto frame = new VentanaReto(rController);
 							frame.setVisible(true);
 						} catch (Exception e) {
 							e.printStackTrace();
@@ -148,15 +151,18 @@ public class VentanaMain extends JFrame {
 		btnNewButton_2.setFont(new Font("Montserrat", Font.BOLD, 15));
 		panel.add(btnNewButton_2);
 
-		btnActivarReto.addMouseListener(new MouseAdapter() {
+		btnActivarReto.addActionListener(new ActionListener() {
+			
 			@Override
-			public void mouseClicked(MouseEvent e) {
+			public void actionPerformed(ActionEvent e) {
 				JDialog.setDefaultLookAndFeelDecorated(true);
-				Object[] selectionValues = { "Ciclismo", "Gordo", "Horses" };
-				String initialSelection = "Dogs";
+				Object[] selectionValues = rController.getReto().toArray();
+				String initialSelection = (String)rController.getReto().toArray()[0];
 				Object selection = JOptionPane.showInputDialog(null, "¿Que reto quieres activar?", "Retos Activos",
 						JOptionPane.QUESTION_MESSAGE, null, selectionValues, initialSelection);
-				System.out.println(selection);
+				if(selection != null) {
+					rController.makeRetoAct((String)selection);
+				}
 			}
 		});
 		btnNewButton_2.addMouseListener(new MouseAdapter() {

@@ -11,6 +11,7 @@ import java.awt.GridLayout;
 import javax.swing.JTextField;
 import javax.swing.JComboBox;
 import datechooser.beans.DateChooserDialog;
+import es.deusto.ingenieria.sd.auctions.client.controller.RetoController;
 import datechooser.beans.DateChooserCombo;
 import java.awt.Font;
 import javax.swing.JButton;
@@ -20,7 +21,7 @@ import javax.swing.DefaultComboBoxModel;
 //import clss.TipoDeporte;
 
 public class VentanaReto extends JFrame {
-
+	private RetoController controller;
 	private JPanel contentPane;
 	private JTextField txtReto;
 	private JTextField txtDistancia;
@@ -29,6 +30,7 @@ public class VentanaReto extends JFrame {
 	/**
 	 * Launch the application.
 	 */
+	/*
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -40,12 +42,13 @@ public class VentanaReto extends JFrame {
 				}
 			}
 		});
-	}
+	}*/
 
 	/**
 	 * Create the frame.
 	 */
-	public VentanaReto() {
+	public VentanaReto(RetoController cont) {
+		controller = cont;
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 500, 673);
@@ -93,7 +96,7 @@ public class VentanaReto extends JFrame {
 		panel_1.add(txtDistancia);
 		txtDistancia.setColumns(10);
 		
-		JLabel lblObjetivo = new JLabel("Objetivo");
+		JLabel lblObjetivo = new JLabel("Objetivo (Tiempo)");
 		panel_1.add(lblObjetivo);
 		
 		txtObjetivo = new JTextField();
@@ -104,7 +107,7 @@ public class VentanaReto extends JFrame {
 		panel_1.add(lblTipoDeporte);
 		
 		JComboBox cbTipoDeporte = new JComboBox();
-		//cbTipoDeporte.setModel(new DefaultComboBoxModel(TipoDeporte.values()));
+		cbTipoDeporte.setModel(new DefaultComboBoxModel(controller.getDeporte()));
 		panel_1.add(cbTipoDeporte);
 		
 		JButton btnCrearReto = new JButton("Crear Reto");
@@ -117,11 +120,18 @@ public class VentanaReto extends JFrame {
 		btnCerrar.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
+				dispose();
 			}
 		});
 		btnCrearReto.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
+				controller.makeReto(txtReto.getText(), 
+						dateChooserCombo.getSelectedDate().getTime().toString(), 
+						dateChooserCombo_1.getSelectedDate().getTime().toString(), 
+						Double.valueOf(txtDistancia.getText()), Double.valueOf(txtObjetivo.getText()), 
+						(String)cbTipoDeporte.getSelectedItem());
+				dispose();
 			}
 		});
 	}

@@ -1,9 +1,10 @@
 package es.deusto.ingenieria.sd.auctions.server.data.dto;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SesionDTO {
+public class SesionDTO implements Serializable{
 	//This attribute is needed to implement the "Serializable" interface.
 	private String titulo;
 	private String deporte;

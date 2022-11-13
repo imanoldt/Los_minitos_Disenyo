@@ -8,14 +8,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import es.deusto.ingenieria.sd.auctions.server.data.domain.Reto;
 import es.deusto.ingenieria.sd.auctions.server.data.domain.Sesion;
 
 import es.deusto.ingenieria.sd.auctions.server.data.domain.User;
+import es.deusto.ingenieria.sd.auctions.server.data.dto.RetoAssembler;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.RetoDTO;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.SesionAssembler;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.SesionDTO;
-import es.deusto.ingenieria.sd.auctions.server.services.BidAppService;
 import es.deusto.ingenieria.sd.auctions.server.services.LoginAppService;
+import es.deusto.ingenieria.sd.auctions.server.services.RetoAppService;
 import es.deusto.ingenieria.sd.auctions.server.services.SesionAppService;
 
 public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {	
@@ -27,6 +29,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	//TODO: Remove this instances when Singleton Pattern is implemented
 	private LoginAppService loginService = new LoginAppService();
 	private SesionAppService sesionAppService = new SesionAppService();
+	private RetoAppService retoAppService = new RetoAppService();
 
 	public RemoteFacade() throws RemoteException {
 		super();		
@@ -54,6 +57,15 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 		Sesion sesion = new Sesion(titulo, deporte, km, fInicio, hora, duracion);
 		User user = serverState.get(serverState.keySet().toArray()[0]);
 		sesionAppService.makeSesion(sesion, user);
+	}
+	
+	@Override
+	public void makeReto(String nombre, String fInicio, String fFin, double distancia, double objetivo,
+			String deporte) throws RemoteException {
+		System.out.println(" * Making Reto: " + nombre + " " + deporte);
+		Reto reto = new Reto(nombre, fInicio, fFin, distancia, objetivo, deporte);
+		User user = serverState.get(serverState.keySet().toArray()[0]);
+		retoAppService.makeReto(reto, user);
 	}
 	
 	@Override
@@ -94,44 +106,43 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	public List<String> getDeporte() throws RemoteException {
 		return SesionDTO.getTipoDeporte();
 	}
-
+	
 	@Override
-	public List<SesionDTO> getSesiones() throws RemoteException {
-		System.out.println(" * RemoteFacade getArticle('')");
-
-		//Get Articles using BidAppService
-		List<Sesion> sesions = new ArrayList<Sesion>();//TODObidService.getSesiones(null);
-		
-		if (sesions != null) {
-			//Convert domain object to DTO
-			return SesionAssembler.getInstance().sesionToDTO(sesions);
-		} else {
-			throw new RemoteException("getArticles() fails!");
+	public String[] getDeporteRet() throws RemoteException {
+		return RetoDTO.getTDeporte();
+	}
+	
+	@Override
+	public List<String> getReto() throws RemoteException {
+		List<String> retos = new ArrayList<>();
+		for(Reto r: LoginAppService.getUserMap().get(serverState.get(serverState.keySet().toArray()[0]).getEmail()).getRetos()) {
+			retos.add(RetoAssembler.retoToDTO(r).toString());
+		}
+		return retos;
+	}
+	
+	@Override
+	public List<String> getRetoActivado() throws RemoteException {
+		List<String> retos = new ArrayList<>();
+		for(Reto r: LoginAppService.getUserMap().get(serverState.get(serverState.keySet().toArray()[0]).getEmail()).getRetosAct()) {
+			retos.add(RetoAssembler.retoToDTO(r).toString());
+		}
+		return retos;
+	}
+	
+	@Override
+	public void activateReto(String nombre) throws RemoteException {
+		System.out.println(" * Activating Reto: " + nombre);
+		User user = serverState.get(serverState.keySet().toArray()[0]);
+		Reto reto = null;
+		for(Reto r: LoginAppService.getUserMap().get(serverState.get(serverState.keySet().toArray()[0]).getEmail()).getRetos()) {
+			if(r.toString().equals(nombre)) {
+				reto = r;
+			}
+		}
+		if(reto != null) {
+			retoAppService.activateReto(reto, user);
 		}
 	}
 	
-	@Override
-	public List<RetoDTO> getReto() throws RemoteException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	@Override
-	public List<RetoDTO> getRetoActivado() throws RemoteException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	@Override
-	public boolean activateReto(String nombre) throws RemoteException {
-		// TODO Auto-generated method stub
-		return false;
-	}
-	
-	@Override
-	public boolean makeReto(String nombre, String fInicio, String fFin, double distancia, double objetivo
-			) throws RemoteException {
-		// TODO Auto-generated method stub
-		return false;
-	}
 }

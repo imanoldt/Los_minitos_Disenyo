@@ -14,6 +14,7 @@ public class User {
 	private double fCardiacaReposo;
 	private String provedor;
 	private List<Reto> retos = new ArrayList<>();
+	private List<Reto> retosAct = new ArrayList<>();
 	private List<Sesion> sesiones = new ArrayList<>();
 	
 	public User() {
@@ -110,6 +111,14 @@ public class User {
 	public void setRetos(List<Reto> retos) {
 		this.retos = retos;
 	}
+	
+	public List<Reto> getRetosAct() {
+		return retosAct;
+	}
+	
+	public void setRetosAct(List<Reto> retosAct) {
+		this.retosAct = retosAct;
+	}
 
 	public List<Sesion> getSesiones() {
 		return sesiones;
@@ -139,7 +148,7 @@ public class User {
 		result.append(" - ");
 		result.append(this.email);
 		result.append(" - (");
-		result.append(this.retos.size());
+		result.append(this.retosAct.size());
 		result.append(" retos) - (");
 		result.append(this.sesiones.size());
 		result.append(" sesiones)");

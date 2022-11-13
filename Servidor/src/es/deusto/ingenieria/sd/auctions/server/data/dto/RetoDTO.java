@@ -1,13 +1,20 @@
 package es.deusto.ingenieria.sd.auctions.server.data.dto;
 
+import java.io.Serializable;
 
-public class RetoDTO {
+public class RetoDTO implements Serializable {
 	private String nombre;
 	private String fInicio;
 	private String fFin;
 	private double distancia;
 	private double objetivo;
+	private String deporte;
+	private static final String[] T_Deporte = {"Running", "Ciclismo", "Run_&_Cycle"};
 	
+	public static String[] getTDeporte() {
+		return T_Deporte;
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -48,6 +55,14 @@ public class RetoDTO {
 		this.objetivo = objetivo;
 	}
 	
+	public String getDeporte() {
+		return deporte;
+	}
+	
+	public void setDeporte(String deporte) {
+		this.deporte = deporte;
+	}
+	
 	@Override
 	public String toString() {
 		StringBuffer result = new StringBuffer();
@@ -61,6 +76,8 @@ public class RetoDTO {
 		result.append(this.distancia);
 		result.append(" - ");
 		result.append(this.objetivo);
+		result.append(" - ");
+		result.append(this.deporte);
 		
 		return result.toString();		
 	}
