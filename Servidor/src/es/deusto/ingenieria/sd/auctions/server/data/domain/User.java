@@ -12,6 +12,7 @@ public class User {
 	private int altura;
 	private double fCardiacaMaxima;
 	private double fCardiacaReposo;
+	private String provedor;
 	private List<Reto> retos = new ArrayList<>();
 	private List<Sesion> sesiones = new ArrayList<>();
 	
@@ -20,16 +21,16 @@ public class User {
 	}
 	
 	public User(String nick, String pass, String email, String fNac, double peso, 
-			int alt, double fCardMax, double fCardRep, int provedor) {
+			int alt, double fCardMax, double fCardRep, String provedor) {
 		this.nickname = nick;
 		this.password = pass;
 		this.email = email;
 		this.fNac = fNac;
 		this.peso = peso;
 		this.altura = alt;
-		//this.fCardiacaMaxima = fCardMax;
-		//this.fCardiacaReposo = fCardRep;
-		//this.provedor = provedor y deprte;
+		this.fCardiacaMaxima = fCardMax;
+		this.fCardiacaReposo = fCardRep;
+		this.provedor = provedor;
 		this.retos = new ArrayList<>();
 		this.sesiones = new ArrayList<>();
 	}

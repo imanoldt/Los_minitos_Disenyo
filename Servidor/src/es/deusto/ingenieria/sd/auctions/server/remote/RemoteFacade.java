@@ -39,7 +39,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 		System.out.println(" * RemoteFacade regist(): " + email + " / " + pass);
 		
 		User u = new User(nick, pass, email, fNac, Double.valueOf(peso), Integer.valueOf(alt), 
-				0, 0, 0);
+				Double.valueOf(fCardMax), Double.valueOf(fCardRep), provedor);
 		if(!loginService.regist(u)) {
 			throw new RemoteException("User is already logged in!");
 		}

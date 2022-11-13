@@ -20,12 +20,15 @@ import net.miginfocom.swing.MigLayout;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 import datechooser.beans.DateChooserPanel;
+import es.deusto.ingenieria.sd.auctions.client.controller.LoginController;
+
 import java.awt.Color;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 
 public class VentanaRegistro extends JFrame {
 
+	private LoginController controller;
 	private JPanel contentPane;
 	private JPanel panel;
 	private JPanel panel_1;
@@ -55,6 +58,7 @@ public class VentanaRegistro extends JFrame {
 	/**
 	 * Launch the application.
 	 */
+	/*
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -67,11 +71,13 @@ public class VentanaRegistro extends JFrame {
 			}
 		});
 	}
+	*/
 
 	/**
 	 * Create the frame.
 	 */
-	public VentanaRegistro() {
+	public VentanaRegistro(LoginController cont) {
+		controller = cont;
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1060, 708);
@@ -180,7 +186,11 @@ public class VentanaRegistro extends JFrame {
 		
 		btnRegistrarse.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				controller.regist(textField.getText(), textField_5.getText(), textField_1.getText(), 
+						dateChooserPanel.getSelectedDate().getTime().toString(), 
+						textField_2.getText(), textField_3.getText(), txtFcardiacaMax.getText(), 
+						textField_4.getText(), (String)comboBox.getSelectedItem());
+				dispose();
 			}
 		});
 
