@@ -5,6 +5,8 @@ import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
@@ -64,7 +66,7 @@ public class VentanaSesion extends JFrame {
 		pnlTitulo.setBackground(new Color(255, 165, 0));
 		contentPane.add(pnlTitulo, BorderLayout.NORTH);
 		
-		JLabel lblNewLabel = new JLabel("Creacion De Reto");
+		JLabel lblNewLabel = new JLabel("Creacion De Sesion");
 		lblNewLabel.setFont(new Font("Montserrat", Font.BOLD, 17));
 		pnlTitulo.add(lblNewLabel);
 		
@@ -117,7 +119,19 @@ public class VentanaSesion extends JFrame {
 		
 		JButton btnCrearSesion = new JButton("Crear Sesion");
 		panel.add(btnCrearSesion);
+		btnCrearSesion.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				controller.makeSesion(txtReto.getText(), (String)comboBox.getSelectedItem(),
+						Double.valueOf(txtKm.getText()),
+						dateChooserCombo.getSelectedDate().getTime().toString(),
+						Integer.valueOf(txtDistancia.getText()), Double.valueOf(txtObjetivo.getText()));
+				dispose();
+			}
+		});
 	}
-	}
+}
 
 

@@ -5,7 +5,7 @@ import es.deusto.ingenieria.sd.auctions.server.data.domain.User;
 
 //TODO: Implement Singleton Pattern
 public class LoginAppService {
-	private Map<String, User> userMap = new HashMap<>();
+	private static Map<String, User> userMap = new HashMap<>();
 		
 	public boolean regist(User user) {
 		if(userMap.containsKey(user.getEmail())) {
@@ -23,5 +23,9 @@ public class LoginAppService {
 			} 
 		}
 		return null;
+	}
+	
+	public static Map<String, User> getUserMap() {
+		return userMap;
 	}
 }

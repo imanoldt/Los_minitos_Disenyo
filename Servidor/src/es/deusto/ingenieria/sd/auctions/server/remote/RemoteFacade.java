@@ -16,6 +16,7 @@ import es.deusto.ingenieria.sd.auctions.server.data.dto.SesionAssembler;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.SesionDTO;
 import es.deusto.ingenieria.sd.auctions.server.services.BidAppService;
 import es.deusto.ingenieria.sd.auctions.server.services.LoginAppService;
+import es.deusto.ingenieria.sd.auctions.server.services.SesionAppService;
 
 public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {	
 	private static final long serialVersionUID = 1L;
@@ -25,7 +26,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	
 	//TODO: Remove this instances when Singleton Pattern is implemented
 	private LoginAppService loginService = new LoginAppService();
-	private BidAppService bidService = new BidAppService();
+	private SesionAppService sesionAppService = new SesionAppService();
 
 	public RemoteFacade() throws RemoteException {
 		super();		
@@ -44,6 +45,15 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 			throw new RemoteException("User is already logged in!");
 		}
 		
+	}
+	
+	@Override
+	public void makeSesion(String titulo, String deporte, double km, String fInicio, int hora, double duracion)
+			throws RemoteException {
+		System.out.println(" * Making Sesion: " + titulo + " " + deporte);
+		Sesion sesion = new Sesion(titulo, deporte, km, fInicio, hora, duracion);
+		User user = serverState.get(serverState.keySet().toArray()[0]);
+		sesionAppService.makeSesion(sesion, user);
 	}
 	
 	@Override
@@ -121,13 +131,6 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	@Override
 	public boolean makeReto(String nombre, String fInicio, String fFin, double distancia, double objetivo
 			) throws RemoteException {
-		// TODO Auto-generated method stub
-		return false;
-	}
-	
-	@Override
-	public boolean makeSesion(String titulo, double km, String fInicio, int hora, double duracion)
-			throws RemoteException {
 		// TODO Auto-generated method stub
 		return false;
 	}

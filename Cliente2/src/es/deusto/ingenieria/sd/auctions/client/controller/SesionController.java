@@ -16,8 +16,16 @@ public class SesionController {
 			try {
 				return this.serviceLocator.getService().getDeporte();
 			} catch (Exception e) {
-				System.out.println("Error during getDep: " + e);
+				System.out.println("# Error during getDep: " + e);
 				return null;
+			}
+		}
+		
+		public void makeSesion(String titulo, String deporte, double km, String fInicio, int hora, double duracion) {
+			try {
+				this.serviceLocator.getService().makeSesion(titulo, deporte, km, fInicio, hora, duracion);
+			} catch(Exception e) {
+				System.out.println("# Error during session making: " + e);
 			}
 		}
 		

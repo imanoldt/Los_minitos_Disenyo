@@ -25,8 +25,8 @@ public interface IRemoteFacade extends Remote {
 	
 	public List<SesionDTO> getSesiones() throws RemoteException;
 	
-	public boolean makeSesion(String titulo, double km, 
-			String fInicio, int hora, double duracion) throws RemoteException;
+	public void makeSesion(String titulo, String deporte, double km, String fInicio, 
+			int hora, double duracion) throws RemoteException;
 	
 	public boolean makeReto(String nombre, String fInicio, String fFin, double distancia, 
 			double objetivo) throws RemoteException;
