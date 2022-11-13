@@ -2,6 +2,7 @@ package windows;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -19,37 +20,41 @@ import net.miginfocom.swing.MigLayout;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 import datechooser.beans.DateChooserPanel;
-import es.deusto.ingenieria.sd.auctions.client.controller.LoginController;
-import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
-
 import java.awt.Color;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
 
 public class VentanaRegistro extends JFrame {
-	
-	private LoginController controller;
 
 	private JPanel contentPane;
 	private JPanel panel;
 	private JPanel panel_1;
 	private JLabel lblNewLabel;
 	private JLabel lblRegistro;
-	private JLabel lblNewLabel_2;
-	private JLabel lblNewLabel_3;
+	private JLabel lblNombre;
+	private JLabel lblEmail;
 	private JTextField textField;
 	private JTextField textField_1;
 	private JLabel lblFecha;
-	private JLabel lblNewLabel_4;
-	private JLabel lblNewLabel_5;
+	private JLabel lblPeso;
+	private JLabel lblAltura;
 	private JTextField textField_2;
 	private JTextField textField_3;
 	private DateChooserPanel dateChooserPanel;
 	private JButton btnRegistrarse;
+	private JLabel lblFcardiacaMax;
+	private JTextField txtFcardiacaMax;
+	private JComboBox comboBox;
+	private JLabel lblProvedor;
+	private JTextField textField_4;
+	private JLabel lblNewLabel_1;
+	private JLabel lblContrasenya;
+	private JTextField textField_5;
 
 
 	/**
 	 * Launch the application.
 	 */
-	/*
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -62,13 +67,11 @@ public class VentanaRegistro extends JFrame {
 			}
 		});
 	}
-	*/
 
 	/**
 	 * Create the frame.
 	 */
-	public VentanaRegistro(LoginController cont) {
-		controller = cont;
+	public VentanaRegistro() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1060, 708);
@@ -82,28 +85,29 @@ public class VentanaRegistro extends JFrame {
 		panel.setLayout(new GridLayout(0, 2, 0, 0));
 		
 		panel_1 = new JPanel();
+		panel_1.setBackground(new Color(255, 239, 213));
 		panel.add(panel_1);
-		panel_1.setLayout(new MigLayout("", "[][grow][][grow][grow][grow][grow][][][][][][][][][][][]", "[][][][][][][grow][][][][][][][][][][][][][][][][]"));
+		panel_1.setLayout(new MigLayout("", "[191.00][grow][][][grow][grow][grow][grow][grow][grow][][grow][][][][][][grow][][][]", "[][][][][][][grow][][][][][][][][][][][][][][][][]"));
 		
 		lblRegistro = new JLabel("Registro");
 		lblRegistro.setHorizontalAlignment(SwingConstants.CENTER);
-		lblRegistro.setFont(new Font("Montserrat", Font.PLAIN, 22));
-		panel_1.add(lblRegistro, "cell 0 0 14 1,alignx center,aligny center");
+		lblRegistro.setFont(new Font("Montserrat", Font.BOLD, 25));
+		panel_1.add(lblRegistro, "cell 0 0 16 1,alignx center,aligny center");
 		
-		lblNewLabel_2 = new JLabel("Nombre:");
-		lblNewLabel_2.setFont(new Font("Montserrat", Font.PLAIN, 15));
-		panel_1.add(lblNewLabel_2, "cell 0 2,grow");
+		lblNombre = new JLabel("Nombre:");
+		lblNombre.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(lblNombre, "flowx,cell 0 2,grow");
 		
-		textField = new JTextField();
-		panel_1.add(textField, "cell 6 2 11 1,growx");
-		textField.setColumns(10);
+		textField_5 = new JTextField();
+		panel_1.add(textField_5, "cell 9 2 11 1,grow");
+		textField_5.setColumns(10);
 		
-		lblNewLabel_3 = new JLabel("Email:");
-		lblNewLabel_3.setFont(new Font("Montserrat", Font.PLAIN, 15));
-		panel_1.add(lblNewLabel_3, "cell 0 4,growx,aligny center");
+		lblEmail = new JLabel("Email:");
+		lblEmail.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(lblEmail, "cell 0 4,growx,aligny center");
 		
 		textField_1 = new JTextField();
-		panel_1.add(textField_1, "cell 6 4 11 1,growx");
+		panel_1.add(textField_1, "cell 10 4 10 1,growx");
 		textField_1.setColumns(10);
 		
 		lblFecha = new JLabel("Fecha de Nacimiento:\n");
@@ -111,30 +115,63 @@ public class VentanaRegistro extends JFrame {
 		panel_1.add(lblFecha, "cell 0 6");
 		
 		dateChooserPanel = new DateChooserPanel();
-		panel_1.add(dateChooserPanel, "cell 5 6 12 1,grow");
+		panel_1.add(dateChooserPanel, "cell 6 6 14 1,grow");
 		
-		lblNewLabel_4 = new JLabel("Peso:");
-		lblNewLabel_4.setFont(new Font("Montserrat", Font.PLAIN, 15));
-		panel_1.add(lblNewLabel_4, "cell 0 8,grow");
+		lblPeso = new JLabel("Peso:");
+		lblPeso.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(lblPeso, "cell 0 8,grow");
 		
 		textField_2 = new JTextField();
-		panel_1.add(textField_2, "cell 7 8 10 1,growx");
+		panel_1.add(textField_2, "cell 10 8 10 1,grow");
 		textField_2.setColumns(10);
 		
-		lblNewLabel_5 = new JLabel("Altura:");
-		lblNewLabel_5.setFont(new Font("Montserrat", Font.PLAIN, 15));
-		panel_1.add(lblNewLabel_5, "cell 0 10,grow");
+		lblAltura = new JLabel("Altura:");
+		lblAltura.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(lblAltura, "cell 0 10,grow");
 		
 		textField_3 = new JTextField();
-		panel_1.add(textField_3, "cell 7 10 10 1,growx");
+		panel_1.add(textField_3, "cell 10 10 10 1,growx");
 		textField_3.setColumns(10);
 		
+		lblNewLabel_1 = new JLabel("Frecuencia Cardiaca Reps.");
+		lblNewLabel_1.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(lblNewLabel_1, "cell 0 11");
+		
+		textField_4 = new JTextField();
+		panel_1.add(textField_4, "cell 10 11 10 1,grow");
+		textField_4.setColumns(10);
+		
+		lblFcardiacaMax = new JLabel("Frecuencia Cardiaca Max.");
+		lblFcardiacaMax.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(lblFcardiacaMax, "cell 0 12");
+		
+		txtFcardiacaMax = new JTextField();
+		panel_1.add(txtFcardiacaMax, "cell 10 12 10 1,growx,aligny center");
+		txtFcardiacaMax.setColumns(10);
+		
+		lblProvedor = new JLabel("Proveedor:");
+		lblProvedor.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(lblProvedor, "cell 0 14");
+		
+		comboBox = new JComboBox();
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"GOOGLE", "FACEBOOK", "LOCAL"}));
+		panel_1.add(comboBox, "cell 9 14 11 1,grow");
+		
 		btnRegistrarse = new JButton("Registrarme");
+		btnRegistrarse.setForeground(new Color(255, 255, 255));
 		btnRegistrarse.setOpaque(true);
-		btnRegistrarse.setBackground(new Color(255, 165, 0));
+		btnRegistrarse.setBackground(new Color(0, 0, 0));
 		btnRegistrarse.setFont(new Font("Montserrat", Font.BOLD, 18));
 
-		panel_1.add(btnRegistrarse, "cell 0 18 17 4,grow");
+		panel_1.add(btnRegistrarse, "cell 0 18 20 4,grow");
+		
+		textField = new JTextField();
+		panel_1.add(textField, "flowx,cell 0 2 8 1,growx");
+		textField.setColumns(10);
+		
+		lblContrasenya = new JLabel("Contraseña:");
+		lblContrasenya.setFont(new Font("Montserrat", Font.PLAIN, 15));
+		panel_1.add(lblContrasenya, "cell 7 2");
 		
 		lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon("img/Disenyo_sin_titulo.png"));
@@ -143,10 +180,7 @@ public class VentanaRegistro extends JFrame {
 		
 		btnRegistrarse.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				controller.regist(textField.getText(), "a", textField_1.getText(), 
-				dateChooserPanel.getSelectedDate().toString(), textField_2.getText(), 
-				textField_3.getText(), "a", "a", "a");
-				dispose();
+				
 			}
 		});
 
