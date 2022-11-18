@@ -189,7 +189,7 @@ public class VentanaRegistro extends JFrame {
 				controller.regist(textField.getText(), textField_5.getText(), textField_1.getText(), 
 						dateChooserPanel.getSelectedDate().getTime().toString(), 
 						textField_2.getText(), textField_3.getText(), txtFcardiacaMax.getText(), 
-						textField_4.getText(), (String)comboBox.getSelectedItem());
+						textField_4.getText(), comboBox.getSelectedIndex());
 				dispose();
 			}
 		});

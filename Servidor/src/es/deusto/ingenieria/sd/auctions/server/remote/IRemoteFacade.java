@@ -6,12 +6,12 @@ import java.util.List;
 
 import es.deusto.ingenieria.sd.auctions.server.data.dto.RetoDTO;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.SesionDTO;
+import es.deusto.ingenieria.sd.auctions.server.data.dto.UserDTO;
 
 //This interface defines the API of the Server. It represents the Remote Facade pattern
 public interface IRemoteFacade extends Remote {	
 	
-	public void regist(String nick, String pass, String email, String fNac, String peso, 
-			String alt, String fCardMax, String fCardRep, String provedor) throws RemoteException;
+	public void regist(UserDTO dto) throws RemoteException;
 
 	public long login(String email, String password) throws RemoteException;
 	
@@ -21,7 +21,7 @@ public interface IRemoteFacade extends Remote {
 	
 	public String[] getDeporteRet() throws RemoteException;
 	
-	public List<String> getReto() throws RemoteException;
+	public List<RetoDTO> getReto() throws RemoteException;
 	
 	public List<String> getRetoActivado() throws RemoteException;
 	

@@ -21,9 +21,7 @@ public class UserDTO implements Serializable {
 	private int altura;
 	private double fCardiacaMaxima;
 	private double fCardiacaReposo;
-	private int estado;
-	private List<Reto> retos = new ArrayList<>();
-	private List<Sesion> sesiones = new ArrayList<>();
+	private int provedor;
 		
 	public String getNickname() {
 		return nickname;
@@ -31,6 +29,10 @@ public class UserDTO implements Serializable {
 	
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
+	}
+	
+	public String getPassword() {
+		return password;
 	}
 	
 	public boolean checkPassword(String password) {
@@ -89,40 +91,12 @@ public class UserDTO implements Serializable {
 		this.fCardiacaReposo = fCardiacaReposo;
 	}
 
-	public int getEstado() {
-		return estado;
+	public int getProvedor() {
+		return provedor;
 	}
 
-	public void setEstado(int estado) {
-		this.estado = estado;
-	}
-
-	public List<Reto> getRetos() {
-		return retos;
-	}
-
-	public void setRetos(List<Reto> retos) {
-		this.retos = retos;
-	}
-
-	public List<Sesion> getSesiones() {
-		return sesiones;
-	}
-
-	public void setSesiones(List<Sesion> sesiones) {
-		this.sesiones = sesiones;
-	}
-
-	public void addSesion(Sesion sesion) {
-		if (sesion != null && !this.sesiones.contains(sesion)) {
-			this.sesiones.add(sesion);
-		}
-	}
-	
-	public void addReto(Reto reto) {
-		if (reto != null && !this.retos.contains(reto)) {
-			this.retos.add(reto);
-		}
+	public void setProvedor(int estado) {
+		this.provedor = estado;
 	}
 		
 	@Override
@@ -132,11 +106,6 @@ public class UserDTO implements Serializable {
 		result.append(this.nickname);
 		result.append(" - ");
 		result.append(this.email);
-		result.append(" - (");
-		result.append(this.retos.size());
-		result.append(" retos) - (");
-		result.append(this.sesiones.size());
-		result.append(" sesiones)");
 		
 		return result.toString();
 	}

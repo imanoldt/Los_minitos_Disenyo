@@ -1,6 +1,8 @@
 package es.deusto.ingenieria.sd.auctions.server.data.domain;
 
-public class Sesion {
+import java.io.Serializable;
+
+public class Sesion implements Serializable {
 	private String titulo;
 	private String deporte;
 	private double km;

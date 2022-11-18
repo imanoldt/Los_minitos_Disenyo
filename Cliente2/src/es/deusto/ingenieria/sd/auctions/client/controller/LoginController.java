@@ -18,10 +18,19 @@ public class LoginController {
 	}
 	
 	public void regist(String nick, String pass, String email, String fNac, String peso, 
-			String alt, String fCardMax, String fCardRep, String provedor) {
+			String alt, String fCardMax, String fCardRep, int provedor) {
 		try {
-			this.serviceLocator.getService().regist(nick, pass, email, fNac, peso, alt, 
-				fCardMax, fCardRep, provedor);
+			UserDTO dto = new UserDTO();
+			dto.setAltura(Integer.valueOf(alt));
+			dto.setEmail(email);
+			dto.setProvedor(provedor);
+			dto.setfCardiacaMaxima(Double.valueOf(fCardMax));
+			dto.setfCardiacaReposo(Double.valueOf(fCardRep));
+			dto.setfNac(fNac);
+			dto.setNickname(nick);
+			dto.setPassword(pass);
+			dto.setPeso(Double.valueOf(peso));
+			this.serviceLocator.getService().regist(dto);
 		} catch (RemoteException e) {
 			System.out.println("# Error during registration: " + e);
 		}
@@ -29,11 +38,8 @@ public class LoginController {
 	
 	public boolean login(String email, String password) {
 		try {
-			if(this.token == -1) {
-				this.token = this.serviceLocator.getService().login(email, password);			
-				return true;
-			}
-			return false;
+			this.token = this.serviceLocator.getService().login(email, password);			
+			return true;
 		} catch (RemoteException e) {
 			System.out.println("# Error during login: " + e);
 			this.token = -1;

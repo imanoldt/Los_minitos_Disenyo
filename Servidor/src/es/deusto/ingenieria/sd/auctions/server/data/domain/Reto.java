@@ -1,6 +1,8 @@
 package es.deusto.ingenieria.sd.auctions.server.data.domain;
 
-public class Reto {
+import java.io.Serializable;
+
+public class Reto implements Serializable {
 	private String nombre;
 	private String fInicio;
 	private String fFin;

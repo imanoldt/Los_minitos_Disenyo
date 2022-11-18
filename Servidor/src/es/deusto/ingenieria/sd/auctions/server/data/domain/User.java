@@ -1,9 +1,10 @@
 package es.deusto.ingenieria.sd.auctions.server.data.domain;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class User {	
+public class User implements Serializable {	
 	private String nickname;
 	private String password;
 	private String email;
@@ -12,7 +13,7 @@ public class User {
 	private int altura;
 	private double fCardiacaMaxima;
 	private double fCardiacaReposo;
-	private String provedor;
+	private int provedor;
 	private List<Reto> retos = new ArrayList<>();
 	private List<Reto> retosAct = new ArrayList<>();
 	private List<Sesion> sesiones = new ArrayList<>();
@@ -22,7 +23,7 @@ public class User {
 	}
 	
 	public User(String nick, String pass, String email, String fNac, double peso, 
-			int alt, double fCardMax, double fCardRep, String provedor) {
+			int alt, double fCardMax, double fCardRep, int provedor) {
 		this.nickname = nick;
 		this.password = pass;
 		this.email = email;
@@ -102,6 +103,14 @@ public class User {
 
 	public void setfCardiacaReposo(double fCardiacaReposo) {
 		this.fCardiacaReposo = fCardiacaReposo;
+	}
+	
+	public int getProvedor() {
+		return provedor;
+	}
+	
+	public void setProvedor(int provedor) {
+		this.provedor = provedor;
 	}
 
 	public List<Reto> getRetos() {

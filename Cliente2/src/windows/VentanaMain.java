@@ -168,6 +168,8 @@ public class VentanaMain extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				rController.getReto();
+				/*
 				JDialog.setDefaultLookAndFeelDecorated(true);
 				Object[] selectionValues = rController.getReto().toArray();
 				String initialSelection = (String)rController.getReto().toArray()[0];
@@ -175,7 +177,7 @@ public class VentanaMain extends JFrame {
 						JOptionPane.QUESTION_MESSAGE, null, selectionValues, initialSelection);
 				if(selection != null) {
 					rController.makeRetoAct((String)selection);
-				}
+				}*/
 			}
 		});
 		btnNewButton_2.addMouseListener(new MouseAdapter() {

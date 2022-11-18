@@ -31,9 +31,9 @@ public class RetoController {
 		}
 	}
 	
-	public List<String> getReto() {
+	public List<RetoDTO> getReto() {
 		try {
-			List<String> list = this.serviceLocator.getService().getReto();
+			List<RetoDTO> list = this.serviceLocator.getService().getReto();
 			return list;
 		} catch(Exception e) {
 			System.out.println(" # Error during get Reto: " + e);

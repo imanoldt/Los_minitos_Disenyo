@@ -16,6 +16,7 @@ import es.deusto.ingenieria.sd.auctions.server.data.dto.RetoAssembler;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.RetoDTO;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.SesionAssembler;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.SesionDTO;
+import es.deusto.ingenieria.sd.auctions.server.data.dto.UserDTO;
 import es.deusto.ingenieria.sd.auctions.server.services.LoginAppService;
 import es.deusto.ingenieria.sd.auctions.server.services.RetoAppService;
 import es.deusto.ingenieria.sd.auctions.server.services.SesionAppService;
@@ -38,12 +39,11 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	//TODO REVISAR TODOS LOS EDITS Y COMENTARIOS 
 	
 	@Override
-	public synchronized void regist(String nick, String pass, String email, String fNac, String peso, 
-			String alt, String fCardMax, String fCardRep, String provedor) throws RemoteException {
-		System.out.println(" * RemoteFacade regist(): " + email + " / " + pass);
+	public synchronized void regist(UserDTO dto) throws RemoteException {
+		System.out.println(" * RemoteFacade regist(): " + dto.getEmail() + " / " + dto.getPassword());
 		
-		User u = new User(nick, pass, email, fNac, Double.valueOf(peso), Integer.valueOf(alt), 
-				Double.valueOf(fCardMax), Double.valueOf(fCardRep), provedor);
+		User u = new User(dto.getNickname(), dto.getPassword(), dto.getEmail(), dto.getfNac(), dto.getPeso(), dto.getAltura(), 
+				dto.getfCardiacaMaxima(), dto.getfCardiacaReposo(), dto.getProvedor());
 		if(!loginService.regist(u)) {
 			throw new RemoteException("User is already logged in!");
 		}
@@ -113,10 +113,10 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 	
 	@Override
-	public List<String> getReto() throws RemoteException {
-		List<String> retos = new ArrayList<>();
+	public List<RetoDTO> getReto() throws RemoteException {
+		List<RetoDTO> retos = new ArrayList<>();
 		for(Reto r: LoginAppService.getUserMap().get(serverState.get(serverState.keySet().toArray()[0]).getEmail()).getRetos()) {
-			retos.add(RetoAssembler.retoToDTO(r).toString());
+			retos.add(RetoAssembler.retoToDTO(r));
 		}
 		return retos;
 	}
