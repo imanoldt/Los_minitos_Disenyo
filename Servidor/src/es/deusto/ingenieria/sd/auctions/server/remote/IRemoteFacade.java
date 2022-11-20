@@ -23,6 +23,8 @@ public interface IRemoteFacade extends Remote {
 	
 	public List<RetoDTO> getRetoActivado() throws RemoteException;
 	
+	public List<SesionDTO> getSesion() throws RemoteException;
+	
 	public void makeSesion(SesionDTO dto, long token) throws RemoteException;
 	
 	public void makeReto(RetoDTO dto, long token) throws RemoteException;

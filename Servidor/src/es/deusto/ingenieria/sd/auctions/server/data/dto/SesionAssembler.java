@@ -17,7 +17,7 @@ public class SesionAssembler {
 		return instance;
 	}
 
-	public SesionDTO sesionToDTO(Sesion sesion) {
+	public static SesionDTO sesionToDTO(Sesion sesion) {
 		SesionDTO dto = new SesionDTO();
 		dto.setDeporte(sesion.getDeporte());
 		dto.setDuracion(sesion.getDuracion());

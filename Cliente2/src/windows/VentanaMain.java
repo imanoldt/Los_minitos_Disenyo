@@ -101,7 +101,7 @@ public class VentanaMain extends JFrame {
 		pnl_Derech.add(panel_1, BorderLayout.CENTER);
 		panel_1.setLayout(new GridLayout(4, 0, 0, 0));
 
-		JButton btnSesion = new JButton("Crear una sesion");
+		JButton btnSesion = new JButton("Crear/Ver sesiones");
 		btnSesion.addActionListener(new ActionListener() {
 			
 			@Override
@@ -109,8 +109,17 @@ public class VentanaMain extends JFrame {
 				EventQueue.invokeLater(new Runnable() {
 					public void run() {
 						try {
-							VentanaSesion frame = new VentanaSesion(sController);
-							frame.setVisible(true);
+							resp = JOptionPane.showConfirmDialog(null, "¿Quieres ver las sesiones?", "Alerta!", JOptionPane.YES_NO_OPTION);
+							if(resp == 0) {
+								JDialog.setDefaultLookAndFeelDecorated(true);
+								Object[] selectionValues = sController.getSesion().toArray();
+								String initialSelection = (String)sController.getSesion().toArray()[0];
+								Object selection = JOptionPane.showInputDialog(null, "Sesiones Activas:", "Sesiones Activas",
+										JOptionPane.QUESTION_MESSAGE, null, selectionValues, initialSelection);
+							} else {
+								VentanaSesion frame = new VentanaSesion(sController);
+								frame.setVisible(true);
+							}
 						} catch (Exception e) {
 							e.printStackTrace();
 						}

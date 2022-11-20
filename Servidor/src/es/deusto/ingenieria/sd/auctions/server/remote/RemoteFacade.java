@@ -128,6 +128,15 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 	
 	@Override
+	public List<SesionDTO> getSesion() throws RemoteException {
+		List<SesionDTO> retos = new ArrayList<>();
+		for(Sesion r: LoginAppService.getUserMap().get(serverState.get(serverState.keySet().toArray()[0]).getEmail()).getSesiones()) {
+			retos.add(SesionAssembler.sesionToDTO(r));
+		}
+		return retos;
+	}
+	
+	@Override
 	public void activateReto(String nombre, long token) throws RemoteException {
 		System.out.println(" * Activating Reto: " + nombre);
 		User user = serverState.get(token);
