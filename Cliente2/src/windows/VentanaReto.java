@@ -12,6 +12,8 @@ import javax.swing.JTextField;
 import javax.swing.JComboBox;
 import datechooser.beans.DateChooserDialog;
 import es.deusto.ingenieria.sd.auctions.client.controller.RetoController;
+import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoDeporte;
+import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoProvedor;
 import datechooser.beans.DateChooserCombo;
 import java.awt.Font;
 import javax.swing.JButton;
@@ -107,7 +109,12 @@ public class VentanaReto extends JFrame {
 		panel_1.add(lblTipoDeporte);
 		
 		JComboBox cbTipoDeporte = new JComboBox();
-		cbTipoDeporte.setModel(new DefaultComboBoxModel(controller.getDeporte()));
+		String[] s = new String[TipoDeporte.values().length];
+		int i = 0;
+		for(TipoDeporte t: TipoDeporte.values()) {
+			s[i++] = t.toString();
+		}
+		cbTipoDeporte.setModel(new DefaultComboBoxModel(s));
 		panel_1.add(cbTipoDeporte);
 		
 		JButton btnCrearReto = new JButton("Crear Reto");
@@ -127,10 +134,10 @@ public class VentanaReto extends JFrame {
 			@Override
 			public void mousePressed(MouseEvent e) {
 				controller.makeReto(txtReto.getText(), 
-						dateChooserCombo.getSelectedDate().getTime().toString(), 
-						dateChooserCombo_1.getSelectedDate().getTime().toString(), 
+						dateChooserCombo.getSelectedDate().getTime(), 
+						dateChooserCombo_1.getSelectedDate().getTime(), 
 						Double.valueOf(txtDistancia.getText()), Double.valueOf(txtObjetivo.getText()), 
-						(String)cbTipoDeporte.getSelectedItem());
+						cbTipoDeporte.getSelectedIndex());
 				dispose();
 			}
 		});

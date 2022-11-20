@@ -1,16 +1,17 @@
 package es.deusto.ingenieria.sd.auctions.server.data.domain;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class Sesion implements Serializable {
 	private String titulo;
-	private String deporte;
+	private TipoDeporte deporte;
 	private double km;
-	private String fInicio;
+	private Date fInicio;
 	private int hora;
 	private double duracion;
 
-	public Sesion(String titulo, String deporte, double km, String fInicio, int hora, double duracion) {
+	public Sesion(String titulo, TipoDeporte deporte, double km, Date fInicio, int hora, double duracion) {
 		super();
 		this.titulo = titulo;
 		this.deporte = deporte;
@@ -34,11 +35,11 @@ public class Sesion implements Serializable {
 		this.titulo = titulo;
 	}
 	
-	public String getDeporte() {
+	public TipoDeporte getDeporte() {
 		return deporte;
 	}
 	
-	public void setDeporte(String deporte) {
+	public void setDeporte(TipoDeporte deporte) {
 		this.deporte = deporte;
 	}
 
@@ -50,11 +51,11 @@ public class Sesion implements Serializable {
 		this.km = km;
 	}
 
-	public String getfInicio() {
+	public Date getfInicio() {
 		return fInicio;
 	}
 
-	public void setfInicio(String fInicio) {
+	public void setfInicio(Date fInicio) {
 		this.fInicio = fInicio;
 	}
 

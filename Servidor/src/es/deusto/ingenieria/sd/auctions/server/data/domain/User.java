@@ -2,18 +2,18 @@ package es.deusto.ingenieria.sd.auctions.server.data.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class User implements Serializable {	
 	private String nickname;
-	private String password;
 	private String email;
-	private String fNac;
+	private Date fNac;
 	private double peso;
 	private int altura;
 	private double fCardiacaMaxima;
 	private double fCardiacaReposo;
-	private int provedor;
+	private TipoProvedor provedor;
 	private List<Reto> retos = new ArrayList<>();
 	private List<Reto> retosAct = new ArrayList<>();
 	private List<Sesion> sesiones = new ArrayList<>();
@@ -22,17 +22,16 @@ public class User implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public User(String nick, String pass, String email, String fNac, double peso, 
+	public User(String nick, String email, Date fNac, double peso, 
 			int alt, double fCardMax, double fCardRep, int provedor) {
 		this.nickname = nick;
-		this.password = pass;
 		this.email = email;
 		this.fNac = fNac;
 		this.peso = peso;
 		this.altura = alt;
 		this.fCardiacaMaxima = fCardMax;
 		this.fCardiacaReposo = fCardRep;
-		this.provedor = provedor;
+		this.provedor = TipoProvedor.values()[provedor];
 		this.retos = new ArrayList<>();
 		this.sesiones = new ArrayList<>();
 	}
@@ -45,17 +44,6 @@ public class User implements Serializable {
 		this.nickname = nickname;
 	}
 	
-	public String getPassword() {
-		return password;
-	}
-	
-	public boolean checkPassword(String password) {
-		return this.password.equals(password);
-	}
-	
-	public void setPassword(String password) {
-		this.password = password;
-	}
 	
 	public String getEmail() {
 		return email;
@@ -65,11 +53,11 @@ public class User implements Serializable {
 		this.email = email;
 	}
 	
-	public String getfNac() {
+	public Date getfNac() {
 		return fNac;
 	}
 
-	public void setfNac(String fNac) {
+	public void setfNac(Date fNac) {
 		this.fNac = fNac;
 	}
 
@@ -105,11 +93,15 @@ public class User implements Serializable {
 		this.fCardiacaReposo = fCardiacaReposo;
 	}
 	
-	public int getProvedor() {
+	public TipoProvedor getProvedor() {
 		return provedor;
 	}
 	
 	public void setProvedor(int provedor) {
+		this.provedor = TipoProvedor.values()[provedor];
+	}
+	
+	public void setProvedor(TipoProvedor provedor) {
 		this.provedor = provedor;
 	}
 

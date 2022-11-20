@@ -1,40 +1,46 @@
 package es.deusto.ingenieria.sd.auctions.client.controller;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
+import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoDeporte;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.RetoDTO;
 
 public class RetoController {
 	//Reference to the Service Locator
 	private ServiceLocator serviceLocator;
+	private long token;
 
-	public RetoController(ServiceLocator serviceLocator) {
+	public RetoController(ServiceLocator serviceLocator, long token) {
 		this.serviceLocator = serviceLocator;
-	}
-
-	public String[] getDeporte() {
-		try {
-			return this.serviceLocator.getService().getDeporteRet();
-		} catch (Exception e) {
-			System.out.println(" # Error during getDepRet: " + e);
-			return null;
-		}
+		this.token = token;
 	}
 	
-	public void makeReto(String nombre, String fInicio, String fFin, double distancia, double objetivo, String deporte) {
+	public void makeReto(String nombre, Date fInicio, Date fFin, double distancia, double objetivo, int deporte) {
 		try {
-			this.serviceLocator.getService().makeReto(nombre, fInicio, fFin, distancia, objetivo, deporte);
+			RetoDTO dto = new RetoDTO();
+			dto.setDeporte(TipoDeporte.values()[deporte]);
+			dto.setDistancia(distancia);
+			dto.setfFin(fFin);
+			dto.setfInicio(fInicio);
+			dto.setNombre(nombre);
+			dto.setObjetivo(objetivo);
+			this.serviceLocator.getService().makeReto(dto, token);
 		} catch(Exception e) {
 			System.out.println(" # Error during reto making: " + e);
 		}
 	}
 	
-	public List<RetoDTO> getReto() {
+	public List<String> getReto() {
 		try {
 			List<RetoDTO> list = this.serviceLocator.getService().getReto();
-			return list;
+			List<String> sList = new ArrayList<>();
+			for(RetoDTO dto: list) {
+				sList.add(dto.toString());
+			}
+			return sList;
 		} catch(Exception e) {
 			System.out.println(" # Error during get Reto: " + e);
 			return null;
@@ -43,7 +49,12 @@ public class RetoController {
 	
 	public List<String> getRetoAct() {
 		try {
-			return this.serviceLocator.getService().getRetoActivado();
+			List<RetoDTO> list = this.serviceLocator.getService().getRetoActivado();
+			List<String> sList = new ArrayList<>();
+			for(RetoDTO dto: list) {
+				sList.add(dto.toString());
+			}
+			return sList;
 		} catch(Exception e) {
 			System.out.println(" # Error during get RetoAct: " + e);
 			return null;
@@ -52,7 +63,7 @@ public class RetoController {
 	
 	public void makeRetoAct(String s) {
 		try {
-			this.serviceLocator.getService().activateReto(s);
+			this.serviceLocator.getService().activateReto(s, token);
 		} catch(Exception e) {
 			System.out.println(" # Error Activate Reto: " + e);
 		}

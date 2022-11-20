@@ -25,6 +25,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class VentanaMain extends JFrame {
 
@@ -56,9 +58,17 @@ public class VentanaMain extends JFrame {
 	 * Create the frame.
 	 */
 	public VentanaMain(LoginController cont) {
+		/*
+		addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosed(WindowEvent e) {
+				controller.logout();
+			}
+		});
+		*/
 		controller = cont;
-		sController = new SesionController(cont.getServiceLocator());
-		rController = new RetoController(cont.getServiceLocator());
+		sController = new SesionController(cont.getServiceLocator(), controller.getToken());
+		rController = new RetoController(cont.getServiceLocator(), controller.getToken());
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1050, 725);
@@ -160,7 +170,6 @@ public class VentanaMain extends JFrame {
 				String initialSelection = (String)rController.getReto().toArray()[0];
 				Object selection = JOptionPane.showInputDialog(null, "Retos Activos:", "Retos Activos",
 						JOptionPane.QUESTION_MESSAGE, null, selectionValues, initialSelection);
-				dispose();
 			}
 		});
 
@@ -169,7 +178,6 @@ public class VentanaMain extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				rController.getReto();
-				/*
 				JDialog.setDefaultLookAndFeelDecorated(true);
 				Object[] selectionValues = rController.getReto().toArray();
 				String initialSelection = (String)rController.getReto().toArray()[0];
@@ -177,7 +185,7 @@ public class VentanaMain extends JFrame {
 						JOptionPane.QUESTION_MESSAGE, null, selectionValues, initialSelection);
 				if(selection != null) {
 					rController.makeRetoAct((String)selection);
-				}*/
+				}
 			}
 		});
 		btnNewButton_2.addMouseListener(new MouseAdapter() {

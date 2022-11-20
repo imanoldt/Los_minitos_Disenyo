@@ -1,13 +1,11 @@
 package es.deusto.ingenieria.sd.auctions.server.data.dto;
 
 import java.io.Serializable;
-
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
-
 import es.deusto.ingenieria.sd.auctions.server.data.domain.Reto;
 import es.deusto.ingenieria.sd.auctions.server.data.domain.Sesion;
-
 import es.deusto.ingenieria.sd.auctions.server.data.domain.User;
 
 //This class implements DTO pattern
@@ -16,7 +14,7 @@ public class UserDTO implements Serializable {
 	private String nickname;
 	private String password;
 	private String email;
-	private String fNac;
+	private Date fNac;
 	private double peso;
 	private int altura;
 	private double fCardiacaMaxima;
@@ -51,11 +49,11 @@ public class UserDTO implements Serializable {
 		this.email = email;
 	}
 	
-	public String getfNac() {
+	public Date getfNac() {
 		return fNac;
 	}
 
-	public void setfNac(String fNac) {
+	public void setfNac(Date fNac) {
 		this.fNac = fNac;
 	}
 

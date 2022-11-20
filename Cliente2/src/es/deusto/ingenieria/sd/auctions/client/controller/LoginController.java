@@ -1,7 +1,7 @@
 package es.deusto.ingenieria.sd.auctions.client.controller;
 
 import java.rmi.RemoteException;
-
+import java.util.Date;
 import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
 import es.deusto.ingenieria.sd.auctions.server.data.dto.UserDTO;
 
@@ -17,7 +17,7 @@ public class LoginController {
 		this.serviceLocator = serviceLocator;
 	}
 	
-	public void regist(String nick, String pass, String email, String fNac, String peso, 
+	public void regist(String nick, String pass, String email, Date fNac, String peso, 
 			String alt, String fCardMax, String fCardRep, int provedor) {
 		try {
 			UserDTO dto = new UserDTO();

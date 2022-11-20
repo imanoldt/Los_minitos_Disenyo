@@ -2,25 +2,19 @@ package es.deusto.ingenieria.sd.auctions.server.data.dto;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+
+import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoDeporte;
 
 public class SesionDTO implements Serializable{
 	//This attribute is needed to implement the "Serializable" interface.
 	private String titulo;
-	private String deporte;
+	private TipoDeporte deporte;
 	private double km;
-	private String fInicio;
+	private Date fInicio;
 	private int hora;
 	private double duracion;
-	private static final String[] TIPOS = {"Running", "Ciclismo"};
-	
-	public static List<String> getTipoDeporte() {
-		List<String> tipoDeporte = new ArrayList<>();
-		for(String s: TIPOS) {
-			tipoDeporte.add(s);
-		}
-		return tipoDeporte;
-	}
 
 	public String getTitulo() {
 		return titulo;
@@ -30,11 +24,11 @@ public class SesionDTO implements Serializable{
 		this.titulo = titulo;
 	}
 	
-	public String getDeporte() {
+	public TipoDeporte getDeporte() {
 		return deporte;
 	}
 	
-	public void setDeporte(String deporte) {
+	public void setDeporte(TipoDeporte deporte) {
 		this.deporte = deporte;
 	}
 
@@ -46,11 +40,11 @@ public class SesionDTO implements Serializable{
 		this.km = km;
 	}
 
-	public String getfInicio() {
+	public Date getfInicio() {
 		return fInicio;
 	}
 
-	public void setfInicio(String fInicio) {
+	public void setfInicio(Date fInicio) {
 		this.fInicio = fInicio;
 	}
 

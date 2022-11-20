@@ -1,19 +1,17 @@
 package es.deusto.ingenieria.sd.auctions.server.data.dto;
 
 import java.io.Serializable;
+import java.util.Date;
+
+import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoDeporte;
 
 public class RetoDTO implements Serializable {
 	private String nombre;
-	private String fInicio;
-	private String fFin;
+	private Date fInicio;
+	private Date fFin;
 	private double distancia;
 	private double objetivo;
-	private String deporte;
-	private static final String[] T_Deporte = {"Running", "Ciclismo", "Run_&_Cycle"};
-	
-	public static String[] getTDeporte() {
-		return T_Deporte;
-	}
+	private TipoDeporte deporte;
 
 	public String getNombre() {
 		return nombre;
@@ -23,19 +21,19 @@ public class RetoDTO implements Serializable {
 		this.nombre = nombre;
 	}
 
-	public String getfInicio() {
+	public Date getfInicio() {
 		return fInicio;
 	}
 
-	public void setfInicio(String fInicio) {
+	public void setfInicio(Date fInicio) {
 		this.fInicio = fInicio;
 	}
 
-	public String getfFin() {
+	public Date getfFin() {
 		return fFin;
 	}
 
-	public void setfFin(String fFin) {
+	public void setfFin(Date fFin) {
 		this.fFin = fFin;
 	}
 
@@ -55,11 +53,11 @@ public class RetoDTO implements Serializable {
 		this.objetivo = objetivo;
 	}
 	
-	public String getDeporte() {
+	public TipoDeporte getDeporte() {
 		return deporte;
 	}
 	
-	public void setDeporte(String deporte) {
+	public void setDeporte(TipoDeporte deporte) {
 		this.deporte = deporte;
 	}
 	

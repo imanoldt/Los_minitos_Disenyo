@@ -1,16 +1,17 @@
 package es.deusto.ingenieria.sd.auctions.server.data.domain;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class Reto implements Serializable {
 	private String nombre;
-	private String fInicio;
-	private String fFin;
+	private Date fInicio;
+	private Date fFin;
 	private double distancia;
 	private double objetivo;
-	private String deporte;
+	private TipoDeporte deporte;
 	
-	public Reto(String nombre, String fInicio, String fFin, double distancia, double objetivo, String deporte) {
+	public Reto(String nombre, Date fInicio, Date fFin, double distancia, double objetivo, TipoDeporte deporte) {
 		super();
 		this.nombre = nombre;
 		this.fInicio = fInicio;
@@ -32,19 +33,19 @@ public class Reto implements Serializable {
 		this.nombre = nombre;
 	}
 
-	public String getfInicio() {
+	public Date getfInicio() {
 		return fInicio;
 	}
 
-	public void setfInicio(String fInicio) {
+	public void setfInicio(Date fInicio) {
 		this.fInicio = fInicio;
 	}
 
-	public String getfFin() {
+	public Date getfFin() {
 		return fFin;
 	}
 
-	public void setfFin(String fFin) {
+	public void setfFin(Date fFin) {
 		this.fFin = fFin;
 	}
 
@@ -64,11 +65,11 @@ public class Reto implements Serializable {
 		this.objetivo = objetivo;
 	}
 	
-	public String getDeporte() {
+	public TipoDeporte getDeporte() {
 		return deporte;
 	}
 	
-	public void setDeporte(String deporte) {
+	public void setDeporte(TipoDeporte deporte) {
 		this.deporte = deporte;
 	}
 

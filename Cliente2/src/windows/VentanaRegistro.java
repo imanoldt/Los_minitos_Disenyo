@@ -21,6 +21,7 @@ import java.awt.Font;
 import javax.swing.SwingConstants;
 import datechooser.beans.DateChooserPanel;
 import es.deusto.ingenieria.sd.auctions.client.controller.LoginController;
+import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoProvedor;
 
 import java.awt.Color;
 import javax.swing.JComboBox;
@@ -160,7 +161,12 @@ public class VentanaRegistro extends JFrame {
 		panel_1.add(lblProvedor, "cell 0 14");
 		
 		comboBox = new JComboBox();
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"GOOGLE", "FACEBOOK", "LOCAL"}));
+		String[] s = new String[TipoProvedor.values().length];
+		int i = 0;
+		for(TipoProvedor t: TipoProvedor.values()) {
+			s[i++] = t.toString();
+		}
+		comboBox.setModel(new DefaultComboBoxModel(s));
 		panel_1.add(comboBox, "cell 9 14 11 1,grow");
 		
 		btnRegistrarse = new JButton("Registrarme");
@@ -187,7 +193,7 @@ public class VentanaRegistro extends JFrame {
 		btnRegistrarse.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				controller.regist(textField.getText(), textField_5.getText(), textField_1.getText(), 
-						dateChooserPanel.getSelectedDate().getTime().toString(), 
+						dateChooserPanel.getSelectedDate().getTime(), 
 						textField_2.getText(), textField_3.getText(), txtFcardiacaMax.getText(), 
 						textField_4.getText(), comboBox.getSelectedIndex());
 				dispose();
