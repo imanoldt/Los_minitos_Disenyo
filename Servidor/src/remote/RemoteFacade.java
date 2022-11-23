@@ -25,8 +25,6 @@ import services.SesionAppService;
 
 public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {	
 	private static final long serialVersionUID = 1L;
-	
-	private static RemoteFacade instance;
 
 	//Data structure for manage Server State
 	private Map<Long, User> serverState = new HashMap<>();
@@ -36,15 +34,8 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	private SesionAppService sesionAppService = SesionAppService.getInstance();
 	private RetoAppService retoAppService = RetoAppService.getInstance();
 
-	private RemoteFacade() throws RemoteException {
+	public RemoteFacade() throws RemoteException {
 		super();		
-	}
-	
-	public static RemoteFacade getInstance() throws RemoteException {
-		if(instance == null) {
-			instance = new RemoteFacade();
-		}
-		return instance;
 	}
 	
 	//TODO REVISAR TODOS LOS EDITS Y COMENTARIOS 
