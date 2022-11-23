@@ -4,6 +4,7 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 public class GoogleService extends UnicastRemoteObject implements IGoogle {
+	
 	public static GoogleService instance;
 	
 	private GoogleService() throws RemoteException {
@@ -26,7 +27,7 @@ public class GoogleService extends UnicastRemoteObject implements IGoogle {
 	
 	@Override
 	public void login() throws RemoteException {
-		System.out.println("Hola");
+		System.out.println("Hola Google Server");
 	}
 
 }

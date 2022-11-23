@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project basedir="." default="3.server" name="Strava_LocalServer">    
+	
+	<property environment="env"/>
+	
+	<property name="server.IP" value="127.0.0.1"/>
+	<property name="server.port" value="8001"/> 
+	<property name="message" value="Hola Facebook Server"/>	
+	
 	<property name="src.dir" location="src"/>
    	<property name="bin.dir" location="bin"/>
 	<property name="dist.dir" location="dist"/>
@@ -36,6 +43,10 @@
         	<arg value="${rmiregistry.IP}"/> 
 	 		<arg value="${rmiregistry.port}"/> 
 			<arg value="${server.name}"/> 
+			
+			<arg value="${server.IP}"/> 
+			<arg value="${server.port}"/> 
+			<arg value="${message}"/> 
         </java>
     </target>
 </project>

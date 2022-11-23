@@ -21,7 +21,8 @@ public class LoginAppService {
 	
 	public User login(String email, String password) {
 		//TODO: Get User using DAO and check 	
-		ExternalServersGateway.getInstance().login();
+		ExternalServersGateway.getInstance().login(TipoProvedor.GOOGLE);
+		ExternalServersGateway.getInstance().login(TipoProvedor.FACEBOOK);
 		
 		if(userMap.containsKey(email)) {
 			User u = userMap.get(email);
