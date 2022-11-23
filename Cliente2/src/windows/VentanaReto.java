@@ -4,6 +4,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import controllers.RetoController;
+
 import java.awt.BorderLayout;
 import javax.swing.JLabel;
 import java.awt.Color;
@@ -11,9 +14,8 @@ import java.awt.GridLayout;
 import javax.swing.JTextField;
 import javax.swing.JComboBox;
 import datechooser.beans.DateChooserDialog;
-import es.deusto.ingenieria.sd.auctions.client.controller.RetoController;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoDeporte;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoProvedor;
+import domain.TipoDeporte;
+import domain.TipoProvedor;
 import datechooser.beans.DateChooserCombo;
 import java.awt.Font;
 import javax.swing.JButton;

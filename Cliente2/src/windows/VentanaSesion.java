@@ -20,10 +20,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
+import controllers.SesionController;
 //import clss.TipoDeporte;
 import datechooser.beans.DateChooserCombo;
-import es.deusto.ingenieria.sd.auctions.client.controller.SesionController;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoDeporte;
+import domain.TipoDeporte;
 
 public class VentanaSesion extends JFrame {
 	

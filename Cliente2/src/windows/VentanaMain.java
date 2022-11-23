@@ -6,10 +6,10 @@ import javax.swing.JPanel;
 import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
 
-import es.deusto.ingenieria.sd.auctions.client.controller.LoginController;
-import es.deusto.ingenieria.sd.auctions.client.controller.RetoController;
-import es.deusto.ingenieria.sd.auctions.client.controller.SesionController;
-import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
+import controllers.LoginController;
+import controllers.RetoController;
+import controllers.SesionController;
+import remote.ServiceLocator;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;

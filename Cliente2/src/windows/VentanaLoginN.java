@@ -7,6 +7,8 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.GridLayout;
 import net.miginfocom.swing.MigLayout;
+import remote.ServiceLocator;
+
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
@@ -15,8 +17,7 @@ import javax.swing.JButton;
 import java.awt.Font;
 import javax.swing.border.MatteBorder;
 
-import es.deusto.ingenieria.sd.auctions.client.controller.LoginController;
-import es.deusto.ingenieria.sd.auctions.client.remote.ServiceLocator;
+import controllers.LoginController;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -43,11 +44,6 @@ public class VentanaLoginN extends JFrame {
 	private JPasswordField passContraseya;
 	private JButton btnIniciarSession, btnRegistrarse, btnSalir;
 	private JLabel lblRegistrate;
-	private JLabel lbl_o;
-	private JPanel panel;
-	private JLabel lblNewLabel;
-	private JLabel lblNewLabel_1;
-	private JLabel lblNewLabel_2;
 	private JLabel lblNewLabel_3;
 	private JLabel lblStravaCopyright;
 
@@ -142,20 +138,6 @@ public class VentanaLoginN extends JFrame {
 
 		ImageIcon imgIconEnc = new ImageIcon("img/xEncendida.png");
 		Image imgEscaladaEnc = imgIconEnc.getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH);
-
-		lbl_o = new JLabel("O Inicia Sesion con:");
-		lbl_o.setFont(new Font("Montserrat", Font.PLAIN, 14));
-		pnlIzquierda.add(lbl_o, "cell 0 9");
-
-		panel = new JPanel();
-		pnlIzquierda.add(panel, "cell 0 10,grow");
-		panel.setLayout(new GridLayout(1, 0, 0, 0));
-		lblNewLabel_2 = new JLabel("GOOGLE");
-		panel.add(lblNewLabel_2);
-		lblNewLabel_1 = new JLabel("FACEBOOK");
-		panel.add(lblNewLabel_1);
-		lblNewLabel = new JLabel("LOCAL");
-		panel.add(lblNewLabel);
 
 		btnSalir = new JButton();
 		btnSalir.setOpaque(false);

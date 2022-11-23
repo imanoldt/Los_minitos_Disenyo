@@ -6,6 +6,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import controllers.LoginController;
+
 import java.awt.GridLayout;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -20,8 +23,7 @@ import net.miginfocom.swing.MigLayout;
 import java.awt.Font;
 import javax.swing.SwingConstants;
 import datechooser.beans.DateChooserPanel;
-import es.deusto.ingenieria.sd.auctions.client.controller.LoginController;
-import es.deusto.ingenieria.sd.auctions.server.data.domain.TipoProvedor;
+import domain.TipoProvedor;
 
 import java.awt.Color;
 import javax.swing.JComboBox;
