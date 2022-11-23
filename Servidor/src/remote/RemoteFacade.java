@@ -25,17 +25,26 @@ import services.SesionAppService;
 
 public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {	
 	private static final long serialVersionUID = 1L;
+	
+	private static RemoteFacade instance;
 
 	//Data structure for manage Server State
 	private Map<Long, User> serverState = new HashMap<>();
 	
 	//TODO: Remove this instances when Singleton Pattern is implemented
-	private LoginAppService loginService = new LoginAppService();
-	private SesionAppService sesionAppService = new SesionAppService();
-	private RetoAppService retoAppService = new RetoAppService();
+	private LoginAppService loginService = LoginAppService.getInstance();
+	private SesionAppService sesionAppService = SesionAppService.getInstance();
+	private RetoAppService retoAppService = RetoAppService.getInstance();
 
-	public RemoteFacade() throws RemoteException {
+	private RemoteFacade() throws RemoteException {
 		super();		
+	}
+	
+	public static RemoteFacade getInstance() throws RemoteException {
+		if(instance == null) {
+			instance = new RemoteFacade();
+		}
+		return instance;
 	}
 	
 	//TODO REVISAR TODOS LOS EDITS Y COMENTARIOS 

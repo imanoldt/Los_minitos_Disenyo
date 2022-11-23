@@ -10,6 +10,16 @@ import gateway.ExternalServersGateway;
 //TODO: Implement Singleton Pattern
 public class LoginAppService {
 	private static Map<String, User> userMap = new HashMap<>();
+	private static LoginAppService instance;
+	
+	public static LoginAppService getInstance() {
+		if(instance == null) {
+			instance = new LoginAppService();
+		}
+		return instance;
+	}
+	
+	private LoginAppService() {}
 		
 	public boolean regist(User user) {
 		if(userMap.containsKey(user.getEmail())) {
