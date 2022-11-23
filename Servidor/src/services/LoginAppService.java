@@ -5,6 +5,7 @@ import java.util.*;
 import domain.TipoProvedor;
 import domain.User;
 import domain.UserLocal;
+import gateway.ExternalServersGateway;
 
 //TODO: Implement Singleton Pattern
 public class LoginAppService {
@@ -19,7 +20,9 @@ public class LoginAppService {
 	}
 	
 	public User login(String email, String password) {
-		//TODO: Get User using DAO and check 		
+		//TODO: Get User using DAO and check 	
+		ExternalServersGateway.getInstance().login();
+		
 		if(userMap.containsKey(email)) {
 			User u = userMap.get(email);
 			if(u.getProvedor().compareTo(TipoProvedor.LOCAL) == 0) {
