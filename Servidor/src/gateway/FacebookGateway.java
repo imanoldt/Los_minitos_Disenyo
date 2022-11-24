@@ -3,54 +3,26 @@ package gateway;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.net.Socket;
-import java.rmi.Naming;
+import java.rmi.RemoteException;
 
-import domain.TipoProvedor;
-import remote.IGoogle;
-
-public class ExternalServersGateway {
-	/*
+public class FacebookGateway implements Gateway {
+	private static FacebookGateway instance;
+	private String[] args = {"", ""};
 	
-	private static ExternalServersGateway instance;
-	private IGoogle googleServer;
-	private String[] args = {"", "", ""};
-	
-	private ExternalServersGateway() {
-		try {
-			String URL = "//127.0.0.1:1099/GoogleServer";
-			args[0] = "127.0.0.1";
-			args[1] = "8001";
-			args[2] = "Hola Facebook Server";
-			this.googleServer = (IGoogle) Naming.lookup(URL);
-		} catch(Exception e) {
-			System.err.println("# Error locating remote services: " + e);
-		}
+	private FacebookGateway() {
+		args[0] = "127.0.0.1";
+		args[1] = "8001";
 	}
 	
-	public static ExternalServersGateway getInstance() {
+	public static FacebookGateway getInstance() {
 		if(instance == null) {
-			instance = new ExternalServersGateway();
+			instance = new FacebookGateway();
 		}
-		
 		return instance;
 	}
 	
-	public void login(TipoProvedor t) {
-		if(t.compareTo(TipoProvedor.GOOGLE) == 0) {
-			System.out.println("   - LogIn from Google Servers");
-			
-			try {
-				this.googleServer.login();
-			} catch(Exception e) {
-				System.out.println(" $ Error LogIn with Google: " + e);
-			}
-		} else if(t.compareTo(TipoProvedor.FACEBOOK) == 0){
-			this.socketConection();
-		}
-	}
-	
-	private void socketConection() {
-		if (args.length < 3) {
+	public boolean login(String email, String pass) throws RemoteException {
+		if (args.length < 2) {
 			System.err.println(" # Usage: TCPSocketClient [SERVER IP] [PORT] [MESSAGE]");
 			System.exit(1);
 		}
@@ -59,8 +31,6 @@ public class ExternalServersGateway {
 		String serverIP = args[0];
 		//args[1] = Server socket port
 		int serverPort = Integer.parseInt(args[1]);
-		//argrs[2] = Message
-		String message = args[2];
 
 		/**
 		 * NOTE: try-with resources Statement - https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html
@@ -69,7 +39,7 @@ public class ExternalServersGateway {
 		 * Any object that implements java.lang.AutoCloseable, which includes all objects which implement java.io.Closeable, 
 		 * can be used as a resource.
 		 */
-		/*
+
 		//Declaration of the socket to send/receive information to/from the server (an IP and a Port are needed)
 		try (Socket tcpSocket = new Socket(serverIP, serverPort);
 			 //Streams to send and receive information are created from the Socket
@@ -77,16 +47,23 @@ public class ExternalServersGateway {
 			 DataOutputStream out = new DataOutputStream(tcpSocket.getOutputStream())){
 			
 			//Send request (a Srting) to the server
-			out.writeUTF(message);
-			System.out.println("- StravaClient: Sent data to '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + message + "'");
+			out.writeUTF(email);
+			out.writeUTF(pass);
+			System.out.println("- StravaClient: Sent data to '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + email + " : " + pass + "'");
 			
 			//Read response (a String) from the server
-			String data = in.readUTF();			
+			String data = in.readUTF();	
 			System.out.println("- StravaClient: Received data from '" + tcpSocket.getInetAddress().getHostAddress() + ":" + tcpSocket.getPort() + "' -> '" + data + "'");
+			if(data.equals("1")) {
+				return true;
+			}
+			return false;
 		} catch (Exception e) {
 			System.out.println("# StravaClient: Error: " + e.getMessage());
 		}
+		return false;
 	}
-	*/
+	
+	
 
 }

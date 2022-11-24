@@ -2,13 +2,22 @@ package remote;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.HashMap;
+import java.util.Map;
 
 public class GoogleService extends UnicastRemoteObject implements IGoogle {
 	
 	public static GoogleService instance;
+	private static Map<String, String> userMap;
 	
 	private GoogleService() throws RemoteException {
 		super();
+		userMap = new HashMap<>();
+		userMap.put("Kerman", "Urrukoetxea");
+		userMap.put("Markel", "Contreras");
+		userMap.put("Imanol", "Duran");
+		userMap.put("Alvaro", "Garcia");
+		userMap.put("Robby", "Retos");
 	}
 	
 	public static GoogleService getInstance() {
@@ -26,8 +35,11 @@ public class GoogleService extends UnicastRemoteObject implements IGoogle {
 	
 	
 	@Override
-	public void login() throws RemoteException {
-		System.out.println("Hola Google Server");
+	public boolean login(String email, String pass) throws RemoteException {
+		if(userMap.containsKey(email)) {
+			return pass.equals(userMap.get(email));
+		}
+		return false;
 	}
 
 }

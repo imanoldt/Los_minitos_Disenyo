@@ -1,8 +1,7 @@
-package remote;
+package gateway;
 
-import java.rmi.Remote;
 import java.rmi.RemoteException;
 
-public interface IGoogle extends Remote {
+public interface Gateway {
 	public boolean login(String email, String pass) throws RemoteException;
 }

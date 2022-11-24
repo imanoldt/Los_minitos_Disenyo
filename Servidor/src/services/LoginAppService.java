@@ -1,14 +1,17 @@
 package services;
 
+import java.rmi.RemoteException;
 import java.util.*;
 
 import domain.TipoProvedor;
 import domain.User;
 import domain.UserLocal;
 import gateway.ExternalServersGateway;
+import gateway.Factory;
+import gateway.Gateway;
 
 //TODO: Implement Singleton Pattern
-public class LoginAppService {
+public class LoginAppService implements Gateway {
 	private static Map<String, User> userMap = new HashMap<>();
 	private static LoginAppService instance;
 	
@@ -29,26 +32,33 @@ public class LoginAppService {
 		return true;
 	}
 	
-	public User login(String email, String password) {
-		//TODO: Get User using DAO and check 	
-		ExternalServersGateway.getInstance().login(TipoProvedor.GOOGLE);
-		ExternalServersGateway.getInstance().login(TipoProvedor.FACEBOOK);
-		
-		if(userMap.containsKey(email)) {
-			User u = userMap.get(email);
-			if(u.getProvedor().compareTo(TipoProvedor.LOCAL) == 0) {
-				UserLocal uL = (UserLocal) u;
-				if(uL.checkPassword(password)) {
-					return uL;
-				} 
-			} else {
-				return u;
+	public User logIn(String email, String password) {
+		//TODO: Get User using DAO and check 
+		try {
+			if(userMap.containsKey(email)) {
+				User u = userMap.get(email);
+				if(Factory.getInstance().createGateway(u.getProvedor()).login(email, password)){
+					return u;
+				}
 			}
+		} catch(Exception e) {
+			System.out.println("# LogIn error: " + e);
+			return null;
 		}
 		return null;
 	}
 	
 	public static Map<String, User> getUserMap() {
 		return userMap;
+	}
+	
+	public boolean login(String email, String pass) throws RemoteException {
+		if(userMap.containsKey(email)) {
+			UserLocal uL = (UserLocal) userMap.get(email);
+			if(uL.checkPassword(pass)) {
+				return true;
+			} 
+		}
+		return false;
 	}
 }
