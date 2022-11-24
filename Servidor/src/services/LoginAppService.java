@@ -5,10 +5,10 @@ import java.util.*;
 import domain.User;
 import domain.UserLocal;
 import gateway.Factory;
-import gateway.Gateway;
+import gateway.IGateway;
 
 //TODO: Implement Singleton Pattern
-public class LoginAppService implements Gateway {
+public class LoginAppService implements IGateway {
 	private static Map<String, User> userMap = new HashMap<>();
 	private static LoginAppService instance;
 	

@@ -15,7 +15,7 @@ public class Factory {
 		return instance;
 	}
 	
-	public Gateway createGateway(TipoProvedor t) {
+	public IGateway createGateway(TipoProvedor t) {
 		if(t.equals(TipoProvedor.GOOGLE)) {
 			return GoogleGateway.getInstance();
 		} else if(t.equals(TipoProvedor.FACEBOOK)) {

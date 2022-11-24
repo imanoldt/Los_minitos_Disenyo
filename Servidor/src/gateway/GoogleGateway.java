@@ -9,7 +9,7 @@ import java.rmi.RemoteException;
 import domain.TipoProvedor;
 import remote.IGoogle;
 
-public class GoogleGateway implements Gateway {
+public class GoogleGateway implements IGateway {
 	private static GoogleGateway instance;
 	private IGoogle googleServer;
 	

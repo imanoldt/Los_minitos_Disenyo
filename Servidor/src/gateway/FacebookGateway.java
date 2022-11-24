@@ -5,7 +5,7 @@ import java.io.DataOutputStream;
 import java.net.Socket;
 import java.rmi.RemoteException;
 
-public class FacebookGateway implements Gateway {
+public class FacebookGateway implements IGateway {
 	private static FacebookGateway instance;
 	private String[] args = {"", ""};
 	
