@@ -2,11 +2,8 @@ package services;
 
 import java.rmi.RemoteException;
 import java.util.*;
-
-import domain.TipoProvedor;
 import domain.User;
 import domain.UserLocal;
-import gateway.ExternalServersGateway;
 import gateway.Factory;
 import gateway.Gateway;
 

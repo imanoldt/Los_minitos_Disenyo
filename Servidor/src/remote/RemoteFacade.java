@@ -4,14 +4,11 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import domain.Reto;
 import domain.Sesion;
-import domain.TipoDeporte;
 import domain.User;
 import domain.UserLocal;
 import dto.RetoAssembler;

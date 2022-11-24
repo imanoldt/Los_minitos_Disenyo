@@ -2,10 +2,7 @@ package remote;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
-import java.util.Date;
 import java.util.List;
-
-import domain.TipoDeporte;
 import dto.RetoDTO;
 import dto.SesionDTO;
 import dto.UserDTO;
