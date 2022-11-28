@@ -35,7 +35,7 @@ public class RetoController {
 	
 	public List<String> getReto() {
 		try {
-			List<RetoDTO> list = this.serviceLocator.getService().getReto();
+			List<RetoDTO> list = this.serviceLocator.getService().getReto(token);
 			List<String> sList = new ArrayList<>();
 			for(RetoDTO dto: list) {
 				sList.add(dto.toString());
@@ -49,7 +49,7 @@ public class RetoController {
 	
 	public List<String> getRetoAct() {
 		try {
-			List<RetoDTO> list = this.serviceLocator.getService().getRetoActivado();
+			List<RetoDTO> list = this.serviceLocator.getService().getRetoActivado(token);
 			List<String> sList = new ArrayList<>();
 			for(RetoDTO dto: list) {
 				sList.add(dto.toString());

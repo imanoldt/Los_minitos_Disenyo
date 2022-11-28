@@ -20,7 +20,7 @@ public class SesionController {
 		
 		public List<String> getSesion() {
 			try {
-				List<SesionDTO> list = this.serviceLocator.getService().getSesion();
+				List<SesionDTO> list = this.serviceLocator.getService().getSesion(token);
 				List<String> sList = new ArrayList<>();
 				for(SesionDTO dto: list) {
 					sList.add(dto.toString());

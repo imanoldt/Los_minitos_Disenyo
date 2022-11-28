@@ -107,27 +107,27 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	}
 	
 	@Override
-	public List<RetoDTO> getReto() throws RemoteException {
+	public List<RetoDTO> getReto(long token) throws RemoteException {
 		List<RetoDTO> retos = new ArrayList<>();
-		for(Reto r: LoginAppService.getUserMap().get(serverState.get(serverState.keySet().toArray()[0]).getEmail()).getRetos()) {
+		for(Reto r: LoginAppService.getUserMap().get(serverState.get(token).getEmail()).getRetos()) {
 			retos.add(RetoAssembler.retoToDTO(r));
 		}
 		return retos;
 	}
 	
 	@Override
-	public List<RetoDTO> getRetoActivado() throws RemoteException {
+	public List<RetoDTO> getRetoActivado(long token) throws RemoteException {
 		List<RetoDTO> retos = new ArrayList<>();
-		for(Reto r: LoginAppService.getUserMap().get(serverState.get(serverState.keySet().toArray()[0]).getEmail()).getRetosAct()) {
+		for(Reto r: LoginAppService.getUserMap().get(serverState.get(token).getEmail()).getRetosAct()) {
 			retos.add(RetoAssembler.retoToDTO(r));
 		}
 		return retos;
 	}
 	
 	@Override
-	public List<SesionDTO> getSesion() throws RemoteException {
+	public List<SesionDTO> getSesion(long token) throws RemoteException {
 		List<SesionDTO> retos = new ArrayList<>();
-		for(Sesion r: LoginAppService.getUserMap().get(serverState.get(serverState.keySet().toArray()[0]).getEmail()).getSesiones()) {
+		for(Sesion r: LoginAppService.getUserMap().get(serverState.get(token).getEmail()).getSesiones()) {
 			retos.add(SesionAssembler.sesionToDTO(r));
 		}
 		return retos;

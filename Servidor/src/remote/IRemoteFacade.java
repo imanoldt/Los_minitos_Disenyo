@@ -16,11 +16,11 @@ public interface IRemoteFacade extends Remote {
 	
 	public void logout(long token) throws RemoteException; 
 	
-	public List<RetoDTO> getReto() throws RemoteException;
+	public List<RetoDTO> getReto(long token) throws RemoteException;
 	
-	public List<RetoDTO> getRetoActivado() throws RemoteException;
+	public List<RetoDTO> getRetoActivado(long token) throws RemoteException;
 	
-	public List<SesionDTO> getSesion() throws RemoteException;
+	public List<SesionDTO> getSesion(long token) throws RemoteException;
 	
 	public void makeSesion(SesionDTO dto, long token) throws RemoteException;
 	
