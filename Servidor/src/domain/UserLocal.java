@@ -7,7 +7,6 @@ import javax.jdo.annotations.InheritanceStrategy;
 import javax.jdo.annotations.PersistenceCapable;
 
 @PersistenceCapable(detachable = "true")
-@Inheritance(strategy = InheritanceStrategy.SUPERCLASS_TABLE)
 public class UserLocal extends User {
 	private String password;
 	

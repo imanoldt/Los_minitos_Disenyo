@@ -12,7 +12,7 @@ import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 
 @PersistenceCapable(detachable = "true")
-@Inheritance(strategy = InheritanceStrategy.NEW_TABLE)
+@Inheritance(strategy = InheritanceStrategy.SUBCLASS_TABLE)
 public class User implements Serializable {	
 	private String nickname;
 	private String email;
