@@ -3,6 +3,9 @@ package domain;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.jdo.annotations.PersistenceCapable;
+
+@PersistenceCapable(detachable = "true")
 public class Sesion implements Serializable {
 	private String titulo;
 	private TipoDeporte deporte;

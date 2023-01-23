@@ -5,6 +5,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.jdo.annotations.Inheritance;
+import javax.jdo.annotations.InheritanceStrategy;
+import javax.jdo.annotations.Join;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+
+@PersistenceCapable(detachable = "true")
+@Inheritance(strategy = InheritanceStrategy.NEW_TABLE)
 public class User implements Serializable {	
 	private String nickname;
 	private String email;
@@ -14,8 +22,14 @@ public class User implements Serializable {
 	private double fCardiacaMaxima;
 	private double fCardiacaReposo;
 	private TipoProvedor provedor;
+	@Join
+	@Persistent(dependentElement = "true")
 	private List<Reto> retos = new ArrayList<>();
+	@Join
+	@Persistent(dependentElement = "true")
 	private List<Reto> retosAct = new ArrayList<>();
+	@Join
+	@Persistent(dependentElement = "true")
 	private List<Sesion> sesiones = new ArrayList<>();
 	
 	public User() {
