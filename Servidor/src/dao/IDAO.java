@@ -7,6 +7,7 @@ import domain.*;
 public interface IDAO {
 	public void storeUser(User u);
 	public User getUser(String mail, String pass);
+	public User getUser(String mail);
 	public void updateUser(User u);
 	
 	public List<Reto> getRetos(User u);

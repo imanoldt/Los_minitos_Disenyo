@@ -7,6 +7,8 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import dao.DAO;
 import domain.Reto;
 import domain.Sesion;
 import domain.User;
@@ -109,7 +111,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	@Override
 	public List<RetoDTO> getReto(long token) throws RemoteException {
 		List<RetoDTO> retos = new ArrayList<>();
-		for(Reto r: LoginAppService.getUserMap().get(serverState.get(token).getEmail()).getRetos()) {
+		for(Reto r: DAO.getInstance().getRetos(serverState.get(token))) {
 			retos.add(RetoAssembler.retoToDTO(r));
 		}
 		return retos;
@@ -118,7 +120,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	@Override
 	public List<RetoDTO> getRetoActivado(long token) throws RemoteException {
 		List<RetoDTO> retos = new ArrayList<>();
-		for(Reto r: LoginAppService.getUserMap().get(serverState.get(token).getEmail()).getRetosAct()) {
+		for(Reto r: DAO.getInstance().getRetosAct(serverState.get(token))) {
 			retos.add(RetoAssembler.retoToDTO(r));
 		}
 		return retos;
@@ -127,7 +129,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 	@Override
 	public List<SesionDTO> getSesion(long token) throws RemoteException {
 		List<SesionDTO> retos = new ArrayList<>();
-		for(Sesion r: LoginAppService.getUserMap().get(serverState.get(token).getEmail()).getSesiones()) {
+		for(Sesion r: DAO.getInstance().getSesiones(serverState.get(token))) {
 			retos.add(SesionAssembler.sesionToDTO(r));
 		}
 		return retos;
@@ -138,7 +140,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 		System.out.println(" * Activating Reto: " + nombre);
 		User user = serverState.get(token);
 		Reto reto = null;
-		for(Reto r: LoginAppService.getUserMap().get(serverState.get(token).getEmail()).getRetos()) {
+		for(Reto r: DAO.getInstance().getRetos(serverState.get(token))) {
 			if(r.toString().equals(nombre)) {
 				reto = r;
 			}

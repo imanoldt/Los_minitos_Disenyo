@@ -1,5 +1,6 @@
 package services;
 
+import dao.DAO;
 import domain.Reto;
 import domain.User;
 
@@ -16,14 +17,14 @@ public class RetoAppService {
 	private RetoAppService() {}
 
 	public void makeReto(Reto reto, User user) {
-		User u = LoginAppService.getUserMap().get(user.getEmail());
+		User u = DAO.getInstance().getUser(user.getEmail());
 		u.getRetos().add(reto);
-		LoginAppService.getUserMap().put(user.getEmail(), u);
+		DAO.getInstance().updateUser(u);
 	}
 	
 	public void activateReto(Reto reto, User user) {
-		User u = LoginAppService.getUserMap().get(user.getEmail());
+		User u = DAO.getInstance().getUser(user.getEmail());
 		u.getRetosAct().add(reto);
-		LoginAppService.getUserMap().put(user.getEmail(), u);
+		DAO.getInstance().updateUser(u);
 	}
 }

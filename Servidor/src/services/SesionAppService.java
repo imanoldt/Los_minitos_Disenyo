@@ -1,5 +1,6 @@
 package services;
 
+import dao.DAO;
 import domain.Sesion;
 import domain.User;
 
@@ -16,9 +17,9 @@ public class SesionAppService {
 	private SesionAppService() {}
 	
 	public void makeSesion(Sesion sesion, User user) {
-		User u = LoginAppService.getUserMap().get(user.getEmail());
+		User u = DAO.getInstance().getUser(user.getEmail());
 		u.getSesiones().add(sesion);
-		LoginAppService.getUserMap().put(user.getEmail(), u);
+		DAO.getInstance().updateUser(u);
 	}
 
 }
