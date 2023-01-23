@@ -1,4 +1,7 @@
 /dao/
 /domain/
-/services/
+/dto/
+/gateway/
 /remote/
+/server/
+/services/
