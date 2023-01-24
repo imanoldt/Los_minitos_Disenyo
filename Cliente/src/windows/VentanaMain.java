@@ -176,9 +176,9 @@ public class VentanaMain extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				JDialog.setDefaultLookAndFeelDecorated(true);
 				Object[] selectionValues = rController.getRetoAct().toArray();
-				String initialSelection = (String)rController.getReto().toArray()[0];
+				//String initialSelection = (String)rController.getReto().toArray()[0];
 				Object selection = JOptionPane.showInputDialog(null, "Retos Activos:", "Retos Activos",
-						JOptionPane.QUESTION_MESSAGE, null, selectionValues, initialSelection);
+						JOptionPane.QUESTION_MESSAGE, null, selectionValues, "");
 			}
 		});
 
@@ -189,9 +189,9 @@ public class VentanaMain extends JFrame {
 				rController.getReto();
 				JDialog.setDefaultLookAndFeelDecorated(true);
 				Object[] selectionValues = rController.getReto().toArray();
-				String initialSelection = (String)rController.getReto().toArray()[0];
+				//String initialSelection = (String)rController.getReto().toArray()[0];
 				Object selection = JOptionPane.showInputDialog(null, "¿Que reto quieres activar?", "Retos Activos",
-						JOptionPane.QUESTION_MESSAGE, null, selectionValues, initialSelection);
+						JOptionPane.QUESTION_MESSAGE, null, selectionValues, "");
 				if(selection != null) {
 					rController.makeRetoAct((String)selection);
 				}

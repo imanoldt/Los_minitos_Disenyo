@@ -1,5 +1,7 @@
 package services;
 
+import java.util.List;
+
 import dao.DAO;
 import domain.Reto;
 import domain.User;
@@ -17,14 +19,18 @@ public class RetoAppService {
 	private RetoAppService() {}
 
 	public void makeReto(Reto reto, User user) {
-		User u = DAO.getInstance().getUser(user.getEmail());
-		u.getRetos().add(reto);
-		DAO.getInstance().updateUser(u);
+		reto.setUser(user.getEmail());
+		reto.setIsActive(0);
+		DAO.getInstance().storeReto(reto);
 	}
 	
 	public void activateReto(Reto reto, User user) {
-		User u = DAO.getInstance().getUser(user.getEmail());
-		u.getRetosAct().add(reto);
-		DAO.getInstance().updateUser(u);
+		List<Reto> rL = DAO.getInstance().getRetos(user);
+		for(Reto r: rL) {
+			if(r.toString().equals(reto.toString())) {
+				reto.setIsActive(1);
+			}
+		}
+		DAO.getInstance().storeReto(reto);
 	}
 }

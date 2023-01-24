@@ -688,3 +688,557 @@ org.datanucleus.store.query.compiler.QueryCompilerSyntaxException: Portion of ex
 03:32:23,751 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
 03:32:23,771 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
 03:32:23,772 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+09:56:32,883 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+09:56:33,452 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+09:56:33,482 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+09:56:33,526 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+09:56:33,545 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+09:56:33,547 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+09:56:45,837 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+09:56:46,376 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+09:56:46,408 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+09:56:46,450 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+09:56:46,471 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+09:56:46,472 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+09:56:47,463 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+09:56:47,464 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+09:56:47,466 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\GoogleServer.jar
+09:56:47,466 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\commons-codec-1.15.jar
+09:56:47,466 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-api-jdo-6.0.1.jar
+09:56:47,466 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-cache-6.0.0-release.jar
+09:56:47,467 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-core-6.0.2.jar
+09:56:47,467 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-rdbms-6.0.2.jar
+09:56:47,467 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\javax.jdo-3.2.1.jar
+09:56:47,467 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\log4j-1.2.14.jar
+09:56:47,468 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\mysql-connector-java-8.0.26.jar
+09:56:47,468 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin
+09:56:47,468 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\resources
+09:56:49,883 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+09:56:49,884 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\DAO.class
+09:56:49,884 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\IDAO.class
+09:56:49,884 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class
+09:56:49,884 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class
+09:56:49,884 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoDeporte.class
+09:56:49,884 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoProvedor.class
+09:56:49,885 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class
+09:56:49,885 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class
+09:56:49,885 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoAssembler.class
+09:56:49,885 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoDTO.class
+09:56:49,885 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionAssembler.class
+09:56:49,885 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionDTO.class
+09:56:49,886 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserAssembler.class
+09:56:49,886 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserDTO.class
+09:56:49,886 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\FacebookGateway.class
+09:56:49,886 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\Factory.class
+09:56:49,886 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\GoogleGateway.class
+09:56:49,887 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\IGateway.class
+09:56:49,887 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\IRemoteFacade.class
+09:56:49,887 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\RemoteFacade.class
+09:56:49,887 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\server\MainProgram.class
+09:56:49,887 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\LoginAppService.class
+09:56:49,887 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\RetoAppService.class
+09:56:49,887 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\SesionAppService.class
+09:56:50,374 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+09:56:50,375 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+09:56:50,375 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+09:56:50,375 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+09:56:50,476 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+09:56:50,476 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+09:56:50,476 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+09:56:50,525 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+09:56:50,526 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+09:56:50,526 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+09:56:51,031 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+09:57:03,604 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+09:57:04,154 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+09:57:04,186 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+09:57:04,235 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+09:57:04,252 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+09:57:04,254 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:06:46,545 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:06:47,075 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:06:47,110 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:06:47,158 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:06:47,178 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:06:47,180 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:08:11,135 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:08:11,669 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:08:11,700 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:08:11,743 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:08:11,763 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:08:11,764 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:10:31,891 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:10:32,435 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:10:32,468 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:10:32,513 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:10:32,532 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:10:32,533 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:11:06,589 (RMI TCP Connection(3)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:11:06,590 (RMI TCP Connection(3)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:11:06,591 (RMI TCP Connection(3)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:11:06,591 (RMI TCP Connection(3)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:11:06,658 (RMI TCP Connection(3)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:11:06,659 (RMI TCP Connection(3)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:11:06,659 (RMI TCP Connection(3)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:11:06,769 (RMI TCP Connection(3)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:11:06,770 (RMI TCP Connection(3)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:11:06,770 (RMI TCP Connection(3)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:11:22,187 (RMI TCP Connection(3)-192.168.0.24) INFO  [DataNucleus.Datastore.Retrieve] - ¡Objeto con el id "1[OID]domain.Reto" no existe!
+10:11:31,214 (RMI TCP Connection(3)-192.168.0.24) INFO  [DataNucleus.Datastore.Retrieve] - ¡Objeto con el id "1[OID]domain.Reto" no existe!
+10:13:56,698 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:13:56,703 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\DAO.class" no existe!
+10:13:56,704 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\IDAO.class" no existe!
+10:13:56,704 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" no existe!
+10:13:56,705 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" no existe!
+10:13:56,705 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoDeporte.class" no existe!
+10:13:56,705 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoProvedor.class" no existe!
+10:13:56,706 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" no existe!
+10:13:56,706 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" no existe!
+10:13:56,706 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoAssembler.class" no existe!
+10:13:56,707 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoDTO.class" no existe!
+10:13:56,707 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionAssembler.class" no existe!
+10:13:56,707 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionDTO.class" no existe!
+10:13:56,708 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserAssembler.class" no existe!
+10:13:56,708 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserDTO.class" no existe!
+10:13:56,708 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\FacebookGateway.class" no existe!
+10:13:56,708 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\Factory.class" no existe!
+10:13:56,709 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\GoogleGateway.class" no existe!
+10:13:56,709 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\IGateway.class" no existe!
+10:13:56,709 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\IRemoteFacade.class" no existe!
+10:13:56,710 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\RemoteFacade.class" no existe!
+10:13:56,710 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\server\MainProgram.class" no existe!
+10:13:56,710 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\LoginAppService.class" no existe!
+10:13:56,711 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\RetoAppService.class" no existe!
+10:13:56,711 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\SesionAppService.class" no existe!
+10:13:56,713 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 0 clases.
+10:13:56,714 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado sin enhance ninguna clase. Compruebe el LOG para los detalles.
+10:14:03,664 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:14:04,376 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:14:04,420 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:14:04,473 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:14:04,496 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:14:04,497 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:14:13,539 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:14:14,079 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:14:14,114 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:14:14,166 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:14:14,184 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:14:14,186 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:14:26,137 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:14:26,703 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:14:26,737 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:14:26,788 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:14:26,807 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:14:26,808 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:14:27,805 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+10:14:27,810 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+10:14:27,811 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\GoogleServer.jar
+10:14:27,812 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\commons-codec-1.15.jar
+10:14:27,812 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-api-jdo-6.0.1.jar
+10:14:27,812 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-cache-6.0.0-release.jar
+10:14:27,812 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-core-6.0.2.jar
+10:14:27,812 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-rdbms-6.0.2.jar
+10:14:27,813 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\javax.jdo-3.2.1.jar
+10:14:27,813 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\log4j-1.2.14.jar
+10:14:27,813 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\mysql-connector-java-8.0.26.jar
+10:14:27,813 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin
+10:14:27,813 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\resources
+10:14:30,034 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+10:14:30,034 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\DAO.class
+10:14:30,034 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\IDAO.class
+10:14:30,034 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class
+10:14:30,034 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class
+10:14:30,034 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoDeporte.class
+10:14:30,035 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoProvedor.class
+10:14:30,035 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class
+10:14:30,035 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class
+10:14:30,036 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoAssembler.class
+10:14:30,036 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoDTO.class
+10:14:30,036 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionAssembler.class
+10:14:30,036 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionDTO.class
+10:14:30,036 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserAssembler.class
+10:14:30,036 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserDTO.class
+10:14:30,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\FacebookGateway.class
+10:14:30,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\Factory.class
+10:14:30,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\GoogleGateway.class
+10:14:30,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\IGateway.class
+10:14:30,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\IRemoteFacade.class
+10:14:30,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\RemoteFacade.class
+10:14:30,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\server\MainProgram.class
+10:14:30,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\LoginAppService.class
+10:14:30,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\RetoAppService.class
+10:14:30,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\SesionAppService.class
+10:14:30,755 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:14:30,755 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:14:30,755 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:14:30,755 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:14:30,861 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:14:30,861 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:14:30,861 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:14:30,963 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:14:30,963 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:14:30,963 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:14:31,638 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+10:14:40,636 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:14:41,190 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:14:41,223 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:14:41,271 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:14:41,289 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:14:41,290 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:19:05,622 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:19:06,159 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:19:06,188 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:19:06,231 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:19:06,249 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:19:06,250 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:20:26,016 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:20:26,582 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:20:26,615 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:20:26,664 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:20:26,685 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:20:26,687 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:20:56,987 (RMI TCP Connection(2)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:20:56,989 (RMI TCP Connection(2)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:20:56,989 (RMI TCP Connection(2)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:20:56,989 (RMI TCP Connection(2)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:20:57,046 (RMI TCP Connection(2)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:20:57,046 (RMI TCP Connection(2)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:20:57,046 (RMI TCP Connection(2)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:20:57,091 (RMI TCP Connection(2)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:20:57,092 (RMI TCP Connection(2)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:20:57,092 (RMI TCP Connection(2)-192.168.0.24) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:23:11,568 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:23:12,113 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:23:12,146 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:23:12,191 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:23:12,211 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:23:12,213 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:23:38,293 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:23:38,848 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:23:38,880 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:23:38,926 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:23:38,945 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:23:38,946 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:23:39,961 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+10:23:39,962 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+10:23:39,964 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\GoogleServer.jar
+10:23:39,964 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\commons-codec-1.15.jar
+10:23:39,965 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-api-jdo-6.0.1.jar
+10:23:39,965 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-cache-6.0.0-release.jar
+10:23:39,965 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-core-6.0.2.jar
+10:23:39,965 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-rdbms-6.0.2.jar
+10:23:39,966 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\javax.jdo-3.2.1.jar
+10:23:39,966 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\log4j-1.2.14.jar
+10:23:39,966 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\mysql-connector-java-8.0.26.jar
+10:23:39,966 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin
+10:23:39,966 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\resources
+10:23:42,137 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+10:23:42,137 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\DAO.class
+10:23:42,137 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\IDAO.class
+10:23:42,137 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class
+10:23:42,137 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class
+10:23:42,138 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoDeporte.class
+10:23:42,138 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoProvedor.class
+10:23:42,138 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class
+10:23:42,138 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class
+10:23:42,138 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoAssembler.class
+10:23:42,138 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoDTO.class
+10:23:42,139 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionAssembler.class
+10:23:42,139 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionDTO.class
+10:23:42,139 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserAssembler.class
+10:23:42,139 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserDTO.class
+10:23:42,140 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\FacebookGateway.class
+10:23:42,140 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\Factory.class
+10:23:42,140 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\GoogleGateway.class
+10:23:42,140 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\IGateway.class
+10:23:42,140 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\IRemoteFacade.class
+10:23:42,140 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\RemoteFacade.class
+10:23:42,140 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\server\MainProgram.class
+10:23:42,141 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\LoginAppService.class
+10:23:42,141 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\RetoAppService.class
+10:23:42,141 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\SesionAppService.class
+10:23:42,671 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:23:42,672 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:23:42,672 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:23:42,672 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:23:42,731 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:23:42,732 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:23:42,732 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:23:42,780 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:23:42,781 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:23:42,781 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:23:43,286 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+10:23:55,712 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:23:56,267 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:23:56,303 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:23:56,347 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:23:56,368 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:23:56,369 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:26:29,791 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:26:30,348 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:26:30,380 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:26:30,426 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:26:30,444 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:26:30,445 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:26:43,308 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:26:43,853 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:26:43,887 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:26:43,930 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:26:43,949 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:26:43,951 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:26:44,941 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+10:26:44,944 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+10:26:44,945 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\GoogleServer.jar
+10:26:44,945 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\commons-codec-1.15.jar
+10:26:44,946 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-api-jdo-6.0.1.jar
+10:26:44,946 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-cache-6.0.0-release.jar
+10:26:44,946 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-core-6.0.2.jar
+10:26:44,946 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-rdbms-6.0.2.jar
+10:26:44,946 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\javax.jdo-3.2.1.jar
+10:26:44,947 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\log4j-1.2.14.jar
+10:26:44,947 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\mysql-connector-java-8.0.26.jar
+10:26:44,947 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin
+10:26:44,947 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\resources
+10:26:47,117 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+10:26:47,117 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\DAO.class
+10:26:47,117 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\IDAO.class
+10:26:47,118 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class
+10:26:47,118 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class
+10:26:47,118 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoDeporte.class
+10:26:47,118 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoProvedor.class
+10:26:47,118 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class
+10:26:47,118 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class
+10:26:47,118 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoAssembler.class
+10:26:47,119 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoDTO.class
+10:26:47,119 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionAssembler.class
+10:26:47,119 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionDTO.class
+10:26:47,119 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserAssembler.class
+10:26:47,119 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserDTO.class
+10:26:47,120 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\FacebookGateway.class
+10:26:47,120 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\Factory.class
+10:26:47,120 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\GoogleGateway.class
+10:26:47,120 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\IGateway.class
+10:26:47,120 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\IRemoteFacade.class
+10:26:47,121 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\RemoteFacade.class
+10:26:47,121 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\server\MainProgram.class
+10:26:47,121 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\LoginAppService.class
+10:26:47,121 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\RetoAppService.class
+10:26:47,121 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\SesionAppService.class
+10:26:47,636 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:26:47,637 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:26:47,637 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:26:47,637 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:26:47,703 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:26:47,704 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:26:47,704 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:26:47,755 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:26:47,755 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:26:47,755 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:26:48,263 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+10:26:58,541 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:26:59,089 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:26:59,121 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:26:59,168 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:26:59,186 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:26:59,187 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:31:30,427 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:31:30,965 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:31:30,995 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:31:31,038 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:31:31,056 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:31:31,057 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:31:42,979 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:31:43,532 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:31:43,570 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:31:43,616 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:31:43,636 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:31:43,637 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:31:44,627 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+10:31:44,628 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+10:31:44,630 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\GoogleServer.jar
+10:31:44,630 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\commons-codec-1.15.jar
+10:31:44,630 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-api-jdo-6.0.1.jar
+10:31:44,630 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-cache-6.0.0-release.jar
+10:31:44,631 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-core-6.0.2.jar
+10:31:44,631 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-rdbms-6.0.2.jar
+10:31:44,631 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\javax.jdo-3.2.1.jar
+10:31:44,631 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\log4j-1.2.14.jar
+10:31:44,631 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\mysql-connector-java-8.0.26.jar
+10:31:44,631 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin
+10:31:44,631 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\resources
+10:31:46,780 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+10:31:46,780 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\DAO.class
+10:31:46,780 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\IDAO.class
+10:31:46,781 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class
+10:31:46,781 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class
+10:31:46,781 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoDeporte.class
+10:31:46,781 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoProvedor.class
+10:31:46,781 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class
+10:31:46,781 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class
+10:31:46,781 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoAssembler.class
+10:31:46,782 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoDTO.class
+10:31:46,782 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionAssembler.class
+10:31:46,782 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionDTO.class
+10:31:46,782 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserAssembler.class
+10:31:46,782 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserDTO.class
+10:31:46,783 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\FacebookGateway.class
+10:31:46,783 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\Factory.class
+10:31:46,783 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\GoogleGateway.class
+10:31:46,783 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\IGateway.class
+10:31:46,783 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\IRemoteFacade.class
+10:31:46,783 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\RemoteFacade.class
+10:31:46,783 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\server\MainProgram.class
+10:31:46,784 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\LoginAppService.class
+10:31:46,784 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\RetoAppService.class
+10:31:46,784 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\SesionAppService.class
+10:31:47,240 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:31:47,240 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:31:47,240 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:31:47,240 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:31:47,299 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:31:47,299 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:31:47,299 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:31:47,347 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:31:47,347 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:31:47,347 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:31:47,980 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+10:32:04,950 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:32:05,822 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:32:05,865 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:32:06,006 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:32:06,058 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:32:06,059 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:35:42,069 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:35:42,625 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:35:42,658 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:35:42,704 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:35:42,724 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:35:42,725 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:35:54,600 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:35:55,172 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:35:55,205 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:35:55,248 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:35:55,266 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:35:55,267 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:35:56,279 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+10:35:56,281 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+10:35:56,282 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\GoogleServer.jar
+10:35:56,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\commons-codec-1.15.jar
+10:35:56,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-api-jdo-6.0.1.jar
+10:35:56,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-cache-6.0.0-release.jar
+10:35:56,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-core-6.0.2.jar
+10:35:56,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-rdbms-6.0.2.jar
+10:35:56,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\javax.jdo-3.2.1.jar
+10:35:56,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\log4j-1.2.14.jar
+10:35:56,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\mysql-connector-java-8.0.26.jar
+10:35:56,285 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin
+10:35:56,285 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\resources
+10:35:58,455 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+10:35:58,456 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\DAO.class
+10:35:58,456 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\IDAO.class
+10:35:58,456 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class
+10:35:58,456 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class
+10:35:58,457 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoDeporte.class
+10:35:58,457 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoProvedor.class
+10:35:58,457 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class
+10:35:58,457 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class
+10:35:58,457 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoAssembler.class
+10:35:58,458 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoDTO.class
+10:35:58,458 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionAssembler.class
+10:35:58,458 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionDTO.class
+10:35:58,458 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserAssembler.class
+10:35:58,458 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserDTO.class
+10:35:58,459 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\FacebookGateway.class
+10:35:58,459 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\Factory.class
+10:35:58,459 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\GoogleGateway.class
+10:35:58,459 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\IGateway.class
+10:35:58,459 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\IRemoteFacade.class
+10:35:58,459 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\RemoteFacade.class
+10:35:58,460 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\server\MainProgram.class
+10:35:58,460 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\LoginAppService.class
+10:35:58,460 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\RetoAppService.class
+10:35:58,460 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\SesionAppService.class
+10:35:58,976 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:35:58,976 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:35:58,976 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:35:58,976 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:35:59,116 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:35:59,116 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:35:59,116 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:35:59,194 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:35:59,194 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:35:59,194 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:35:59,693 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+10:36:12,169 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:36:12,723 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:36:12,755 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:36:12,802 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:36:12,820 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:36:12,821 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:38:16,355 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:38:16,883 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:38:16,914 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:38:16,961 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:38:16,979 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:38:16,980 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:38:29,119 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:38:29,659 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:38:29,692 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:38:29,741 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:38:29,760 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:38:29,761 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+10:38:30,810 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+10:38:30,812 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+10:38:30,813 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\GoogleServer.jar
+10:38:30,814 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\commons-codec-1.15.jar
+10:38:30,814 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-api-jdo-6.0.1.jar
+10:38:30,814 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-cache-6.0.0-release.jar
+10:38:30,814 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-core-6.0.2.jar
+10:38:30,815 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-rdbms-6.0.2.jar
+10:38:30,815 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\javax.jdo-3.2.1.jar
+10:38:30,815 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\log4j-1.2.14.jar
+10:38:30,815 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\mysql-connector-java-8.0.26.jar
+10:38:30,815 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin
+10:38:30,815 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\resources
+10:38:32,980 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+10:38:32,981 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\DAO.class
+10:38:32,981 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\IDAO.class
+10:38:32,981 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class
+10:38:32,981 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class
+10:38:32,981 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoDeporte.class
+10:38:32,981 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoProvedor.class
+10:38:32,981 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class
+10:38:32,982 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class
+10:38:32,982 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoAssembler.class
+10:38:32,982 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoDTO.class
+10:38:32,982 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionAssembler.class
+10:38:32,982 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionDTO.class
+10:38:32,982 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserAssembler.class
+10:38:32,982 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserDTO.class
+10:38:32,983 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\FacebookGateway.class
+10:38:32,983 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\Factory.class
+10:38:32,983 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\GoogleGateway.class
+10:38:32,983 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\IGateway.class
+10:38:32,983 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\IRemoteFacade.class
+10:38:32,984 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\RemoteFacade.class
+10:38:32,984 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\server\MainProgram.class
+10:38:32,984 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\LoginAppService.class
+10:38:32,984 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\RetoAppService.class
+10:38:32,984 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\SesionAppService.class
+10:38:33,455 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:38:33,455 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:38:33,455 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:38:33,455 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:38:33,518 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:38:33,519 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:38:33,519 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:38:33,568 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:38:33,569 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:38:33,569 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+10:38:34,084 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+10:38:44,997 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+10:38:45,561 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+10:38:45,592 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+10:38:45,641 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+10:38:45,658 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+10:38:45,660 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.

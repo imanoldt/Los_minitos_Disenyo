@@ -13,6 +13,7 @@ public class Sesion implements Serializable {
 	private Date fInicio;
 	private int hora;
 	private double duracion;
+	private String user;
 
 	public Sesion(String titulo, TipoDeporte deporte, double km, Date fInicio, int hora, double duracion) {
 		super();
@@ -28,6 +29,14 @@ public class Sesion implements Serializable {
 	public String toString() {
 		return "Sesion [titulo=" + titulo + ", deporte=" + deporte + ", km=" + km + ", fInicio=" + fInicio + ", hora=" + hora
 				+ ", duracion=" + duracion + "]";
+	}
+	
+	public String getUser() {
+		return user;
+	}
+	
+	public void setUser(String user) {
+		this.user = user;
 	}
 
 	public String getTitulo() {

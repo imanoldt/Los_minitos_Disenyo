@@ -18,12 +18,8 @@ public class SesionAppService {
 	private SesionAppService() {}
 	
 	public void makeSesion(Sesion sesion, User user) {
-		UserLocal u = (UserLocal) DAO.getInstance().getUser(user.getEmail());
-		System.out.println("HOLA: " + u.getEmail());
-		u.getSesiones().add(sesion);
-		System.out.println("HOLI");
-		DAO.getInstance().updateUser(u);
-		System.out.println("ADIOS");
+		sesion.setUser(user.getEmail());
+		DAO.getInstance().storeSesion(sesion);
 	}
 
 }

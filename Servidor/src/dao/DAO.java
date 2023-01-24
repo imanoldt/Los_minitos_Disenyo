@@ -1,5 +1,6 @@
 package dao;
 
+import java.util.ArrayList;
 import java.util.List;
 import javax.jdo.Extent;
 import javax.jdo.JDOHelper;
@@ -50,6 +51,48 @@ public class DAO implements IDAO {
 	}
 	
 	@Override
+	public void storeReto(Reto r) {
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+
+		try {
+			tx.begin();
+			System.out.println("   * Storing a reto: " + r.getNombre());
+			pm.makePersistent(r);
+			tx.commit();
+		} catch (Exception ex) {
+			System.out.println("   $ Error storing a reto: " + ex.getMessage());
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+
+			pm.close();
+		}
+	}
+	
+	@Override
+	public void storeSesion(Sesion s) {
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+
+		try {
+			tx.begin();
+			System.out.println("   * Storing a sesion: " + s.getTitulo());
+			pm.makePersistent(s);
+			tx.commit();
+		} catch (Exception ex) {
+			System.out.println("   $ Error storing a sesion: " + ex.getMessage());
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+
+			pm.close();
+		}
+	}
+	
+	@Override
 	public User getUser(String mail) {
 		PersistenceManager pm = pmf.getPersistenceManager();
 		pm.getFetchPlan().setMaxFetchDepth(3);
@@ -85,15 +128,18 @@ public class DAO implements IDAO {
 		pm.getFetchPlan().setMaxFetchDepth(3);
 
 		Transaction tx = pm.currentTransaction();
-		List<Reto> l = null;
+		List<Reto> l = new ArrayList<>();
 
 		try {
 			System.out.println("   * Querying Reto List from: " + u.getEmail());
 
 			tx.begin();
-			Query<?> query = pm.newQuery("SELECT retos FROM " + UserLocal.class.getName() + " WHERE email == '" + u.getEmail() + "'");
-			query.setUnique(true);
-			l = (List<Reto>) query.execute();
+			Extent<Reto> extent = pm.getExtent(Reto.class);
+			for(Reto r: extent) {
+				if(r.getUser().equals(u.getEmail()) && r.getIsActive() == 0) {
+					l.add(r);
+				}
+			}
 			tx.commit();
 
 		} catch (Exception ex) {
@@ -115,19 +161,22 @@ public class DAO implements IDAO {
 		pm.getFetchPlan().setMaxFetchDepth(3);
 
 		Transaction tx = pm.currentTransaction();
-		List<Sesion> l = null;
+		List<Sesion> l = new ArrayList<>();
 
 		try {
 			System.out.println("   * Querying Reto List from: " + u.getEmail());
 
 			tx.begin();
-			Query<?> query = pm.newQuery("SELECT sesiones FROM " + UserLocal.class.getName() + " WHERE email == '" + u.getEmail() + "'");
-			query.setUnique(true);
-			l = (List<Sesion>) query.execute();
+			Extent<Sesion> extent = pm.getExtent(Sesion.class);
+			for(Sesion s: extent) {
+				if(s.getUser().equals(u.getEmail())) {
+					l.add(s);
+				}
+			}
 			tx.commit();
 
 		} catch (Exception ex) {
-			System.out.println("   $ Error retreiving sesiones: " + ex.getMessage());
+			System.out.println("   $ Error retreiving retos: " + ex.getMessage());
 			return null;
 		} finally {
 			if (tx != null && tx.isActive()) {
@@ -145,19 +194,22 @@ public class DAO implements IDAO {
 		pm.getFetchPlan().setMaxFetchDepth(3);
 
 		Transaction tx = pm.currentTransaction();
-		List<Reto> l = null;
+		List<Reto> l = new ArrayList<>();
 
 		try {
-			System.out.println("   * Querying Reto Act. List from: " + u.getEmail());
+			System.out.println("   * Querying Reto List from: " + u.getEmail());
 
 			tx.begin();
-			Query<?> query = pm.newQuery("SELECT retosAct FROM " + UserLocal.class.getName() + " WHERE email == '" + u.getEmail() + "'");
-			query.setUnique(true);
-			l = (List<Reto>) query.execute();
+			Extent<Reto> extent = pm.getExtent(Reto.class);
+			for(Reto r: extent) {
+				if(r.getUser().equals(u.getEmail()) && r.getIsActive() != 0) {
+					l.add(r);
+				}
+			}
 			tx.commit();
 
 		} catch (Exception ex) {
-			System.out.println("   $ Error retreiving retos act.: " + ex.getMessage());
+			System.out.println("   $ Error retreiving retos: " + ex.getMessage());
 			return null;
 		} finally {
 			if (tx != null && tx.isActive()) {
@@ -205,10 +257,53 @@ public class DAO implements IDAO {
 
 		try {
 			tx.begin();
+			pm.deletePersistent(u);
 			pm.makePersistent(u);
 			tx.commit();
 		} catch (Exception ex) {
 			System.out.println("   $ Error updating a user: " + ex.getMessage());
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+
+			pm.close();
+		}
+	}
+	
+	@Override
+	public void updateReto(Reto r) {
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+
+		try {
+			tx.begin();
+			pm.deletePersistent(r);
+			pm.makePersistent(r);
+			tx.commit();
+		} catch (Exception ex) {
+			System.out.println("   $ Error updating a reto: " + ex.getMessage());
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+
+			pm.close();
+		}
+	}
+	
+	@Override
+	public void updateSesion(Sesion s) {
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+
+		try {
+			tx.begin();
+			pm.deletePersistent(s);
+			pm.makePersistent(s);
+			tx.commit();
+		} catch (Exception ex) {
+			System.out.println("   $ Error updating a sesion: " + ex.getMessage());
 		} finally {
 			if (tx != null && tx.isActive()) {
 				tx.rollback();

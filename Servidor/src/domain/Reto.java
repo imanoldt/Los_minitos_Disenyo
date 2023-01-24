@@ -13,6 +13,8 @@ public class Reto implements Serializable {
 	private double distancia;
 	private double objetivo;
 	private TipoDeporte deporte;
+	private String user;
+	private int isActive;
 	
 	public Reto(String nombre, Date fInicio, Date fFin, double distancia, double objetivo, TipoDeporte deporte) {
 		super();
@@ -26,6 +28,22 @@ public class Reto implements Serializable {
 
 	public Reto() {
 
+	}
+	
+	public int getIsActive() {
+		return isActive;
+	}
+	
+	public void setIsActive(int isActive) {
+		this.isActive = isActive;
+	}
+	
+	public String getUser() {
+		return user;
+	}
+	
+	public void setUser(String user) {
+		this.user = user;
 	}
 
 	public String getNombre() {

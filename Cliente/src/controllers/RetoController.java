@@ -49,9 +49,9 @@ public class RetoController {
 	
 	public List<String> getRetoAct() {
 		try {
-			List<RetoDTO> list = this.serviceLocator.getService().getRetoActivado(token);
+			//List<RetoDTO> list = this.serviceLocator.getService().getRetoActivado(token);
 			List<String> sList = new ArrayList<>();
-			for(RetoDTO dto: list) {
+			for(RetoDTO dto: this.serviceLocator.getService().getRetoActivado(token)) {
 				sList.add(dto.toString());
 			}
 			return sList;
