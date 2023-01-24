@@ -1,0 +1,690 @@
+01:41:29,697 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+01:41:30,357 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+01:41:30,403 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+01:41:30,457 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+01:41:30,479 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+01:41:30,480 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+01:41:58,580 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+01:41:59,130 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+01:41:59,163 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+01:41:59,211 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+01:41:59,229 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+01:41:59,231 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+01:42:00,237 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+01:42:00,239 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+01:42:00,241 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\GoogleServer.jar
+01:42:00,241 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\commons-codec-1.15.jar
+01:42:00,241 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-api-jdo-6.0.1.jar
+01:42:00,241 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-cache-6.0.0-release.jar
+01:42:00,242 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-core-6.0.2.jar
+01:42:00,242 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-rdbms-6.0.2.jar
+01:42:00,242 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\javax.jdo-3.2.1.jar
+01:42:00,242 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\log4j-1.2.14.jar
+01:42:00,242 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\mysql-connector-java-8.0.26.jar
+01:42:00,242 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin
+01:42:02,257 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+01:42:02,258 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\DAO.class
+01:42:02,258 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\IDAO.class
+01:42:02,258 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class
+01:42:02,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class
+01:42:02,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoDeporte.class
+01:42:02,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoProvedor.class
+01:42:02,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class
+01:42:02,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class
+01:42:02,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoAssembler.class
+01:42:02,260 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoDTO.class
+01:42:02,260 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionAssembler.class
+01:42:02,260 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionDTO.class
+01:42:02,260 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserAssembler.class
+01:42:02,260 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserDTO.class
+01:42:02,260 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\FacebookGateway.class
+01:42:02,261 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\Factory.class
+01:42:02,261 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\GoogleGateway.class
+01:42:02,261 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\IGateway.class
+01:42:02,261 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\IRemoteFacade.class
+01:42:02,261 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\RemoteFacade.class
+01:42:02,261 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\server\MainProgram.class
+01:42:02,261 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\LoginAppService.class
+01:42:02,262 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\RetoAppService.class
+01:42:02,262 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\SesionAppService.class
+01:42:03,329 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+01:42:17,938 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+01:42:18,494 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+01:42:18,530 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+01:42:18,584 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+01:42:18,601 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+01:42:18,603 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+01:49:13,339 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+01:49:14,246 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+01:49:14,289 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+01:49:14,345 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+01:49:14,364 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+01:49:14,366 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+01:49:15,413 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+01:49:15,415 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+01:49:15,416 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\GoogleServer.jar
+01:49:15,417 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\commons-codec-1.15.jar
+01:49:15,417 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-api-jdo-6.0.1.jar
+01:49:15,417 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-cache-6.0.0-release.jar
+01:49:15,418 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-core-6.0.2.jar
+01:49:15,418 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-rdbms-6.0.2.jar
+01:49:15,418 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\javax.jdo-3.2.1.jar
+01:49:15,418 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\log4j-1.2.14.jar
+01:49:15,418 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\mysql-connector-java-8.0.26.jar
+01:49:15,418 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin
+01:49:15,429 (main) ERROR [DataNucleus.SchemaTool] - Error creating NucleusContext
+No se puede leer el archivo de propiedades "file:C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\resources/datanucleus.properties"
+org.datanucleus.exceptions.NucleusUserException: No se puede leer el archivo de propiedades "file:C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\resources/datanucleus.properties"
+	at org.datanucleus.Configuration.getPropertiesFromPropertiesFile(Configuration.java:693)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:294)
+Caused by: java.lang.NullPointerException: inStream parameter is null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.Properties.load(Properties.java:407)
+	at org.datanucleus.Configuration.getPropertiesFromPropertiesFile(Configuration.java:687)
+	... 1 more
+Nested Throwables StackTrace:
+java.lang.NullPointerException: inStream parameter is null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+	at java.base/java.util.Properties.load(Properties.java:407)
+	at org.datanucleus.Configuration.getPropertiesFromPropertiesFile(Configuration.java:687)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:294)
+01:50:19,478 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+01:50:20,218 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+01:50:20,253 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+01:50:20,328 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+01:50:20,348 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+01:50:20,348 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:03:35,547 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:03:36,227 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:03:36,255 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:03:36,321 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:03:36,338 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:03:36,347 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:12:41,568 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:12:42,166 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:12:42,198 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:12:42,248 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:12:42,266 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:12:42,267 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:12:56,736 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:12:57,345 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:12:57,382 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:12:57,441 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:12:57,462 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:12:57,463 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:12:58,556 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+02:12:58,558 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+02:12:58,560 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\GoogleServer.jar
+02:12:58,560 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\commons-codec-1.15.jar
+02:12:58,561 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-api-jdo-6.0.1.jar
+02:12:58,561 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-cache-6.0.0-release.jar
+02:12:58,561 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-core-6.0.2.jar
+02:12:58,561 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-rdbms-6.0.2.jar
+02:12:58,561 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\javax.jdo-3.2.1.jar
+02:12:58,561 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\log4j-1.2.14.jar
+02:12:58,562 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\mysql-connector-java-8.0.26.jar
+02:12:58,562 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin
+02:12:58,562 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\resources
+02:13:00,831 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+02:13:00,831 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\DAO.class
+02:13:00,832 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\IDAO.class
+02:13:00,832 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class
+02:13:00,832 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class
+02:13:00,832 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoDeporte.class
+02:13:00,832 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoProvedor.class
+02:13:00,832 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class
+02:13:00,832 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class
+02:13:00,832 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoAssembler.class
+02:13:00,833 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoDTO.class
+02:13:00,833 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionAssembler.class
+02:13:00,833 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionDTO.class
+02:13:00,833 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserAssembler.class
+02:13:00,834 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserDTO.class
+02:13:00,834 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\FacebookGateway.class
+02:13:00,834 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\Factory.class
+02:13:00,834 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\GoogleGateway.class
+02:13:00,834 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\IGateway.class
+02:13:00,834 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\IRemoteFacade.class
+02:13:00,834 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\RemoteFacade.class
+02:13:00,835 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\server\MainProgram.class
+02:13:00,835 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\LoginAppService.class
+02:13:00,835 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\RetoAppService.class
+02:13:00,835 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\SesionAppService.class
+02:13:01,999 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+02:14:54,910 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:14:55,584 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:14:55,617 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:14:55,669 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:14:55,689 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:14:55,690 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:15:48,823 (RMI TCP Connection(3)-192.168.0.24) INFO  [DataNucleus.JDO] - Exception thrown
+Portion of expression could not be parsed: and password == 'a'
+org.datanucleus.store.query.compiler.QueryCompilerSyntaxException: Portion of expression could not be parsed: and password == 'a'
+	at org.datanucleus.store.query.compiler.JDOQLParser.parse(JDOQLParser.java:93)
+	at org.datanucleus.store.query.compiler.JavaQueryCompiler.compileFilter(JavaQueryCompiler.java:606)
+	at org.datanucleus.store.query.compiler.JDOQLCompiler.compile(JDOQLCompiler.java:103)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.compileGeneric(AbstractJDOQLQuery.java:385)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.compileInternal(AbstractJDOQLQuery.java:443)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:261)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1965)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1893)
+	at org.datanucleus.store.query.Query.execute(Query.java:1875)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at dao.DAO.getUser(Unknown Source)
+	at services.LoginAppService.login(Unknown Source)
+	at services.LoginAppService.logIn(Unknown Source)
+	at remote.RemoteFacade.login(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+02:20:26,254 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:20:26,868 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:20:26,905 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:20:26,964 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:20:26,984 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:20:26,985 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:20:40,805 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:20:41,415 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:20:41,456 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:20:41,558 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:20:41,583 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:20:41,585 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:20:42,652 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+02:20:42,653 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+02:20:42,655 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\GoogleServer.jar
+02:20:42,655 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\commons-codec-1.15.jar
+02:20:42,656 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-api-jdo-6.0.1.jar
+02:20:42,656 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-cache-6.0.0-release.jar
+02:20:42,656 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-core-6.0.2.jar
+02:20:42,656 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-rdbms-6.0.2.jar
+02:20:42,657 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\javax.jdo-3.2.1.jar
+02:20:42,657 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\log4j-1.2.14.jar
+02:20:42,657 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\mysql-connector-java-8.0.26.jar
+02:20:42,657 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin
+02:20:42,657 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\resources
+02:20:44,345 (main) ERROR [DataNucleus.Datastore.Schema] - La inicialización del base de datos ha fallado.
+Unknown database 'stravadb'
+org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'stravadb'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:513)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296)
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:740)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:295)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'stravadb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:190)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496)
+	... 13 more
+Nested Throwables StackTrace:
+java.sql.SQLSyntaxErrorException: Unknown database 'stravadb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:190)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296)
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:740)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:295)
+02:20:44,351 (main) ERROR [DataNucleus.Datastore] - Exception thrown creating StoreManager : Unknown database 'stravadb'
+02:20:44,351 (main) ERROR [DataNucleus.SchemaTool] - Error creating NucleusContext
+Unknown database 'stravadb'
+org.datanucleus.exceptions.NucleusException: Unknown database 'stravadb'
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:98)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:740)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:295)
+Caused by: org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'stravadb'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:513)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296)
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77)
+	... 3 more
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'stravadb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:190)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496)
+	... 13 more
+Nested Throwables StackTrace:
+Unknown database 'stravadb'
+org.datanucleus.exceptions.NucleusDataStoreException: Unknown database 'stravadb'
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:513)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296)
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:740)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:295)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'stravadb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:190)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496)
+	... 13 more
+Nested Throwables StackTrace:
+java.sql.SQLSyntaxErrorException: Unknown database 'stravadb'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:190)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354)
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81)
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592)
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296)
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77)
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424)
+	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:740)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:295)
+02:23:19,372 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:23:20,011 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:23:20,042 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:23:20,093 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:23:20,111 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:23:20,111 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:23:44,413 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:23:45,134 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:23:45,162 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:23:45,227 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:23:45,242 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:23:45,242 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:23:46,601 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+02:23:46,603 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+02:23:46,605 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\GoogleServer.jar
+02:23:46,605 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\commons-codec-1.15.jar
+02:23:46,606 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-api-jdo-6.0.1.jar
+02:23:46,606 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-cache-6.0.0-release.jar
+02:23:46,606 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-core-6.0.2.jar
+02:23:46,606 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-rdbms-6.0.2.jar
+02:23:46,606 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\javax.jdo-3.2.1.jar
+02:23:46,606 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\log4j-1.2.14.jar
+02:23:46,607 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\mysql-connector-java-8.0.26.jar
+02:23:46,607 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin
+02:23:46,607 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\resources
+02:23:49,033 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+02:23:49,033 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\DAO.class
+02:23:49,033 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\IDAO.class
+02:23:49,033 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class
+02:23:49,034 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class
+02:23:49,034 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoDeporte.class
+02:23:49,034 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoProvedor.class
+02:23:49,034 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class
+02:23:49,034 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class
+02:23:49,034 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoAssembler.class
+02:23:49,035 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoDTO.class
+02:23:49,035 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionAssembler.class
+02:23:49,035 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionDTO.class
+02:23:49,035 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserAssembler.class
+02:23:49,035 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserDTO.class
+02:23:49,036 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\FacebookGateway.class
+02:23:49,036 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\Factory.class
+02:23:49,036 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\GoogleGateway.class
+02:23:49,036 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\IGateway.class
+02:23:49,036 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\IRemoteFacade.class
+02:23:49,036 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\RemoteFacade.class
+02:23:49,036 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\server\MainProgram.class
+02:23:49,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\LoginAppService.class
+02:23:49,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\RetoAppService.class
+02:23:49,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\SesionAppService.class
+02:23:49,572 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:23:49,573 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:23:49,573 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:23:49,573 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:23:49,692 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:23:49,692 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:23:49,785 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:23:49,785 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:23:50,840 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+02:24:06,738 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:24:07,677 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:24:07,713 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:24:07,794 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:24:07,814 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:24:07,815 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:26:37,055 (RMI TCP Connection(3)-192.168.0.24) INFO  [DataNucleus.JDO] - Exception thrown
+Portion of expression could not be parsed: AND password == 'a'
+org.datanucleus.store.query.compiler.QueryCompilerSyntaxException: Portion of expression could not be parsed: AND password == 'a'
+	at org.datanucleus.store.query.compiler.JDOQLParser.parse(JDOQLParser.java:93)
+	at org.datanucleus.store.query.compiler.JavaQueryCompiler.compileFilter(JavaQueryCompiler.java:606)
+	at org.datanucleus.store.query.compiler.JDOQLCompiler.compile(JDOQLCompiler.java:103)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.compileGeneric(AbstractJDOQLQuery.java:385)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.compileInternal(AbstractJDOQLQuery.java:443)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:261)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1965)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1893)
+	at org.datanucleus.store.query.Query.execute(Query.java:1875)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at dao.DAO.getUser(Unknown Source)
+	at services.LoginAppService.login(Unknown Source)
+	at services.LoginAppService.logIn(Unknown Source)
+	at remote.RemoteFacade.login(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+02:28:30,907 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:28:31,563 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:28:31,602 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:28:31,642 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:28:31,664 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:28:31,665 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:29:31,534 (RMI TCP Connection(3)-192.168.0.24) INFO  [DataNucleus.JDO] - Exception thrown
+Portion of expression could not be parsed: AND password == 'a'
+org.datanucleus.store.query.compiler.QueryCompilerSyntaxException: Portion of expression could not be parsed: AND password == 'a'
+	at org.datanucleus.store.query.compiler.JDOQLParser.parse(JDOQLParser.java:93)
+	at org.datanucleus.store.query.compiler.JavaQueryCompiler.compileFilter(JavaQueryCompiler.java:606)
+	at org.datanucleus.store.query.compiler.JDOQLCompiler.compile(JDOQLCompiler.java:103)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.compileGeneric(AbstractJDOQLQuery.java:385)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.compileInternal(AbstractJDOQLQuery.java:443)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:261)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1965)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1893)
+	at org.datanucleus.store.query.Query.execute(Query.java:1875)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at dao.DAO.getUser(DAO.java:66)
+	at services.LoginAppService.login(Unknown Source)
+	at services.LoginAppService.logIn(Unknown Source)
+	at remote.RemoteFacade.login(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+02:44:43,475 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:44:44,012 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:44:44,043 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:44:44,089 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:44:44,107 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:44:44,108 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:44:55,886 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:44:56,429 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:44:56,461 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:44:56,502 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:44:56,524 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:44:56,526 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:44:57,573 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+02:44:57,574 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+02:44:57,576 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\GoogleServer.jar
+02:44:57,576 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\commons-codec-1.15.jar
+02:44:57,577 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-api-jdo-6.0.1.jar
+02:44:57,578 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-cache-6.0.0-release.jar
+02:44:57,581 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-core-6.0.2.jar
+02:44:57,581 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-rdbms-6.0.2.jar
+02:44:57,581 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\javax.jdo-3.2.1.jar
+02:44:57,582 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\log4j-1.2.14.jar
+02:44:57,582 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\mysql-connector-java-8.0.26.jar
+02:44:57,582 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin
+02:44:57,582 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\resources
+02:44:59,626 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+02:44:59,626 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\DAO.class
+02:44:59,627 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\IDAO.class
+02:44:59,627 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class
+02:44:59,627 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class
+02:44:59,627 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoDeporte.class
+02:44:59,627 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoProvedor.class
+02:44:59,627 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class
+02:44:59,627 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class
+02:44:59,628 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoAssembler.class
+02:44:59,628 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoDTO.class
+02:44:59,628 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionAssembler.class
+02:44:59,628 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionDTO.class
+02:44:59,629 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserAssembler.class
+02:44:59,629 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserDTO.class
+02:44:59,629 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\FacebookGateway.class
+02:44:59,629 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\Factory.class
+02:44:59,629 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\GoogleGateway.class
+02:44:59,629 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\IGateway.class
+02:44:59,629 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\IRemoteFacade.class
+02:44:59,629 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\RemoteFacade.class
+02:44:59,630 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\server\MainProgram.class
+02:44:59,630 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\LoginAppService.class
+02:44:59,630 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\RetoAppService.class
+02:44:59,630 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\SesionAppService.class
+02:45:00,786 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+02:45:09,261 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:45:09,816 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:45:09,847 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:45:09,899 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:45:09,917 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:45:09,918 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:48:38,389 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:48:38,933 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:48:38,963 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:48:39,009 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:48:39,027 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:48:39,028 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:56:26,863 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:56:27,399 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:56:27,428 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:56:27,478 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:56:27,497 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:56:27,498 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:56:39,345 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:56:39,883 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:56:39,911 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:56:39,963 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:56:39,983 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:56:39,984 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:56:41,033 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+02:56:41,035 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+02:56:41,036 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\GoogleServer.jar
+02:56:41,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\commons-codec-1.15.jar
+02:56:41,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-api-jdo-6.0.1.jar
+02:56:41,037 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-cache-6.0.0-release.jar
+02:56:41,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-core-6.0.2.jar
+02:56:41,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\datanucleus-rdbms-6.0.2.jar
+02:56:41,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\javax.jdo-3.2.1.jar
+02:56:41,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\log4j-1.2.14.jar
+02:56:41,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\lib\mysql-connector-java-8.0.26.jar
+02:56:41,038 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin
+02:56:41,039 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\resources
+02:56:43,258 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+02:56:43,258 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\DAO.class
+02:56:43,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dao\IDAO.class
+02:56:43,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class
+02:56:43,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class
+02:56:43,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoDeporte.class
+02:56:43,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\TipoProvedor.class
+02:56:43,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class
+02:56:43,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class
+02:56:43,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoAssembler.class
+02:56:43,259 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\RetoDTO.class
+02:56:43,260 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionAssembler.class
+02:56:43,260 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\SesionDTO.class
+02:56:43,261 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserAssembler.class
+02:56:43,261 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\dto\UserDTO.class
+02:56:43,261 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\FacebookGateway.class
+02:56:43,261 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\Factory.class
+02:56:43,261 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\GoogleGateway.class
+02:56:43,262 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\gateway\IGateway.class
+02:56:43,262 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\IRemoteFacade.class
+02:56:43,262 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\remote\RemoteFacade.class
+02:56:43,262 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\server\MainProgram.class
+02:56:43,262 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\LoginAppService.class
+02:56:43,262 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\RetoAppService.class
+02:56:43,262 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\services\SesionAppService.class
+02:56:43,730 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:56:43,730 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:56:43,730 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:56:43,730 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:56:43,819 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:56:43,820 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:56:43,899 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:56:43,899 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+02:56:44,494 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+02:56:57,955 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:56:58,487 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:56:58,517 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:56:58,566 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:56:58,584 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:56:58,585 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+02:59:06,125 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+02:59:06,660 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+02:59:06,691 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+02:59:06,738 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+02:59:06,757 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+02:59:06,758 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+03:03:15,331 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+03:03:15,861 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+03:03:15,891 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+03:03:15,939 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+03:03:15,957 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+03:03:15,958 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+03:06:39,937 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+03:06:40,474 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+03:06:40,506 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+03:06:40,555 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+03:06:40,572 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+03:06:40,574 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+03:09:49,280 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+03:09:49,832 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+03:09:49,861 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+03:09:49,910 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+03:09:49,927 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+03:09:49,928 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+03:11:20,156 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+03:11:20,699 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+03:11:20,730 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+03:11:20,781 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+03:11:20,798 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+03:11:20,800 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
+03:32:23,144 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 6.0.2) para el API "JDO" utilisando el JRE "{2}"
+03:32:23,680 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Reto.class" con definicion enhanced
+03:32:23,710 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\Sesion.class" con definicion enhanced
+03:32:23,751 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\User.class" con definicion enhanced
+03:32:23,771 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\alvgd\Downloads\GitHub\Los_minitos_Disenyo\Servidor\bin\domain\UserLocal.class" con definicion enhanced
+03:32:23,772 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.

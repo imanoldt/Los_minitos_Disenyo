@@ -61,6 +61,9 @@ public class LoginAppService implements IGateway {
 	*/
 	
 	public boolean login(String email, String pass) throws RemoteException {
-		return DAO.getInstance().getUser(email, pass) != null;
+		if(DAO.getInstance().getUser(email) != null) {
+			return ((UserLocal) DAO.getInstance().getUser(email)).checkPassword(pass);
+		}
+		return false;
 	}
 }

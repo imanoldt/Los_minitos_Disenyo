@@ -23,13 +23,16 @@
             <include name="**/*.jar"/>
         </fileset>
         <pathelement location="${bin.dir}"/>
+		<pathelement location="${resources.dir}"/>
     </path>
 	
 	<target name="1.build" description="Builds the project">
 		<delete dir="${bin.dir}"/>
 		<mkdir dir="${bin.dir}"/>
-		<javac srcdir="${src.dir}" destdir="${bin.dir}" classpathref="classpath" deprecation="true" fork="true" includeantruntime="no"/>
-    </target>
+		<javac srcdir="${src.dir}" destdir="${bin.dir}" classpathref="classpath" deprecation="true" fork="true" includeantruntime="no">
+			<include name="**/*.java"/>
+		</javac>
+	</target>
 		
 	<target name="2.export" depends="1.build" description="Export classes into a .jar file">
 		<delete dir="${dist.dir}"/>

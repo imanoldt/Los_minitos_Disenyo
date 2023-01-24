@@ -1,17 +1,16 @@
 package dao;
 
 import java.util.List;
-
 import javax.jdo.Extent;
 import javax.jdo.JDOHelper;
 import javax.jdo.PersistenceManager;
 import javax.jdo.PersistenceManagerFactory;
 import javax.jdo.Query;
 import javax.jdo.Transaction;
-
 import domain.Reto;
 import domain.Sesion;
 import domain.User;
+import domain.UserLocal;
 
 public class DAO implements IDAO {
 	
@@ -49,36 +48,6 @@ public class DAO implements IDAO {
 			pm.close();
 		}
 	}
-
-	@Override
-	public User getUser(String mail, String pass) {
-		PersistenceManager pm = pmf.getPersistenceManager();
-		pm.getFetchPlan().setMaxFetchDepth(3);
-
-		Transaction tx = pm.currentTransaction();
-		User u = null;
-
-		try {
-			System.out.println("   * Querying a User: " + mail);
-
-			tx.begin();
-			Query<?> query = pm.newQuery("SELECT FROM " + User.class.getName() + " WHERE email == '" + mail + "' and password == '" + pass + "'");
-			query.setUnique(true);
-			u = (User) query.execute();
-			tx.commit();
-
-		} catch (Exception ex) {
-			System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
-			return null;
-		} finally {
-			if (tx != null && tx.isActive()) {
-				tx.rollback();
-			}
-
-			pm.close();
-		}
-		return u;
-	}
 	
 	@Override
 	public User getUser(String mail) {
@@ -92,13 +61,13 @@ public class DAO implements IDAO {
 			System.out.println("   * Querying a User: " + mail);
 
 			tx.begin();
-			Query<?> query = pm.newQuery("SELECT FROM " + User.class.getName() + " WHERE email == '" + mail + "'");
+			Query<?> query = pm.newQuery("SELECT FROM " + UserLocal.class.getName() + " WHERE email == '" + mail + "'");
 			query.setUnique(true);
 			u = (User) query.execute();
 			tx.commit();
 
 		} catch (Exception ex) {
-			System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+			System.out.println("   $ Error retreiving a user: " + ex.getMessage());
 			return null;
 		} finally {
 			if (tx != null && tx.isActive()) {
@@ -122,13 +91,13 @@ public class DAO implements IDAO {
 			System.out.println("   * Querying Reto List from: " + u.getEmail());
 
 			tx.begin();
-			Query<?> query = pm.newQuery("SELECT retos FROM " + User.class.getName() + " WHERE email == '" + u.getEmail() + "'");
+			Query<?> query = pm.newQuery("SELECT retos FROM " + UserLocal.class.getName() + " WHERE email == '" + u.getEmail() + "'");
 			query.setUnique(true);
 			l = (List<Reto>) query.execute();
 			tx.commit();
 
 		} catch (Exception ex) {
-			System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+			System.out.println("   $ Error retreiving retos: " + ex.getMessage());
 			return null;
 		} finally {
 			if (tx != null && tx.isActive()) {
@@ -152,13 +121,13 @@ public class DAO implements IDAO {
 			System.out.println("   * Querying Reto List from: " + u.getEmail());
 
 			tx.begin();
-			Query<?> query = pm.newQuery("SELECT sesiones FROM " + User.class.getName() + " WHERE email == '" + u.getEmail() + "'");
+			Query<?> query = pm.newQuery("SELECT sesiones FROM " + UserLocal.class.getName() + " WHERE email == '" + u.getEmail() + "'");
 			query.setUnique(true);
 			l = (List<Sesion>) query.execute();
 			tx.commit();
 
 		} catch (Exception ex) {
-			System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+			System.out.println("   $ Error retreiving sesiones: " + ex.getMessage());
 			return null;
 		} finally {
 			if (tx != null && tx.isActive()) {
@@ -182,13 +151,13 @@ public class DAO implements IDAO {
 			System.out.println("   * Querying Reto Act. List from: " + u.getEmail());
 
 			tx.begin();
-			Query<?> query = pm.newQuery("SELECT retos FROM " + User.class.getName() + " WHERE email == '" + u.getEmail() + "'");
+			Query<?> query = pm.newQuery("SELECT retosAct FROM " + UserLocal.class.getName() + " WHERE email == '" + u.getEmail() + "'");
 			query.setUnique(true);
 			l = (List<Reto>) query.execute();
 			tx.commit();
 
 		} catch (Exception ex) {
-			System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+			System.out.println("   $ Error retreiving retos act.: " + ex.getMessage());
 			return null;
 		} finally {
 			if (tx != null && tx.isActive()) {
@@ -208,7 +177,7 @@ public class DAO implements IDAO {
 		try {
 			tx.begin();
 			
-			Extent<User> uExtent = pm.getExtent(User.class);
+			Extent<UserLocal> uExtent = pm.getExtent(UserLocal.class);
 			for(User u: uExtent) {
 				System.out.println("- Deleted User from DB: " + u.getEmail());
 				pm.deletePersistent(u);
@@ -239,7 +208,7 @@ public class DAO implements IDAO {
 			pm.makePersistent(u);
 			tx.commit();
 		} catch (Exception ex) {
-			System.out.println("   $ Error retreiving an extent: " + ex.getMessage());
+			System.out.println("   $ Error updating a user: " + ex.getMessage());
 		} finally {
 			if (tx != null && tx.isActive()) {
 				tx.rollback();
