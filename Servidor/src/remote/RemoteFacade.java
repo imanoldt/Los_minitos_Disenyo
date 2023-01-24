@@ -48,7 +48,7 @@ public class RemoteFacade extends UnicastRemoteObject implements IRemoteFacade {
 			u = new UserLocal(dto.getNickname(), dto.getPassword(), dto.getEmail(), dto.getfNac(), dto.getPeso(), dto.getAltura(), 
 				dto.getfCardiacaMaxima(), dto.getfCardiacaReposo(), dto.getProvedor());
 		} else {
-			u = new User(dto.getNickname(), dto.getEmail(), dto.getfNac(), dto.getPeso(), dto.getAltura(), 
+			u = new UserLocal(dto.getNickname(), null, dto.getEmail(), dto.getfNac(), dto.getPeso(), dto.getAltura(), 
 				dto.getfCardiacaMaxima(), dto.getfCardiacaReposo(), dto.getProvedor());
 		}
 		if(!loginService.regist(u)) {
